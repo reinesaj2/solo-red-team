@@ -1,0 +1,138 @@
+HTML Form Timing Side-Channel Attack
+==================================================
+Testing password length timing variations...
+Length  1: 0.265219 seconds
+Length  2: 0.265939 seconds
+Length  3: 0.285850 seconds
+Length  4: 0.256513 seconds
+Length  5: 0.274529 seconds
+Length  6: 0.258986 seconds
+Length  7: 0.238639 seconds
+Length  8: 0.255130 seconds
+Length  9: 0.263348 seconds
+Length 10: 0.282943 seconds
+Length 11: 0.259557 seconds
+Length 12: 0.229019 seconds
+Length 13: 0.233396 seconds
+Length 14: 0.228063 seconds
+Length 15: 0.196406 seconds
+
+Testing first character timing variations...
+Char 'a': 0.213200 seconds
+Char 'b': 0.212482 seconds
+Char 'c': 0.202150 seconds
+Char 'd': 0.212166 seconds
+Char 'e': 0.195948 seconds
+Char 'f': 0.205653 seconds
+Char 'g': 0.238687 seconds
+Char 'h': 0.258660 seconds
+Char 'i': 0.247836 seconds
+Char 'j': 0.279169 seconds
+Char 'k': 0.247594 seconds
+Char 'l': 0.251157 seconds
+Char 'm': 0.270322 seconds
+Char 'n': 0.223407 seconds
+Char 'o': 0.347160 seconds
+Char 'p': 0.218008 seconds
+Char 'q': 0.219943 seconds
+Char 'r': 0.234642 seconds
+Char 's': 0.288860 seconds
+Char 't': 0.216176 seconds
+Char 'u': 0.243320 seconds
+Char 'v': 0.192052 seconds
+Char 'w': 0.224145 seconds
+Char 'x': 0.231168 seconds
+Char 'y': 0.251062 seconds
+Char 'z': 0.196816 seconds
+Char 'A': 0.235768 seconds
+Char 'B': 0.173842 seconds
+Char 'C': 0.277551 seconds
+Char 'D': 0.277398 seconds
+Char 'E': 0.230489 seconds
+Char 'F': 0.227820 seconds
+Char 'G': 0.248535 seconds
+Char 'H': 0.274552 seconds
+Char 'I': 0.233418 seconds
+Char 'J': 0.262528 seconds
+Char 'K': 0.233450 seconds
+Char 'L': 0.205033 seconds
+Char 'M': 0.262238 seconds
+Char 'N': 0.250846 seconds
+Char 'O': 0.200340 seconds
+Char 'P': 0.176270 seconds
+Char 'Q': 0.231911 seconds
+Char 'R': 0.226622 seconds
+Char 'S': 0.201334 seconds
+Char 'T': 0.220187 seconds
+Char 'U': 0.207052 seconds
+Char 'V': 0.285027 seconds
+Char 'W': 0.200533 seconds
+Char 'X': 0.214078 seconds
+Char 'Y': 0.198868 seconds
+Char 'Z': 0.252021 seconds
+Char '0': 0.253903 seconds
+Char '1': 0.206021 seconds
+Char '2': 0.220886 seconds
+Char '3': 0.182736 seconds
+Char '4': 0.231516 seconds
+Char '5': 0.201249 seconds
+Char '6': 0.248034 seconds
+Char '7': 0.260094 seconds
+Char '8': 0.276653 seconds
+Char '9': 0.203239 seconds
+
+Fastest responses (potential correct characters):
+'B': 0.173842s
+'P': 0.176270s
+'3': 0.182736s
+'v': 0.192052s
+'e': 0.195948s
+'z': 0.196816s
+'Y': 0.198868s
+'O': 0.200340s
+'W': 0.200533s
+'5': 0.201249s
+
+Slowest responses:
+'C': 0.277551s
+'j': 0.279169s
+'V': 0.285027s
+'s': 0.288860s
+'o': 0.347160s
+
+Testing known patterns from PVD results...
+Password 'a1b2c3d4': 0.195953 seconds
+Password 'qwerty10': 0.227914 seconds
+Password 'letmein2': 0.221737 seconds
+Password 'passw0rd': 0.215260 seconds
+Password 'qaZwsX': 0.227420 seconds
+Password '1q2w3e4r': 0.223998 seconds
+Password 'trustno1': 0.202090 seconds
+Password 'mskitty666': 0.225953 seconds
+Password '111111': 0.273372 seconds
+Password '11111111': 0.253477 seconds
+Password 'a1b2c3d4': 0.241448 seconds
+Password 'qwerty10': 0.276846 seconds
+Password 'letmein2': 0.243190 seconds
+Password 'passw0rd': 0.194191 seconds
+Password 'qaZwsX11': 0.224453 seconds
+Password '1q2w3e4r': 0.207781 seconds
+Password 'trustno1': 0.220135 seconds
+Password 'mskitty6': 0.219828 seconds
+Password '11111111': 0.250496 seconds
+Password '11111111': 0.242833 seconds
+
+Fastest known pattern responses:
+'passw0rd': 0.194191s
+'a1b2c3d4': 0.195953s
+'trustno1': 0.202090s
+'1q2w3e4r': 0.207781s
+'passw0rd': 0.215260s
+
+==================================================
+TIMING ATTACK ANALYSIS COMPLETE
+==================================================
+POTENTIAL LENGTH VULNERABILITY DETECTED!
+Timing range: 0.196406s - 0.285850s
+POTENTIAL CHARACTER VULNERABILITY DETECTED!
+Character timing range: 0.173842s - 0.347160s

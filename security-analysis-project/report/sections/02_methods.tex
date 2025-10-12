@@ -1,0 +1,116 @@
+\section{Methods and Tools}
+
+This section outlines the methodological approach, tools, and experimental setup used throughout the security assessment.
+
+\subsection{Experimental Environment}
+
+\subsubsection{Hardware and Platform}
+All testing was conducted on JMU Computer Science laboratory machines running Ubuntu/Kali Linux, accessed remotely through SSH. The hardware specifications included (see Figure~\ref{fig:A-misc-16-system-info-kali-linux-apple-silicon}):
+\begin{itemize}
+    \item Architecture: ARM64 (aarch64) processors (Apple Silicon hosts in lab)
+    \item Multi-core CPU configuration optimized for parallel processing
+    \item Sufficient RAM for wordlist operations and large file processing
+    \item High-speed network connectivity for VPN-based web testing
+\end{itemize}
+
+\subsubsection{Software Environment}
+The testing environment utilized Kali Linux 2023.3 with the following key components (tool versions referenced per-task in Results):
+\begin{itemize}
+    \item Linux kernel 6.12.38+kali-arm64 with ARM optimizations
+    \item Python 3.x for custom analysis scripts
+    \item OpenVPN client for secure access to target web servers
+    \item Various security analysis tools (detailed below)
+\end{itemize}
+
+\subsection{Security Tools and Frameworks}
+
+\subsubsection{Password Hash Cracking Tools}
+
+\paragraph{\ToolName{Ophcrack}}
+Ophcrack specializes in LM hash cracking using precomputed rainbow tables. Key characteristics:
+\begin{itemize}
+    \item Utilizes time-space trade-off for rapid hash lookups
+    \item Requires minimal computational resources during attack phase
+    \item Highly effective against LM hashes due to their structural weaknesses
+    \item Downloaded rainbow tables from \url{https://ophcrack.sourceforge.io/tables.php}
+\end{itemize}
+
+\paragraph{\ToolName{John the Ripper}}
+A versatile password cracker supporting multiple hash formats:
+\begin{itemize}
+    \item Version 1.9.0-jumbo-1+bleeding-562f1d5 with ARM optimizations
+    \item MD4 128/128 ASIMD 4x2 algorithm implementation for NTLM hashes
+    \item MKPC (Most Keys Per Crypt): 4096 for optimal performance
+    \item Support for wordlist attacks, rule-based mutations, and incremental mode
+\end{itemize}
+
+\paragraph{\ToolName{Hydra}}
+Online password guessing tool for web application testing:
+\begin{itemize}
+    \item Support for multiple protocols (HTTP forms, Basic Auth, Digest Auth)
+    \item Configurable rate limiting and session management
+    \item Integration with custom wordlists and credential sets
+    \item Detailed logging and progress monitoring capabilities
+\end{itemize}
+
+\subsubsection{Supporting Tools}
+\begin{itemize}
+    \item \textbf{OpenSSL}: Certificate and private key analysis
+    \item \textbf{Custom Python Scripts}: Attack visualization and statistical analysis
+    \item \textbf{Wordlist Management}: pw-inspector for length filtering, custom wordlist generation
+\end{itemize}
+
+\subsection{Methodological Approach}
+
+\subsubsection{Strategic Security Analysis}
+Following the project's emphasis on developing a security mindset, the assessment prioritized:
+
+\begin{enumerate}
+    \item \textbf{Weakest Link Identification}: Analyzing each system to identify the most vulnerable authentication components
+    \item \textbf{Resource Optimization}: Implementing time-limited attacks with specific yield thresholds
+    \item \textbf{ROI-Focused Testing}: Prioritizing attack vectors based on success probability versus computational cost
+    \item \textbf{Comprehensive Documentation}: Maintaining detailed logs of all commands, timing, and results
+\end{enumerate}
+
+\subsubsection{Attack Phases}
+
+\paragraph{Phase 1: Reconnaissance and Analysis}
+\begin{itemize}
+    \item Password Verification Data (PVD) file format analysis
+    \item Hash type identification and field structure examination
+    \item Tool capability assessment and attack planning
+\end{itemize}
+
+\paragraph{Phase 2: Offline Dictionary Attacks}
+\begin{itemize}
+    \item Wordlist preparation and optimization
+    \item Sequential tool deployment based on hash vulnerability
+    \item Real-time monitoring and success tracking
+\end{itemize}
+
+\paragraph{Phase 3: Online Password Guessing}
+\begin{itemize}
+    \item VPN connectivity establishment to target networks
+    \item Web application authentication mechanism analysis
+    \item Controlled brute-force testing with rate limiting
+\end{itemize}
+
+\paragraph{Phase 4: Token Authentication Analysis}
+\begin{itemize}
+    \item RSA certificate and private key extraction
+    \item Cryptographic parameter identification
+    \item Security implementation assessment
+\end{itemize}
+
+\subsection{Data Collection and Analysis}
+
+All experimental activities were comprehensively logged, including:
+\begin{itemize}
+    \item Complete command histories with timestamps
+    \item Tool output files with success/failure indicators
+    \item Runtime measurements and performance metrics
+    \item Attack success rates and pattern analysis
+    \item Security vulnerability assessments and recommendations
+\end{itemize}
+
+Evidence collection followed strict protocols to ensure reproducibility and academic integrity, with all results saved to structured directories for subsequent analysis and report generation.

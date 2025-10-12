@@ -39,7 +39,7 @@ The methodology was guided by a systematic and iterative approach:
 
 ## Evidence & Reporting
 
-The `cs660-p3-shared/evidence/` directory contains a comprehensive collection of artifacts from this engagement, including:
+The `evidence/` directory contains a comprehensive collection of artifacts from this engagement, including:
 
 *   **Attack Summaries:** Detailed summaries of the basic and advanced attack phases.
 *   **Log Files:** Raw output from tools like Hydra and Patator.

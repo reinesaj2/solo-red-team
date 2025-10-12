@@ -1,0 +1,3956 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.3.27)  13 SEP 2025 15:37
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen149
+\lightrulewidth=\dimen150
+\cmidrulewidth=\dimen151
+\belowrulesep=\dimen152
+\belowbottomsep=\dimen153
+\aboverulesep=\dimen154
+\abovetopsep=\dimen155
+\cmidrulesep=\dimen156
+\cmidrulekern=\dimen157
+\defaultaddspace=\dimen158
+\@cmidla=\count190
+\@cmidlb=\count191
+\@aboverulesep=\dimen159
+\@belowrulesep=\dimen160
+\@thisruleclass=\count192
+\@lastruleclass=\count193
+\@thisrulewidth=\dimen161
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count194
+\LTcapwidth=\dimen162
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count195
+\LT@rows=\count196
+\c@LT@tables=\count197
+\c@LT@chunks=\count198
+\LT@p@ftn=\toks17
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen163
+\ar@mcellbox=\box51
+\extrarowheight=\dimen164
+\NC@list=\toks18
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box52
+)
+\TX@col@width=\dimen165
+\TX@old@table=\dimen166
+\TX@old@col=\dimen167
+\TX@target=\dimen168
+\TX@delta=\dimen169
+\TX@cols=\count199
+\TX@ftn=\toks19
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks20
+\float@box=\box53
+\@float@everytoks=\toks21
+\@floatcapt=\box54
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip55
+\enit@outerparindent=\dimen170
+\enit@toks=\toks22
+\enit@inbox=\box55
+\enit@count@id=\count267
+\enitdp@description=\count268
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen171
+\captionmargin@=\dimen172
+\captionwidth=\dimen173
+\caption@tempdima=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count269
+\c@continuedfloat=\count270
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count271
+\c@subtable=\count272
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen178
+\Hy@linkcounter=\count273
+\Hy@pagecounter=\count274
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count275
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count276
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen179
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count277
+\Field@Width=\dimen180
+\Fld@charsize=\dimen181
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count278
+\c@Item=\count279
+\c@Hfootnote=\count280
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count281
+\c@bookmark@seq@number=\count282
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip56
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count283
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count284
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count285
+\c@listtotal=\count286
+\c@listcount=\count287
+\c@liststart=\count288
+\c@liststop=\count289
+\c@citecount=\count290
+\c@citetotal=\count291
+\c@multicitecount=\count292
+\c@multicitetotal=\count293
+\c@instcount=\count294
+\c@maxnames=\count295
+\c@minnames=\count296
+\c@maxitems=\count297
+\c@minitems=\count298
+\c@citecounter=\count299
+\c@maxcitecounter=\count300
+\c@savedcitecounter=\count301
+\c@uniquelist=\count302
+\c@uniquename=\count303
+\c@refsection=\count304
+\c@refsegment=\count305
+\c@maxextratitle=\count306
+\c@maxextratitleyear=\count307
+\c@maxextraname=\count308
+\c@maxextradate=\count309
+\c@maxextraalpha=\count310
+\c@abbrvpenalty=\count311
+\c@highnamepenalty=\count312
+\c@lownamepenalty=\count313
+\c@maxparens=\count314
+\c@parenlevel=\count315
+\blx@tempcnta=\count316
+\blx@tempcntb=\count317
+\blx@tempcntc=\count318
+\blx@maxsection=\count319
+\blx@maxsegment@0=\count320
+\blx@notetype=\count321
+\blx@parenlevel@text=\count322
+\blx@parenlevel@foot=\count323
+\blx@sectionciteorder@0=\count324
+\blx@entrysetcounter=\count325
+\blx@biblioinstance=\count326
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language87
+\c@mincomprange=\count327
+\c@maxcomprange=\count328
+\c@mincompwidth=\count329
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'apa.dbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/apa.dbx
+File: apa.dbx 2020/08/28 v9.14 APA biblatex style data model
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count330
+\c@savedafterword=\count331
+\c@annotator=\count332
+\c@savedannotator=\count333
+\c@author=\count334
+\c@savedauthor=\count335
+\c@bookauthor=\count336
+\c@savedbookauthor=\count337
+\c@commentator=\count338
+\c@savedcommentator=\count339
+\c@editor=\count340
+\c@savededitor=\count341
+\c@editora=\count342
+\c@savededitora=\count343
+\c@editorb=\count344
+\c@savededitorb=\count345
+\c@editorc=\count346
+\c@savededitorc=\count347
+\c@foreword=\count348
+\c@savedforeword=\count349
+\c@holder=\count350
+\c@savedholder=\count351
+\c@introduction=\count352
+\c@savedintroduction=\count353
+\c@namea=\count354
+\c@savednamea=\count355
+\c@nameb=\count356
+\c@savednameb=\count357
+\c@namec=\count358
+\c@savednamec=\count359
+\c@translator=\count360
+\c@savedtranslator=\count361
+\c@shortauthor=\count362
+\c@savedshortauthor=\count363
+\c@shorteditor=\count364
+\c@savedshorteditor=\count365
+\c@groupauthor=\count366
+\c@savedgroupauthor=\count367
+\c@narrator=\count368
+\c@savednarrator=\count369
+\c@execproducer=\count370
+\c@savedexecproducer=\count371
+\c@execdirector=\count372
+\c@savedexecdirector=\count373
+\c@with=\count374
+\c@savedwith=\count375
+\c@labelname=\count376
+\c@savedlabelname=\count377
+\c@institution=\count378
+\c@savedinstitution=\count379
+\c@lista=\count380
+\c@savedlista=\count381
+\c@listb=\count382
+\c@savedlistb=\count383
+\c@listc=\count384
+\c@savedlistc=\count385
+\c@listd=\count386
+\c@savedlistd=\count387
+\c@liste=\count388
+\c@savedliste=\count389
+\c@listf=\count390
+\c@savedlistf=\count391
+\c@location=\count392
+\c@savedlocation=\count393
+\c@organization=\count394
+\c@savedorganization=\count395
+\c@origlocation=\count396
+\c@savedoriglocation=\count397
+\c@origpublisher=\count398
+\c@savedorigpublisher=\count399
+\c@publisher=\count400
+\c@savedpublisher=\count401
+\c@language=\count402
+\c@savedlanguage=\count403
+\c@origlanguage=\count404
+\c@savedoriglanguage=\count405
+\c@citation=\count406
+\c@savedcitation=\count407
+\c@pageref=\count408
+\c@savedpageref=\count409
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count410
+\c@textcitetotal=\count411
+\c@textcitemaxnames=\count412
+\c@biburlbigbreakpenalty=\count413
+\c@biburlbreakpenalty=\count414
+\c@biburlnumpenalty=\count415
+\c@biburlucpenalty=\count416
+\c@biburllcpenalty=\count417
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count418
+)
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/apa.bbx
+File: apa.bbx 2020/08/28 v9.14 APA biblatex references style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count419
+\c@bbx:relatedtotal=\count420
+))
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/apa.cbx
+File: apa.cbx 2020/08/28 v9.14 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'textcite' already 
+defined, overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
+, overwriting.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\citeyear'.
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count421
+\FV@InFile=\read3
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count422
+\FV@StepNumber=\count423
+\FV@OutFile=\write4
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count424
+\output=\toks23
+\linenoprevgraf=\count425
+\linenumbersep=\dimen182
+\linenumberwidth=\dimen183
+\c@linenumber=\count426
+\c@pagewiselinenumber=\count427
+\c@LN@truepage=\count428
+\c@internallinenumber=\count429
+\c@internallinenumbers=\count430
+\quotelinenumbersep=\dimen184
+\bframerule=\dimen185
+\bframesep=\dimen186
+\bframebox=\box57
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count431
+\c@FV@TrueTabCounter=\count432
+\FV@TabBox@Group=\box58
+\FV@TmpLength=\skip79
+\c@FV@HighlightLinesStart=\count433
+\c@FV@HighlightLinesStop=\count434
+\FV@LoopCount=\count435
+\FV@NCharsBox=\box59
+\FV@BreakIndent=\dimen187
+\FV@BreakIndentNChars=\count436
+\FV@BreakSymbolSepLeft=\dimen188
+\FV@BreakSymbolSepLeftNChars=\count437
+\FV@BreakSymbolSepRight=\dimen189
+\FV@BreakSymbolSepRightNChars=\count438
+\FV@BreakSymbolIndentLeft=\dimen190
+\FV@BreakSymbolIndentLeftNChars=\count439
+\FV@BreakSymbolIndentRight=\dimen191
+\FV@BreakSymbolIndentRightNChars=\count440
+\c@FancyVerbLineBreakLast=\count441
+\FV@LineBox=\box60
+\FV@LineIndentBox=\box61
+\FV@LineWidth=\dimen192
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count442
+\calc@Bcount=\count443
+\calc@Adimen=\dimen193
+\calc@Bdimen=\dimen194
+\calc@Askip=\skip80
+\calc@Bskip=\skip81
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count444
+\calc@Cskip=\skip82
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "project3_report_readable.w18")...executed.
+
+
+(./project3_report_readable.w18)
+runsystem(rm -- "project3_report_readable.w18")...executed.
+
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count445
+\decimalpart=\count446
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip83
+\fb@frw=\dimen195
+\fb@frh=\dimen196
+\FrameRule=\dimen197
+\FrameSep=\dimen198
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box62
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count447
+\c@minted@pygmentizecounter=\count448
+\@float@every@listing=\toks24
+\c@listing=\count449
+)
+runsystem(mkdir -p _minted-project3_report_readable)...executed.
+
+ (./macros.tex (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count450
+\l__pdf_internal_box=\box63
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex))) (/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count451
+Package zref Info: New property: abspage on input line 66.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip84
+\c@mdf@globalstyle@cnt=\count452
+\mdf@skipabove@length=\skip85
+\mdf@skipbelow@length=\skip86
+\mdf@leftmargin@length=\skip87
+\mdf@rightmargin@length=\skip88
+\mdf@innerleftmargin@length=\skip89
+\mdf@innerrightmargin@length=\skip90
+\mdf@innertopmargin@length=\skip91
+\mdf@innerbottommargin@length=\skip92
+\mdf@splittopskip@length=\skip93
+\mdf@splitbottomskip@length=\skip94
+\mdf@outermargin@length=\skip95
+\mdf@innermargin@length=\skip96
+\mdf@linewidth@length=\skip97
+\mdf@innerlinewidth@length=\skip98
+\mdf@middlelinewidth@length=\skip99
+\mdf@outerlinewidth@length=\skip100
+\mdf@roundcorner@length=\skip101
+\mdf@footenotedistance@length=\skip102
+\mdf@userdefinedwidth@length=\skip103
+\mdf@needspace@length=\skip104
+\mdf@frametitleaboveskip@length=\skip105
+\mdf@frametitlebelowskip@length=\skip106
+\mdf@frametitlerulewidth@length=\skip107
+\mdf@frametitleleftmargin@length=\skip108
+\mdf@frametitlerightmargin@length=\skip109
+\mdf@shadowsize@length=\skip110
+\mdf@extratopheight@length=\skip111
+\mdf@subtitleabovelinewidth@length=\skip112
+\mdf@subtitlebelowlinewidth@length=\skip113
+\mdf@subtitleaboveskip@length=\skip114
+\mdf@subtitlebelowskip@length=\skip115
+\mdf@subtitleinneraboveskip@length=\skip116
+\mdf@subtitleinnerbelowskip@length=\skip117
+\mdf@subsubtitleabovelinewidth@length=\skip118
+\mdf@subsubtitlebelowlinewidth@length=\skip119
+\mdf@subsubtitleaboveskip@length=\skip120
+\mdf@subsubtitlebelowskip@length=\skip121
+\mdf@subsubtitleinneraboveskip@length=\skip122
+\mdf@subsubtitleinnerbelowskip@length=\skip123
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box64
+\mdf@footnotebox=\box65
+\mdf@splitbox@one=\box66
+\mdf@splitbox@two=\box67
+\mdf@splitbox@save=\box68
+\mdfsplitboxwidth=\skip124
+\mdfsplitboxtotalwidth=\skip125
+\mdfsplitboxheight=\skip126
+\mdfsplitboxdepth=\skip127
+\mdfsplitboxtotalheight=\skip128
+\mdfframetitleboxwidth=\skip129
+\mdfframetitleboxtotalwidth=\skip130
+\mdfframetitleboxheight=\skip131
+\mdfframetitleboxdepth=\skip132
+\mdfframetitleboxtotalheight=\skip133
+\mdffootnoteboxwidth=\skip134
+\mdffootnoteboxtotalwidth=\skip135
+\mdffootnoteboxheight=\skip136
+\mdffootnoteboxdepth=\skip137
+\mdffootnoteboxtotalheight=\skip138
+\mdftotallinewidth=\skip139
+\mdfboundingboxwidth=\skip140
+\mdfboundingboxtotalwidth=\skip141
+\mdfboundingboxheight=\skip142
+\mdfboundingboxdepth=\skip143
+\mdfboundingboxtotalheight=\skip144
+\mdf@freevspace@length=\skip145
+\mdf@horizontalwidthofbox@length=\skip146
+\mdf@verticalmarginwhole@length=\skip147
+\mdf@horizontalspaceofbox=\skip148
+\mdfsubtitleheight=\skip149
+\mdfsubsubtitleheight=\skip150
+\c@mdfcountframes=\count453
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count454
+\c@mdf@env@i=\count455
+\c@mdf@env@ii=\count456
+\c@mdf@zref@counter=\count457
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks25
+\minrowclearance=\skip151
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box69
+\beforetitleunit=\skip152
+\aftertitleunit=\skip153
+\ttl@plus=\dimen199
+\ttl@minus=\dimen256
+\ttl@toksa=\toks26
+\titlewidth=\dimen257
+\titlewidthlast=\dimen258
+\titlewidthfirst=\dimen259
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+\@quotelevel=\count458
+\@quotereset=\count459
+runsystem(which pygmentize && touch project3_report_readable.aex)...executed.
+
+runsystem(rm project3_report_readable.aex)...executed.
+
+
+(./project3_report_readable.aux)
+\openout1 = `project3_report_readable.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(50.58878pt, 513.11745pt, 50.58878pt)
+* v-part:(T,H,B)=(50.58878pt, 693.79243pt, 50.58878pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=513.11745pt
+* \textheight=693.79243pt
+* \oddsidemargin=-21.68121pt
+* \evensidemargin=-21.68121pt
+* \topmargin=-10.0pt
+* \headheight=12.0pt
+* \headsep=10.0pt
+* \topskip=8.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count460
+\scratchdimen=\dimen260
+\scratchbox=\box70
+\nofMPsegments=\count461
+\nofMParguments=\count462
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count463
+\MPscratchDim=\dimen261
+\MPnumerator=\count464
+\makeMPintoPDFobject=\count465
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 32.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count466
+)
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
+ (./project3_report_readable.out) (./project3_report_readable.out)
+\@outlinefile=\write6
+\openout6 = `project3_report_readable.out'.
+
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+File: english-apa.lbx 2020/08/28 v9.14 APA biblatex localisation
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
+Package biblatex Info: ... file 'american-apa.lbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
+File: american-apa.lbx 2020/08/28 v9.14 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+))))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2021-02-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout3 = `project3_report_readable.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'project3_report_readable.bbl' found.
+
+(./project3_report_readable.bbl)
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 34.
+ (./project3_report_readable.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+ [1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write7
+\openout7 = `project3_report_readable.toc'.
+
+
+(./sections/00_abstract.tex) (./sections/01_intro.tex [2])
+(./sections/02_methods.tex [3]) (./sections/03_results_by_task.tex [4]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+18.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in alignment at lines 62--62
+[][][][] 
+ []
+
+[5]
+Package mdframed Info: Not enough space on this page on input line 85.
+
+Overfull \hbox (2.5832pt too wide) in paragraph at lines 114--114
+[]\OT1/cmr/bx/n/10 Requirement (ver-ba-tim). \OT1/cmr/m/n/10 Find the pass-word
+ for user-name wangxx for web page http://192.168.100.101/login.html
+ []
+
+[6]
+
+LaTeX Warning: Reference `tab:traceability' on page 7 undefined on input line 1
+62.
+
+(./tables/t_traceability.tex)) (./sections/04_discussion.tex
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     \item \textbf
+                      {Iteration Count}: Multiple hash iterations increase c...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 15
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \item \textbf
+                      {Attack Resistance}: Significantly higher computationa...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+! Undefined control sequence.
+\enit@enditemize ->\enit@after 
+                               \endlist \ifx \enit@series \relax \else \ifnu...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@enditemize ...x \else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.17 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.17 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.17 \end{itemize}
+                  
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+\enit@enditemize ...ist \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.17 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.17 \end{itemize}
+                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
+                                                  \endcsname \the \csname c@...
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...e \the \csname c@\@listctr 
+                                                  \endcsname }\fi }
+l.17 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.17 \end{itemize}
+                  
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.17 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.17 \end{itemize}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+[7]) (./sections/05_conclusion.tex [8]) (./sections/06_ethics_limitations.tex
+[9] [10]) (./sections/07_references.tex) [11] (./sections/A0_appendix_index.tex
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.7 \textbf{Filename} & \textbf{Description} &
+                                               \textbf{Reference} \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/9 PVD file struc-ture
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.12 ...analysis\_*& PVD file structure analysis &
+                                                   Fig.~\ref{fig:A-task0-pvd...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (14.79105pt too wide) in paragraph at lines 13--13
+[]|\OT1/cmr/m/n/9 Ophcrack/John/Hashcat
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.13 ...arison& Ophcrack/John/Hashcat comparison &
+                                                   Fig.~\ref{fig:A-task1-too...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 15--15
+[]|\OT1/cmr/m/n/9 Windows 7 NTLM
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.15 ...\_john\_results& Windows 7 NTLM cracking &
+                                                   Fig.~\ref{fig:A-task2-win...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 16--16
+[]|\OT1/cmr/m/n/9 Windows 2003 LM
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.16 ..._results& Windows 2003 LM rainbow tables &
+                                                   Fig.~\ref{fig:A-task3-win...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.18 ...x\_john\_results& Ubuntu SHA-512 attacks &
+                                                   Fig.~\ref{fig:A-task4-lin...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 7796) in paragraph at lines 19--19
+[]|\OT1/cmr/m/n/9 Cross-platform vul-
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.19 ...n& Cross-platform vulnerability analysis &
+                                                   Fig.~\ref{fig:A-task5-com...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.27 \textbf{Filename} & \textbf{Description} &
+                                                \textbf{Reference} \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.31 ...results& HTML form authentication attack &
+                                                   Fig.~\ref{fig:A-web-html-...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.32 ...esults& HTTP Basic authentication attack &
+                                                   Fig.~\ref{fig:A-web-basic...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/cmr/m/n/9 HTTP Di-gest au-
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.34 ...sults& HTTP Digest authentication attack &
+                                                   Fig.~\ref{fig:A-web-diges...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \vbox (badness 10000) detected at line 37
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.42 \textbf{Filename} & \textbf{Description} &
+                                                \textbf{Reference} \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.46 rsa\_certificate& RSA public key extraction &
+                                                   Fig.~\ref{fig:A-token-cer...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\OT1/cmr/m/n/9 RSA pri-vate key
+ []
+
+! Extra alignment tab has been changed to \cr.
+<template> ...egin \relax \d@llarend \endtemplate 
+                                                  
+l.47 rsa\_private\_key& RSA private key analysis &
+                                                   Fig.~\ref{fig:A-token-pri...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Underfull \vbox (badness 10000) detected at line 50
+ []
+
+
+Overfull \hbox (86.65578pt too wide) in paragraph at lines 60--60
+[]|\OT1/cmr/m/n/9 ADVANCED[]TECHNIQUES[]SUMMARY.txt| 
+ []
+
+
+Overfull \hbox (65.7369pt too wide) in paragraph at lines 60--61
+[]|\OT1/cmtt/m/n/9 fig:A-misc-advanced-techniques-summary| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]|\OT1/cmr/m/n/9 327.8
+ []
+
+
+Overfull \hbox (65.7369pt too wide) in paragraph at lines 62--63
+[]|\OT1/cmtt/m/n/9 fig:A-attack-timing-attempts-over-time| 
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 64--65
+[]|\OT1/cmtt/m/n/9 fig:A-misc-bad-test-creds| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\OT1/cmr/m/n/9 828.0
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 66--67
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-2min-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/9 680.0
+ []
+
+
+Overfull \hbox (4.25452pt too wide) in paragraph at lines 70--70
+[]|\OT1/cmr/m/n/9 basic[]advanced[]attack.txt| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 70--71
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-advanced-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\OT1/cmr/m/n/9 211.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 72--73
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-all8-intelligent| 
+ []
+
+
+Overfull \hbox (17.09483pt too wide) in paragraph at lines 74--74
+[]|\OT1/cmr/m/n/9 basic[]all8[]intelligent[]final.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\OT1/cmr/m/n/9 217.0
+ []
+
+
+Overfull \hbox (70.46184pt too wide) in paragraph at lines 74--75
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-all8-intelligent-final| 
+ []
+
+
+Overfull \hbox (3.55244pt too wide) in paragraph at lines 76--76
+[]|\OT1/cmr/m/n/9 basic[]attack[]summary.txt| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 76--77
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-attack-summary| 
+ []
+
+
+Overfull \hbox (10.71628pt too wide) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/9 basic[]biographical[]ultra.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/9 221.0
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 78--79
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-biographical-ultra| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\OT1/cmr/m/n/9 721.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 80--81
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-constraint-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]|\OT1/cmr/m/n/9 210.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 82--83
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-focused-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]|\OT1/cmr/m/n/9 847.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 84--85
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra| 
+ []
+
+
+Overfull \hbox (9.01364pt too wide) in paragraph at lines 86--86
+[]|\OT1/cmr/m/n/9 basic[]hydra[]all6[]results.txt| 
+ []
+
+
+Overfull \hbox (75.18678pt too wide) in paragraph at lines 86--87
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-all6-results| 
+ []
+
+
+Overfull \hbox (9.01364pt too wide) in paragraph at lines 88--88
+[]|\OT1/cmr/m/n/9 basic[]hydra[]all8[]results.txt| 
+ []
+
+
+Overfull \hbox (75.18678pt too wide) in paragraph at lines 88--89
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-all8-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\OT1/cmr/m/n/9 34.2
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 90--91
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-console| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\OT1/cmr/m/n/9 861.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 92--93
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-final| 
+ []
+
+
+Overfull \hbox (10.73029pt too wide) in paragraph at lines 94--94
+[]|\OT1/cmr/m/n/9 basic[]hydra[]final[]report.txt| 
+ []
+
+
+Overfull \hbox (75.18678pt too wide) in paragraph at lines 94--95
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-final-report| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\OT1/cmr/m/n/9 704.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 96--97
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-long| 
+ []
+
+[12
+
+]
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 98--99
+[]|\OT1/cmtt/m/n/9 fig:A-web-basic-basic-hydra-results| 
+ []
+
+
+Overfull \hbox (10.47946pt too wide) in paragraph at lines 100--100
+[]|\OT1/cmr/m/n/9 basic[]intelligent[]console.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]|\OT1/cmr/m/n/9 51.3
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 100--101
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-intelligent-console| 
+ []
+
+
+Overfull \hbox (6.57047pt too wide) in paragraph at lines 102--102
+[]|\OT1/cmr/m/n/9 basic[]intelligent[]nohup.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]|\OT1/cmr/m/n/9 51.4
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 102--103
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-intelligent-nohup| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--104
+[]|\OT1/cmr/m/n/9 64.8
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 104--105
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-jmu-results| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 106--107
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-manual-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/9 185.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 108--109
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-nsr-sprint| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/9 184.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 110--111
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-nsrsprint| 
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 112--113
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-password| 
+ []
+
+
+Overfull \hbox (37.55511pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/9 basic[]patator[]rockyou8[]results.txt| 
+ []
+
+
+Overfull \hbox (79.91173pt too wide) in paragraph at lines 114--115
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-patator-rockyou8-results| 
+ []
+
+
+Overfull \hbox (22.7823pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/9 basic[]patator[]wang[]crunch.txt| 
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 116--117
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-patator-wang-crunch| 
+ []
+
+
+Overfull \hbox (22.11772pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/9 basic[]patator[]wang[]results.txt| 
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 118--119
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-patator-wang-results| 
+ []
+
+
+Overfull \hbox (18.97955pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/9 basic[]patator[]wang[]smart.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 120--121
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-patator-wang-smart| 
+ []
+
+
+Overfull \hbox (6.62532pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/9 basic[]phase1[]enhanced.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/9 220.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 122--123
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-phase1-enhanced| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/9 218.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 124--125
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-phase2-security| 
+ []
+
+
+Overfull \hbox (18.45859pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/9 basic[]phase3[]biographical.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/9 214.0
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 126--127
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-phase3-biographical| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]|\OT1/cmr/m/n/9 211.0
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 128--129
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-phase4-hybrid| 
+ []
+
+
+Overfull \hbox (4.39896pt too wide) in paragraph at lines 130--130
+[]|\OT1/cmr/m/n/9 basic[]rockyou8[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]|\OT1/cmr/m/n/9 392.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 130--131
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-rockyou8-results| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 132--133
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-strategic-8char| 
+ []
+
+
+Overfull \hbox (11.85376pt too wide) in paragraph at lines 134--134
+[]|\OT1/cmr/m/n/9 basic[]strategic[]precision.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]|\OT1/cmr/m/n/9 275.0
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 134--135
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-strategic-precision| 
+ []
+
+
+Overfull \hbox (2.65521pt too wide) in paragraph at lines 136--136
+[]|\OT1/cmr/m/n/9 basic[]strategic[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]|\OT1/cmr/m/n/9 218.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 136--137
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-strategic-results| 
+ []
+
+
+Overfull \hbox (10.23988pt too wide) in paragraph at lines 138--138
+[]|\OT1/cmr/m/n/9 basic[]ultimate[]strategic.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]|\OT1/cmr/m/n/9 40.1
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 138--139
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-ultimate-strategic| 
+ []
+
+
+Overfull \hbox (40.38148pt too wide) in paragraph at lines 140--140
+[]|\OT1/cmr/m/n/9 basic[]ultra[]biographical[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\OT1/cmr/m/n/9 232.0
+ []
+
+
+Overfull \hbox (89.36162pt too wide) in paragraph at lines 140--141
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-ultra-biographical-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/9 800.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 142--143
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-v2-attack| 
+ []
+
+
+Overfull \hbox (9.51698pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/9 basic[]windows[]patterns.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/9 215.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 144--145
+[]|\OT1/cmtt/m/n/9 fig:A-misc-basic-windows-patterns| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/9 38.7
+ []
+
+
+Overfull \hbox (21.57994pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/9 comprehensive[]dashboard.png| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/9 492.2
+ []
+
+
+Overfull \hbox (89.36162pt too wide) in paragraph at lines 148--149
+[]|\OT1/cmtt/m/n/9 fig:A-comprehensive-comprehensive-dashboard| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/9 262.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 150--151
+[]|\OT1/cmtt/m/n/9 fig:A-misc-constraint-validation| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/9 207.0
+ []
+
+
+Overfull \hbox (8.03084pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/9 credential[]reuse[]results.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 154--155
+[]|\OT1/cmtt/m/n/9 fig:A-misc-credential-reuse-results| 
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 156--157
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-2min-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/9 760.0
+ []
+
+
+Overfull \hbox (19.67801pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/9 digest[]advanced[]academic.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/9 11.7
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 160--161
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-advanced-academic| 
+ []
+
+
+Overfull \hbox (7.85518pt too wide) in paragraph at lines 162--162
+[]|\OT1/cmr/m/n/9 digest[]advanced[]attack.txt| 
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 162--163
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-advanced-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]|\OT1/cmr/m/n/9 213.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 164--165
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-all6-intelligent| 
+ []
+
+
+Overfull \hbox (20.6955pt too wide) in paragraph at lines 166--166
+[]|\OT1/cmr/m/n/9 digest[]all6[]intelligent[]final.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\OT1/cmr/m/n/9 219.0
+ []
+
+
+Overfull \hbox (75.18678pt too wide) in paragraph at lines 166--167
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-all6-intelligent-final| 
+ []
+
+
+Overfull \hbox (7.1531pt too wide) in paragraph at lines 168--168
+[]|\OT1/cmr/m/n/9 digest[]attack[]summary.txt| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 168--169
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-attack-summary| 
+ []
+
+
+Overfull \hbox (14.31694pt too wide) in paragraph at lines 170--170
+[]|\OT1/cmr/m/n/9 digest[]biographical[]ultra.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
+[]|\OT1/cmr/m/n/9 223.0
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 170--171
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-biographical-ultra| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[]|\OT1/cmr/m/n/9 12.6
+ []
+
+
+Overfull \hbox (0.7844pt too wide) in paragraph at lines 174--174
+[]|\OT1/cmr/m/n/9 digest[]constraint[]test.txt| 
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 174--175
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-constraint-test| 
+ []
+
+
+Overfull \hbox (27.65714pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/9 digest[]crunch[]cap3low2digit.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/9 200.0
+ []
+
+
+Overfull \hbox (65.7369pt too wide) in paragraph at lines 176--177
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-crunch-cap3low2digit| 
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/9 192.0
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 178--179
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-cs660-digits| 
+ []
+
+
+Overfull \hbox (0.52745pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/9 digest[]cs660[]patterns.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/9 194.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 180--181
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-cs660-patterns| 
+ []
+
+
+Overfull \hbox (13.3643pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/9 digest[]cs660[]patterns[]v2.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/9 197.0
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 182--183
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-cs660-patterns-v2| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/9 942.0
+ []
+
+
+Overfull \hbox (1.61008pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/9 digest[]focused[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/9 213.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 186--187
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-focused-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/9 848.0
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 188--189
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra| 
+ []
+
+
+Overfull \hbox (12.6143pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/9 digest[]hydra[]all6[]results.txt| 
+ []
+
+
+Overfull \hbox (84.63667pt too wide) in paragraph at lines 190--191
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-all6-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/9 50.5
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 192--193
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-console| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 194--195
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-final| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\OT1/cmr/m/n/9 736.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 196--197
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-long| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]|\OT1/cmr/m/n/9 969.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 198--199
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-results| 
+ []
+
+
+Overfull \hbox (3.06631pt too wide) in paragraph at lines 200--200
+[]|\OT1/cmr/m/n/9 digest[]hydra[]strategic.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]|\OT1/cmr/m/n/9 205.0
+ []
+
+
+Overfull \hbox (70.46184pt too wide) in paragraph at lines 200--201
+[]|\OT1/cmtt/m/n/9 fig:A-web-digest-digest-hydra-strategic| 
+ []
+
+
+Overfull \hbox (14.08012pt too wide) in paragraph at lines 202--202
+[]|\OT1/cmr/m/n/9 digest[]intelligent[]console.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\OT1/cmr/m/n/9 50.5
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 202--203
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-intelligent-console| 
+ []
+
+
+Overfull \hbox (10.17113pt too wide) in paragraph at lines 204--204
+[]|\OT1/cmr/m/n/9 digest[]intelligent[]nohup.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\OT1/cmr/m/n/9 50.6
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 204--205
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-intelligent-nohup| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
+[]|\OT1/cmr/m/n/9 619.0
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 206--207
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-nonce-reuse| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+[]|\OT1/cmr/m/n/9 187.0
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 208--209
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-nsr-sprint| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/9 186.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 210--211
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-nsrsprint| 
+ []
+
+
+Overfull \hbox (21.92603pt too wide) in paragraph at lines 212--212
+[]|\OT1/cmr/m/n/9 digest[]online[]tester[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]|\OT1/cmr/m/n/9 613.0
+ []
+
+
+Overfull \hbox (70.46184pt too wide) in paragraph at lines 212--213
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-online-tester-results| 
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 214--215
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-password| 
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 216--217
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-patator| 
+ []
+
+
+Overfull \hbox (13.33028pt too wide) in paragraph at lines 218--218
+[]|\OT1/cmr/m/n/9 digest[]patator[]cs[]crunch.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 218--219
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-patator-cs-crunch| 
+ []
+
+
+Overfull \hbox (9.52753pt too wide) in paragraph at lines 220--220
+[]|\OT1/cmr/m/n/9 digest[]patator[]cs[]smart.txt| 
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 220--221
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-patator-cs-smart| 
+ []
+
+
+Overfull \hbox (41.15578pt too wide) in paragraph at lines 222--222
+[]|\OT1/cmr/m/n/9 digest[]patator[]rockyou6[]results.txt| 
+ []
+
+
+Overfull \hbox (84.63667pt too wide) in paragraph at lines 222--223
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-patator-rockyou6-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\OT1/cmr/m/n/9 68.4
+ []
+
+
+Overfull \hbox (10.22598pt too wide) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/9 digest[]phase1[]enhanced.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/9 219.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 226--227
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-phase1-enhanced| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[]|\OT1/cmr/m/n/9 201.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 228--229
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-phase1-results| 
+ []
+
+
+Overfull \hbox (3.35728pt too wide) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/9 digest[]phase2[]security.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/9 220.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 230--231
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-phase2-security| 
+ []
+
+
+Overfull \hbox (22.05925pt too wide) in paragraph at lines 232--232
+[]|\OT1/cmr/m/n/9 digest[]phase3[]biographical.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]|\OT1/cmr/m/n/9 216.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 232--233
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-phase3-biographical| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]|\OT1/cmr/m/n/9 213.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 234--235
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-phase4-hybrid| 
+ []
+
+
+Overfull \hbox (10.36696pt too wide) in paragraph at lines 236--236
+[]|\OT1/cmr/m/n/9 digest[]professor[]specific.txt| 
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 236--237
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-professor-specific| 
+ []
+
+
+Overfull \hbox (7.99962pt too wide) in paragraph at lines 238--238
+[]|\OT1/cmr/m/n/9 digest[]rockyou6[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[]|\OT1/cmr/m/n/9 396.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 238--239
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-rockyou6-results| 
+ []
+
+
+Overfull \hbox (4.642pt too wide) in paragraph at lines 240--240
+[]|\OT1/cmr/m/n/9 digest[]simple[]patterns.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]|\OT1/cmr/m/n/9 195.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 240--241
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-simple-patterns| 
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 242--243
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-strategic| 
+ []
+
+
+Overfull \hbox (15.45442pt too wide) in paragraph at lines 244--244
+[]|\OT1/cmr/m/n/9 digest[]strategic[]precision.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]|\OT1/cmr/m/n/9 277.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 244--245
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-strategic-precision| 
+ []
+
+
+Overfull \hbox (6.25587pt too wide) in paragraph at lines 246--246
+[]|\OT1/cmr/m/n/9 digest[]strategic[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]|\OT1/cmr/m/n/9 220.0
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 246--247
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-strategic-results| 
+ []
+
+
+Overfull \hbox (43.98215pt too wide) in paragraph at lines 248--248
+[]|\OT1/cmr/m/n/9 digest[]ultra[]biographical[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
+[]|\OT1/cmr/m/n/9 234.0
+ []
+
+
+Overfull \hbox (94.08656pt too wide) in paragraph at lines 248--249
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-ultra-biographical-results| 
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 250--251
+[]|\OT1/cmtt/m/n/9 fig:A-misc-digest-v2-attack| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 252--253
+[]|\OT1/cmtt/m/n/9 fig:A-misc-discovered-password| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 254--255
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ab| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 256--257
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ac| 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 258--259
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 260--261
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-af| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 262--263
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ag| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 264--265
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ah| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 266--267
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-aj| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 268--269
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ak| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 270--271
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-al| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 272--273
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-an| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 274--275
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ao| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/9 348.0
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 276--277
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-16part-ap| 
+ []
+
+
+Overfull \hbox (2.91841pt too wide) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/9 html[]advanced[]attack.txt| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 278--279
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-advanced-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+[]|\OT1/cmr/m/n/9 280.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 280--281
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-all8-intelligent| 
+ []
+
+
+Overfull \hbox (15.75873pt too wide) in paragraph at lines 282--282
+[]|\OT1/cmr/m/n/9 html[]all8[]intelligent[]final.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
+[]|\OT1/cmr/m/n/9 286.0
+ []
+
+
+Overfull \hbox (65.7369pt too wide) in paragraph at lines 282--283
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-all8-intelligent-final| 
+ []
+
+
+Overfull \hbox (9.38017pt too wide) in paragraph at lines 284--284
+[]|\OT1/cmr/m/n/9 html[]biographical[]ultra.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
+[]|\OT1/cmr/m/n/9 290.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 284--285
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-biographical-ultra| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 286--287
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-constraint-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
+[]|\OT1/cmr/m/n/9 604.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 288--289
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-cookie-fix-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]|\OT1/cmr/m/n/9 131.0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
+[]|\OT1/cmr/m/n/9 131.0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\OT1/cmr/m/n/9 131.0
+ []
+
+
+Overfull \hbox (0.65105pt too wide) in paragraph at lines 296--296
+[]|\OT1/cmr/m/n/9 html[]correct[]attempt.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]|\OT1/cmr/m/n/9 701.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 296--297
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-correct-attempt| 
+ []
+
+
+Overfull \hbox (5.27948pt too wide) in paragraph at lines 298--298
+[]|\OT1/cmr/m/n/9 html[]correct[]detection.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
+[]|\OT1/cmr/m/n/9 305.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 298--299
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-correct-detection| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+[]|\OT1/cmr/m/n/9 362.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 300--301
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-correct-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/9 131.0
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 302--303
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-correct-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+[]|\OT1/cmr/m/n/9 604.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 304--305
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-final-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[]|\OT1/cmr/m/n/9 356.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 306--307
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-focused-results| 
+ []
+
+
+Overfull \hbox (2.25117pt too wide) in paragraph at lines 308--308
+[]|\OT1/cmr/m/n/9 html[]form[]restart[]full.log| 
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 308--309
+[]|\OT1/cmtt/m/n/9 fig:A-web-html-html-form-restart-full| 
+ []
+
+
+Overfull \hbox (4.10463pt too wide) in paragraph at lines 310--310
+[]|\OT1/cmr/m/n/9 html[]form[]restart[]test.log| 
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 310--311
+[]|\OT1/cmtt/m/n/9 fig:A-web-html-html-form-restart-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]|\OT1/cmr/m/n/9 899.0
+ []
+
+
+Overfull \hbox (0.67188pt too wide) in paragraph at lines 314--314
+[]|\OT1/cmr/m/n/9 html[]hydra[]corrected.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
+[]|\OT1/cmr/m/n/9 280.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 314--315
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-hydra-corrected| 
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 316--317
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-hydra-results| 
+ []
+
+
+Overfull \hbox (18.93163pt too wide) in paragraph at lines 318--318
+[]|\OT1/cmr/m/n/9 html[]hydra[]strategic[]final.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\OT1/cmr/m/n/9 682.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 318--319
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-hydra-strategic-final| 
+ []
+
+
+Overfull \hbox (9.14336pt too wide) in paragraph at lines 320--320
+[]|\OT1/cmr/m/n/9 html[]intelligent[]console.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]|\OT1/cmr/m/n/9 51.5
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 320--321
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-intelligent-console| 
+ []
+
+
+Overfull \hbox (5.23436pt too wide) in paragraph at lines 322--322
+[]|\OT1/cmr/m/n/9 html[]intelligent[]nohup.log| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]|\OT1/cmr/m/n/9 51.7
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 322--323
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-intelligent-nohup| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]|\OT1/cmr/m/n/9 499.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 324--325
+[]|\OT1/cmtt/m/n/9 fig:A-web-html-html-login-baseline| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 326--327
+[]|\OT1/cmtt/m/n/9 fig:A-web-html-html-login-marker| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+[]|\OT1/cmr/m/n/9 499.0
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 328--329
+[]|\OT1/cmtt/m/n/9 fig:A-web-html-html-login-test| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
+[]|\OT1/cmr/m/n/9 610.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 330--331
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-nsr-sprint| 
+ []
+
+
+Overfull \hbox (16.98926pt too wide) in paragraph at lines 332--332
+[]|\OT1/cmr/m/n/9 html[]online[]tester[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\OT1/cmr/m/n/9 613.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 332--333
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-online-tester-results| 
+ []
+
+
+Overfull \hbox (14.56013pt too wide) in paragraph at lines 336--336
+[]|\OT1/cmr/m/n/9 html[]patator[]john[]smart.txt| 
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 336--337
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-john-smart| 
+ []
+
+[15]
+Overfull \hbox (17.69484pt too wide) in paragraph at lines 338--338
+[]|\OT1/cmr/m/n/9 html[]patator[]pass[]crunch.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 338--339
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-pass-crunch| 
+ []
+
+
+Overfull \hbox (1.18175pt too wide) in paragraph at lines 340--340
+[]|\OT1/cmr/m/n/9 html[]patator[]test[]fail.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]|\OT1/cmr/m/n/9 615.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 340--341
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-test-fail| 
+ []
+
+
+Overfull \hbox (17.0129pt too wide) in paragraph at lines 342--342
+[]|\OT1/cmr/m/n/9 html[]patator[]test[]success.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]|\OT1/cmr/m/n/9 565.0
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 342--343
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-test-success| 
+ []
+
+
+Overfull \hbox (21.63786pt too wide) in paragraph at lines 344--344
+[]|\OT1/cmr/m/n/9 html[]patator[]test[]success2.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+[]|\OT1/cmr/m/n/9 565.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 344--345
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-test-success2| 
+ []
+
+
+Overfull \hbox (21.63786pt too wide) in paragraph at lines 346--346
+[]|\OT1/cmr/m/n/9 html[]patator[]test[]success3.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
+[]|\OT1/cmr/m/n/9 696.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 346--347
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-patator-test-success3| 
+ []
+
+
+Overfull \hbox (5.28922pt too wide) in paragraph at lines 348--348
+[]|\OT1/cmr/m/n/9 html[]phase1[]enhanced.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--348
+[]|\OT1/cmr/m/n/9 289.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 348--349
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-phase1-enhanced| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
+[]|\OT1/cmr/m/n/9 598.0
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 350--351
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-phase2-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[]|\OT1/cmr/m/n/9 287.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 352--353
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-phase2-security| 
+ []
+
+
+Overfull \hbox (17.12248pt too wide) in paragraph at lines 354--354
+[]|\OT1/cmr/m/n/9 html[]phase3[]biographical.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
+[]|\OT1/cmr/m/n/9 283.0
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 354--355
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-phase3-biographical| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\OT1/cmr/m/n/9 280.0
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 356--357
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-phase4-hybrid| 
+ []
+
+
+Overfull \hbox (3.06285pt too wide) in paragraph at lines 358--358
+[]|\OT1/cmr/m/n/9 html[]rockyou8[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+[]|\OT1/cmr/m/n/9 684.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 358--359
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-rockyou8-results| 
+ []
+
+
+Overfull \hbox (10.51765pt too wide) in paragraph at lines 360--360
+[]|\OT1/cmr/m/n/9 html[]strategic[]precision.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+[]|\OT1/cmr/m/n/9 344.0
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 360--361
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-strategic-precision| 
+ []
+
+
+Overfull \hbox (1.3191pt too wide) in paragraph at lines 362--362
+[]|\OT1/cmr/m/n/9 html[]strategic[]results.txt| 
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 362--363
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-strategic-results| 
+ []
+
+
+Overfull \hbox (5.90588pt too wide) in paragraph at lines 364--364
+[]|\OT1/cmr/m/n/9 html[]success[]detection.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
+[]|\OT1/cmr/m/n/9 556.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 364--365
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-success-detection| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--366
+[]|\OT1/cmr/m/n/9 131.0
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 366--367
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-test-cookies| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
+[]|\OT1/cmr/m/n/9 604.0
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 368--369
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-test-corrected| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--370
+[]|\OT1/cmr/m/n/9 604.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 370--371
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-test-validation| 
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 372--373
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-timing-attack| 
+ []
+
+
+Overfull \hbox (8.90378pt too wide) in paragraph at lines 374--374
+[]|\OT1/cmr/m/n/9 html[]ultimate[]strategic.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--374
+[]|\OT1/cmr/m/n/9 28.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 374--375
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-ultimate-strategic| 
+ []
+
+
+Overfull \hbox (39.04538pt too wide) in paragraph at lines 376--376
+[]|\OT1/cmr/m/n/9 html[]ultra[]biographical[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
+[]|\OT1/cmr/m/n/9 378.0
+ []
+
+
+Overfull \hbox (84.63667pt too wide) in paragraph at lines 376--377
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-ultra-biographical-results| 
+ []
+
+[16]
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 378--379
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-v2-attack| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 380--381
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-verified-console| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 382--383
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-verified-results| 
+ []
+
+
+Overfull \hbox (25.89964pt too wide) in paragraph at lines 384--384
+[]|\OT1/cmr/m/n/9 html[]wangxx[]attack[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
+[]|\OT1/cmr/m/n/9 613.0
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 384--385
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-wangxx-attack-results| 
+ []
+
+
+Overfull \hbox (8.18088pt too wide) in paragraph at lines 386--386
+[]|\OT1/cmr/m/n/9 html[]windows[]patterns.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
+[]|\OT1/cmr/m/n/9 361.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 386--387
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-windows-patterns| 
+ []
+
+
+Overfull \hbox (43.46063pt too wide) in paragraph at lines 388--388
+[]|\OT1/cmr/m/n/9 html[]windows[]success[]detection.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\OT1/cmr/m/n/9 291.0
+ []
+
+
+Overfull \hbox (79.91173pt too wide) in paragraph at lines 388--389
+[]|\OT1/cmtt/m/n/9 fig:A-misc-html-windows-success-detection| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 390--391
+[]|\OT1/cmtt/m/n/9 fig:A-misc-hydra-session-start| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--392
+[]|\OT1/cmr/m/n/9 231.5
+ []
+
+
+Overfull \hbox (2.34341pt too wide) in paragraph at lines 394--394
+[]|\OT1/cmr/m/n/9 john[]results[]summary.txt| 
+ []
+
+
+Overfull \hbox (70.46184pt too wide) in paragraph at lines 394--395
+[]|\OT1/cmtt/m/n/9 fig:A-john-results-john-results-summary| 
+ []
+
+
+Overfull \hbox (4.20659pt too wide) in paragraph at lines 396--396
+[]|\OT1/cmr/m/n/9 linux[]enhanced[]attack.log| 
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 396--397
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-enhanced-attack| 
+ []
+
+
+Overfull \hbox (3.4323pt too wide) in paragraph at lines 398--398
+[]|\OT1/cmr/m/n/9 linux[]final[]completion.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
+[]|\OT1/cmr/m/n/9 756.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 398--399
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-final-completion| 
+ []
+
+
+Overfull \hbox (3.81285pt too wide) in paragraph at lines 400--400
+[]|\OT1/cmr/m/n/9 linux[]focused[]wordlist.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]|\OT1/cmr/m/n/9 287.0
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 400--401
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-focused-wordlist| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 402--403
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-john-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--404
+[]|\OT1/cmr/m/n/9 363.0
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 404--405
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-john-show-final| 
+ []
+
+
+Overfull \hbox (5.50867pt too wide) in paragraph at lines 406--406
+[]|\OT1/cmr/m/n/9 linux[]medium[]rockyou.log| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 406--407
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-medium-rockyou| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 408--409
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-rockyou-test| 
+ []
+
+
+Overfull \hbox (18.48744pt too wide) in paragraph at lines 410--411
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-root-bonus| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 412--413
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-rules-attack| 
+ []
+
+
+Overfull \hbox (7.97533pt too wide) in paragraph at lines 414--414
+[]|\OT1/cmr/m/n/9 linux[]strategic[]analysis.txt| 
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 414--415
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-strategic-analysis| 
+ []
+
+
+Overfull \hbox (42.11217pt too wide) in paragraph at lines 416--417
+[]|\OT1/cmtt/m/n/9 fig:A-task4-linux-targeted-attack| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--418
+[]|\OT1/cmr/m/n/9 192.4
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 418--419
+[]|\OT1/cmtt/m/n/9 fig:A-lockout-lockout-analysis| 
+ []
+
+
+Overfull \hbox (16.82816pt too wide) in paragraph at lines 420--420
+[]|\OT1/cmr/m/n/9 online[]attack[]final[]report.txt| 
+ []
+
+
+Overfull \hbox (61.01195pt too wide) in paragraph at lines 420--421
+[]|\OT1/cmtt/m/n/9 fig:A-misc-online-attack-final-report| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
+[]|\OT1/cmr/m/n/9 340.0
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 422--423
+[]|\OT1/cmtt/m/n/9 fig:A-misc-online-attack-results| 
+ []
+
+
+Overfull \hbox (7.6156pt too wide) in paragraph at lines 424--424
+[]|\OT1/cmr/m/n/9 online[]attack[]summary.txt| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 424--425
+[]|\OT1/cmtt/m/n/9 fig:A-misc-online-attack-summary| 
+ []
+
+
+Overfull \hbox (70.46184pt too wide) in paragraph at lines 426--427
+[]|\OT1/cmtt/m/n/9 fig:A-ophcrack-results-ophcrack-results| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 428--429
+[]|\OT1/cmtt/m/n/9 fig:A-misc-parameter-pollution| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+[]|\OT1/cmr/m/n/9 404.0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+[]|\OT1/cmr/m/n/9 404.0
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 436--437
+[]|\OT1/cmtt/m/n/9 fig:A-misc-response-fingerprint| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
+[]|\OT1/cmr/m/n/9 43.9
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 438--439
+[]|\OT1/cmtt/m/n/9 fig:A-misc-rockyou-8char-alnum| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 440--441
+[]|\OT1/cmtt/m/n/9 fig:A-misc-rsa-analysis-answers| 
+ []
+
+
+Overfull \hbox (4.3126pt too wide) in paragraph at lines 442--443
+[]|\OT1/cmtt/m/n/9 fig:A-token-cert-rsa-cert| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 444--445
+[]|\OT1/cmtt/m/n/9 fig:A-token-private-rsa-private| 
+ []
+
+
+Overfull \hbox (8.06476pt too wide) in paragraph at lines 446--446
+[]|\OT1/cmr/m/n/9 screenshots[]description.txt| 
+ []
+
+
+Overfull \hbox (46.83711pt too wide) in paragraph at lines 446--447
+[]|\OT1/cmtt/m/n/9 fig:A-misc-screenshots-description| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[]|\OT1/cmr/m/n/9 434.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 448--449
+[]|\OT1/cmtt/m/n/9 fig:A-misc-service-accounts| 
+ []
+
+
+Overfull \hbox (9.85307pt too wide) in paragraph at lines 450--450
+[]|\OT1/cmr/m/n/9 service[]accounts[]results.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 450--451
+[]|\OT1/cmtt/m/n/9 fig:A-misc-service-accounts-results| 
+ []
+
+
+Overfull \hbox (32.50514pt too wide) in paragraph at lines 452--452
+[]|\OT1/cmr/m/n/9 service[]accounts[]vista[]results.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
+[]|\OT1/cmr/m/n/9 190.0
+ []
+
+
+Overfull \hbox (79.91173pt too wide) in paragraph at lines 452--453
+[]|\OT1/cmtt/m/n/9 fig:A-misc-service-accounts-vista-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
+[]|\OT1/cmr/m/n/9 452.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 454--455
+[]|\OT1/cmtt/m/n/9 fig:A-misc-service-results| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--456
+[]|\OT1/cmr/m/n/9 959.0
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 458--458
+[]|\OT1/cmr/m/n/9 969.0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--462
+[]|\OT1/cmr/m/n/9 321.2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]|\OT1/cmr/m/n/9 139.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 466--467
+[]|\OT1/cmtt/m/n/9 fig:A-misc-smith-variations| 
+ []
+
+
+Overfull \hbox (5.4059pt too wide) in paragraph at lines 468--468
+[]|\OT1/cmr/m/n/9 strategic[]analysis[]final.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 468--469
+[]|\OT1/cmtt/m/n/9 fig:A-misc-strategic-analysis-final| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 470--471
+[]|\OT1/cmtt/m/n/9 fig:A-misc-success-page-content| 
+ []
+
+
+Overfull \hbox (0.63023pt too wide) in paragraph at lines 472--472
+[]|\OT1/cmr/m/n/9 success[]rate[]analysis.png| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+[]|\OT1/cmr/m/n/9 208.3
+ []
+
+
+Overfull \hbox (94.08656pt too wide) in paragraph at lines 472--473
+[]|\OT1/cmtt/m/n/9 fig:A-success-analysis-success-rate-analysis| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 476--477
+[]|\OT1/cmtt/m/n/9 fig:A-misc-targeted-attack-log| 
+ []
+
+
+Overfull \hbox (4.8609pt too wide) in paragraph at lines 478--478
+[]|\OT1/cmr/m/n/9 task0[]pvd[]file[]analysis.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 478--479
+[]|\OT1/cmtt/m/n/9 fig:A-task0-task0-pvd-file-analysis| 
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 480--481
+[]|\OT1/cmtt/m/n/9 fig:A-task1-task1-toolstudy| 
+ []
+
+
+Overfull \hbox (42.18982pt too wide) in paragraph at lines 482--482
+[]|\OT1/cmr/m/n/9 task2[]windows7[]password[]table.txt| 
+ []
+
+
+Overfull \hbox (79.91173pt too wide) in paragraph at lines 482--483
+[]|\OT1/cmtt/m/n/9 fig:A-task2-task2-windows7-password-table| 
+ []
+
+
+Overfull \hbox (56.06473pt too wide) in paragraph at lines 484--484
+[]|\OT1/cmr/m/n/9 task3[]windows2003[]password[]table.txt| 
+ []
+
+
+Overfull \hbox (94.08656pt too wide) in paragraph at lines 484--485
+[]|\OT1/cmtt/m/n/9 fig:A-task3-task3-windows2003-password-table| 
+ []
+
+
+Overfull \hbox (23.3816pt too wide) in paragraph at lines 486--486
+[]|\OT1/cmr/m/n/9 task4[]linux[]password[]table.txt| 
+ []
+
+
+Overfull \hbox (65.7369pt too wide) in paragraph at lines 486--487
+[]|\OT1/cmtt/m/n/9 fig:A-task4-task4-linux-password-table| 
+ []
+
+
+Overfull \hbox (25.2473pt too wide) in paragraph at lines 488--488
+[]|\OT1/cmr/m/n/9 Task5[]ComparisonAnalysis.md| 
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 488--489
+[]|\OT1/cmtt/m/n/9 fig:A-task5-task5-comparisonanalysis| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+[]|\OT1/cmr/m/n/9 885.0
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 492--493
+[]|\OT1/cmtt/m/n/9 fig:A-misc-test-login-correct| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
+[]|\OT1/cmr/m/n/9 895.0
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 494--495
+[]|\OT1/cmtt/m/n/9 fig:A-misc-test-login-debug| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--496
+[]|\OT1/cmr/m/n/9 817.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 496--497
+[]|\OT1/cmtt/m/n/9 fig:A-misc-test-login-fail| 
+ []
+
+
+Overfull \hbox (36.04106pt too wide) in paragraph at lines 498--498
+[]|\OT1/cmr/m/n/9 theoretical[]prerequisites[]section3-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--498
+[]|\OT1/cmr/m/n/9 12.0
+ []
+
+
+Overfull \hbox (108.2614pt too wide) in paragraph at lines 498--499
+[]|\OT1/cmtt/m/n/9 fig:A-misc-theoretical-prerequisites-section3-2| 
+ []
+
+
+Overfull \hbox (2.9698pt too wide) in paragraph at lines 500--500
+[]|\OT1/cmr/m/n/9 timing[]focused[]attack.txt| 
+ []
+
+
+Overfull \hbox (37.38722pt too wide) in paragraph at lines 500--501
+[]|\OT1/cmtt/m/n/9 fig:A-misc-timing-focused-attack| 
+ []
+
+
+Overfull \hbox (12.00792pt too wide) in paragraph at lines 502--502
+[]|\OT1/cmr/m/n/9 ultimate[]8char[]strategic.txt| 
+ []
+
+
+Overfull \hbox (51.56206pt too wide) in paragraph at lines 502--503
+[]|\OT1/cmtt/m/n/9 fig:A-misc-ultimate-8char-strategic| 
+ []
+
+
+Overfull \hbox (13.7625pt too wide) in paragraph at lines 506--507
+[]|\OT1/cmtt/m/n/9 fig:A-misc-wangxx-strategic| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
+[]|\OT1/cmr/m/n/9 998.0
+ []
+
+
+Overfull \hbox (9.03755pt too wide) in paragraph at lines 508--509
+[]|\OT1/cmtt/m/n/9 fig:A-misc-wangxx-ultimate| 
+ []
+
+
+Overfull \hbox (16.40651pt too wide) in paragraph at lines 510--510
+[]|\OT1/cmr/m/n/9 win2003[]service[]accounts.txt| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]|\OT1/cmr/m/n/9 9.9
+ []
+
+
+Overfull \hbox (56.287pt too wide) in paragraph at lines 510--511
+[]|\OT1/cmtt/m/n/9 fig:A-task3-win2003-service-accounts| 
+ []
+
+
+Overfull \hbox (56.29457pt too wide) in paragraph at lines 512--512
+[]|\OT1/cmr/m/n/9 win2003[]service[]accounts[]summary.txt| 
+ []
+
+
+Overfull \hbox (94.08656pt too wide) in paragraph at lines 512--513
+[]|\OT1/cmtt/m/n/9 fig:A-task3-win2003-service-accounts-summary| 
+ []
+
+
+Overfull \hbox (2.47328pt too wide) in paragraph at lines 514--514
+[]|\OT1/cmr/m/n/9 win7[]attack[]summary.txt| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 514--515
+[]|\OT1/cmtt/m/n/9 fig:A-task2-win7-attack-summary| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
+[]|\OT1/cmr/m/n/9 852.0
+ []
+
+
+Overfull \hbox (23.21239pt too wide) in paragraph at lines 516--517
+[]|\OT1/cmtt/m/n/9 fig:A-task2-win7-john-results| 
+ []
+
+
+Overfull \hbox (0.65732pt too wide) in paragraph at lines 518--518
+[]|\OT1/cmr/m/n/9 win7[]smith[]advanced.txt| 
+ []
+
+
+Overfull \hbox (32.66228pt too wide) in paragraph at lines 518--519
+[]|\OT1/cmtt/m/n/9 fig:A-task2-win7-smith-advanced| 
+ []
+
+
+Overfull \hbox (27.93733pt too wide) in paragraph at lines 520--521
+[]|\OT1/cmtt/m/n/9 fig:A-task2-win7-smith-results| 
+ []
+
+[18]) (./appendix/figures_autogen.tex
+<../screenshots/06_linux_passwd_file_contents.png, id=559, 878.28125pt x 921.44
+25pt>
+File: ../screenshots/06_linux_passwd_file_contents.png Graphic file (type png)
+<use ../screenshots/06_linux_passwd_file_contents.png>
+Package pdftex.def Info: ../screenshots/06_linux_passwd_file_contents.png  used
+ on input line 7.
+(pdftex.def)             Requested size: 461.80257pt x 484.50975pt.
+ [19]
+<../screenshots/07_windows_2003_ntlm_hash_file.png, id=567, 861.2175pt x 333.24
+5pt>
+File: ../screenshots/07_windows_2003_ntlm_hash_file.png Graphic file (type png)
+
+<use ../screenshots/07_windows_2003_ntlm_hash_file.png>
+Package pdftex.def Info: ../screenshots/07_windows_2003_ntlm_hash_file.png  use
+d on input line 14.
+(pdftex.def)             Requested size: 461.80257pt x 178.69363pt.
+ [20 <../screenshots/06_linux_passwd_file_contents.png>]
+<../screenshots/08_windows_7_ntlm_hash_file.png, id=573, 866.23625pt x 260.975p
+t>
+File: ../screenshots/08_windows_7_ntlm_hash_file.png Graphic file (type png)
+<use ../screenshots/08_windows_7_ntlm_hash_file.png>
+Package pdftex.def Info: ../screenshots/08_windows_7_ntlm_hash_file.png  used o
+n input line 21.
+(pdftex.def)             Requested size: 461.80257pt x 139.12845pt.
+<../screenshots/01_john_ripper_cracked_passwords_summary.png, id=574, 582.175pt
+ x 202.7575pt>
+File: ../screenshots/01_john_ripper_cracked_passwords_summary.png Graphic file 
+(type png)
+<use ../screenshots/01_john_ripper_cracked_passwords_summary.png>
+Package pdftex.def Info: ../screenshots/01_john_ripper_cracked_passwords_summar
+y.png  used on input line 29.
+(pdftex.def)             Requested size: 461.80257pt x 160.83875pt.
+<../screenshots/15_john_windows7_complete_10_passwords_cracked.png, id=575, 872
+.25874pt x 768.8725pt>
+File: ../screenshots/15_john_windows7_complete_10_passwords_cracked.png Graphic
+ file (type png)
+<use ../screenshots/15_john_windows7_complete_10_passwords_cracked.png>
+Package pdftex.def Info: ../screenshots/15_john_windows7_complete_10_passwords_
+cracked.png  used on input line 37.
+(pdftex.def)             Requested size: 461.80257pt x 407.06639pt.
+ [21 <../screenshots/07_windows_2003_ntlm_hash_file.png> <../screenshots/08_win
+dows_7_ntlm_hash_file.png> <../screenshots/01_john_ripper_cracked_passwords_sum
+mary.png>]
+<../screenshots/14_john_windows7_all_passwords_cracking.png, id=585, 863.225pt 
+x 235.88126pt>
+File: ../screenshots/14_john_windows7_all_passwords_cracking.png Graphic file (
+type png)
+<use ../screenshots/14_john_windows7_all_passwords_cracking.png>
+Package pdftex.def Info: ../screenshots/14_john_windows7_all_passwords_cracking
+.png  used on input line 44.
+(pdftex.def)             Requested size: 461.80257pt x 126.18982pt.
+<../screenshots/10_john_pot_file_nt_hash_passwords.png, id=586, 596.2275pt x 20
+3.76125pt>
+File: ../screenshots/10_john_pot_file_nt_hash_passwords.png Graphic file (type 
+png)
+<use ../screenshots/10_john_pot_file_nt_hash_passwords.png>
+Package pdftex.def Info: ../screenshots/10_john_pot_file_nt_hash_passwords.png 
+ used on input line 51.
+(pdftex.def)             Requested size: 461.80257pt x 157.82317pt.
+ [22 <../screenshots/15_john_windows7_complete_10_passwords_cracked.png> <../sc
+reenshots/14_john_windows7_all_passwords_cracking.png>]
+<../screenshots/09_ophcrack_cracked_passwords_results.png, id=594, 874.26625pt 
+x 421.575pt>
+File: ../screenshots/09_ophcrack_cracked_passwords_results.png Graphic file (ty
+pe png)
+<use ../screenshots/09_ophcrack_cracked_passwords_results.png>
+Package pdftex.def Info: ../screenshots/09_ophcrack_cracked_passwords_results.p
+ng  used on input line 59.
+(pdftex.def)             Requested size: 461.80257pt x 222.68105pt.
+<../screenshots/19_ophcrack_rainbow_table_results_complete.png, id=595, 868.243
+74pt x 418.56375pt>
+File: ../screenshots/19_ophcrack_rainbow_table_results_complete.png Graphic fil
+e (type png)
+<use ../screenshots/19_ophcrack_rainbow_table_results_complete.png>
+Package pdftex.def Info: ../screenshots/19_ophcrack_rainbow_table_results_compl
+ete.png  used on input line 66.
+(pdftex.def)             Requested size: 461.80257pt x 222.62968pt.
+ [23 <../screenshots/10_john_pot_file_nt_hash_passwords.png> <../screenshots/09
+_ophcrack_cracked_passwords_results.png>]
+<../screenshots/17_john_linux_sha512_matrix123_cracked.png, id=603, 871.255pt x
+ 203.76125pt>
+File: ../screenshots/17_john_linux_sha512_matrix123_cracked.png Graphic file (t
+ype png)
+<use ../screenshots/17_john_linux_sha512_matrix123_cracked.png>
+Package pdftex.def Info: ../screenshots/17_john_linux_sha512_matrix123_cracked.
+png  used on input line 74.
+(pdftex.def)             Requested size: 461.80257pt x 108.00226pt.
+<../screenshots/11_john_smith_hash_qaZwsX_cracked.png, id=604, 455.7025pt x 205
+.76875pt>
+File: ../screenshots/11_john_smith_hash_qaZwsX_cracked.png Graphic file (type p
+ng)
+<use ../screenshots/11_john_smith_hash_qaZwsX_cracked.png>
+Package pdftex.def Info: ../screenshots/11_john_smith_hash_qaZwsX_cracked.png  
+used on input line 81.
+(pdftex.def)             Requested size: 461.80257pt x 208.52809pt.
+<../screenshots/12_john_show_smith_password_confirmation.png, id=605, 865.2325p
+t x 223.83624pt>
+File: ../screenshots/12_john_show_smith_password_confirmation.png Graphic file 
+(type png)
+<use ../screenshots/12_john_show_smith_password_confirmation.png>
+Package pdftex.def Info: ../screenshots/12_john_show_smith_password_confirmatio
+n.png  used on input line 88.
+(pdftex.def)             Requested size: 461.80257pt x 119.46942pt.
+ [24 <../screenshots/19_ophcrack_rainbow_table_results_complete.png> <../screen
+shots/17_john_linux_sha512_matrix123_cracked.png> <../screenshots/11_john_smith
+_hash_qaZwsX_cracked.png>]
+<../screenshots/13_morpheus_hash_cross_platform_analysis.png, id=615, 868.24374
+pt x 330.23375pt>
+File: ../screenshots/13_morpheus_hash_cross_platform_analysis.png Graphic file 
+(type png)
+<use ../screenshots/13_morpheus_hash_cross_platform_analysis.png>
+Package pdftex.def Info: ../screenshots/13_morpheus_hash_cross_platform_analysi
+s.png  used on input line 96.
+(pdftex.def)             Requested size: 461.80257pt x 175.64787pt.
+<../screenshots/04_hydra_successful_password_iloveyou_found.png, id=616, 865.23
+25pt x 326.21875pt>
+File: ../screenshots/04_hydra_successful_password_iloveyou_found.png Graphic fi
+le (type png)
+<use ../screenshots/04_hydra_successful_password_iloveyou_found.png>
+Package pdftex.def Info: ../screenshots/04_hydra_successful_password_iloveyou_f
+ound.png  used on input line 104.
+(pdftex.def)             Requested size: 461.80257pt x 174.11464pt.
+<../screenshots/20_hydra_http_basic_auth_sotalait_password_found.png, id=617, 8
+71.255pt x 955.57pt>
+File: ../screenshots/20_hydra_http_basic_auth_sotalait_password_found.png Graph
+ic file (type png)
+<use ../screenshots/20_hydra_http_basic_auth_sotalait_password_found.png>
+Package pdftex.def Info: ../screenshots/20_hydra_http_basic_auth_sotalait_passw
+ord_found.png  used on input line 111.
+(pdftex.def)             Requested size: 461.80257pt x 506.49344pt.
+
+[25 <../screenshots/12_john_show_smith_password_confirmation.png> <../screensho
+ts/13_morpheus_hash_cross_platform_analysis.png> <../screenshots/04_hydra_succe
+ssful_password_iloveyou_found.png>]
+<../screenshots/02_hydra_http_brute_force_attack_in_progress.png, id=627, 737.7
+5626pt x 1008.76875pt>
+File: ../screenshots/02_hydra_http_brute_force_attack_in_progress.png Graphic f
+ile (type png)
+<use ../screenshots/02_hydra_http_brute_force_attack_in_progress.png>
+Package pdftex.def Info: ../screenshots/02_hydra_http_brute_force_attack_in_pro
+gress.png  used on input line 118.
+(pdftex.def)             Requested size: 461.80257pt x 631.43327pt.
+ [26 <../screenshots/20_hydra_http_basic_auth_sotalait_password_found.png>]
+<../screenshots/03_curl_http_auth_testing_success_failure.png, id=633, 661.4712
+5pt x 345.29pt>
+File: ../screenshots/03_curl_http_auth_testing_success_failure.png Graphic file
+ (type png)
+<use ../screenshots/03_curl_http_auth_testing_success_failure.png>
+Package pdftex.def Info: ../screenshots/03_curl_http_auth_testing_success_failu
+re.png  used on input line 125.
+(pdftex.def)             Requested size: 461.80257pt x 241.05855pt.
+ [27 <../screenshots/02_hydra_http_brute_force_attack_in_progress.png>]
+<../screenshots/18_network_connectivity_ping_tests.png, id=640, 733.74126pt x 9
+80.66376pt>
+File: ../screenshots/18_network_connectivity_ping_tests.png Graphic file (type 
+png)
+<use ../screenshots/18_network_connectivity_ping_tests.png>
+Package pdftex.def Info: ../screenshots/18_network_connectivity_ping_tests.png 
+ used on input line 133.
+(pdftex.def)             Requested size: 461.80257pt x 617.22289pt.
+ [28 <../screenshots/03_curl_http_auth_testing_success_failure.png>]
+<../screenshots/16_system_info_kali_linux_apple_silicon.png, id=647, 874.26625p
+t x 572.1375pt>
+File: ../screenshots/16_system_info_kali_linux_apple_silicon.png Graphic file (
+type png)
+<use ../screenshots/16_system_info_kali_linux_apple_silicon.png>
+Package pdftex.def Info: ../screenshots/16_system_info_kali_linux_apple_silicon
+.png  used on input line 141.
+(pdftex.def)             Requested size: 461.80257pt x 302.21pt.
+ [29 <../screenshots/18_network_connectivity_ping_tests.png>]
+<../screenshots/05_john_ripper_smith_phase2c_session_log.png, id=653, 878.28125
+pt x 684.5575pt>
+File: ../screenshots/05_john_ripper_smith_phase2c_session_log.png Graphic file 
+(type png)
+<use ../screenshots/05_john_ripper_smith_phase2c_session_log.png>
+Package pdftex.def Info: ../screenshots/05_john_ripper_smith_phase2c_session_lo
+g.png  used on input line 149.
+(pdftex.def)             Requested size: 461.80257pt x 359.95168pt.
+)
+[30 <../screenshots/16_system_info_kali_linux_apple_silicon.png>] [31 <../scree
+nshots/05_john_ripper_smith_phase2c_session_log.png>]
+
+LaTeX Warning: Empty bibliography on input line 61.
+
+(./project3_report_readable.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `project3_report_readable.out' has not change
+d.
+(rerunfilecheck)             Checksum: F5F18EFCAD98405AA0A680E3109D0666;15311.
+Package logreq Info: Writing requests to 'project3_report_readable.run.xml'.
+\openout1 = `project3_report_readable.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22546 strings out of 478994
+ 405965 string characters out of 5858184
+ 1334154 words of memory out of 5000000
+ 39516 multiletter control sequences out of 15000+600000
+ 410732 words of font info for 51 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 86i,9n,92p,1149b,4825s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on project3_report_readable.pdf (31 pages, 10599198 bytes).
+PDF statistics:
+ 746 PDF objects out of 1000 (max. 8388607)
+ 653 compressed objects within 7 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 709 words of extra memory for PDF output out of 10000 (max. 10000000)
+

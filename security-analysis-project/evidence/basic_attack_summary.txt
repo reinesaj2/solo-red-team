@@ -1,0 +1,1 @@
+Basic auth attack stopped after 340+ attempts - strong password policy

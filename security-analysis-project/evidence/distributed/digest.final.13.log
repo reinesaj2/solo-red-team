@@ -1,0 +1,21 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:18:01
+[DATA] max 1 task per 1 server, overall 1 task, 8859 login tries (l:1/p:8859), ~8859 tries per task
+[DATA] attacking http-get://192.168.100.103:80/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytkee" - 1 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytkeä" - 2 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytkin" - 3 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyttae" - 4 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyttää" - 5 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytynä" - 6 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytätä" - 7 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kytölä" - 8 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyydin" - 9 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyyhky" - 10 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyykin" - 11 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyykkä" - 12 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyylae" - 13 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyylät" - 14 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyynel" - 15 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "kyyroe" - 16 of 8859 [child 0] (0/0)

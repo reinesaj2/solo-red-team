@@ -1,0 +1,9 @@
+Morpheus:A1B2C3D4:1001:1001::/home/morpheus:/bin/sh
+Neo:Qwerty10:1002:1002::/home/neo:/bin/sh
+Trinity:LetMeIn2:1003:1003::/home/trinity:/bin/sh
+Cypher:Passw0rd:1004:1004::/home/cypher:/bin/sh
+Smith:QazWsx:1005:1005::/home/smith:/bin/sh
+Cobb:1Q2w3e4R:1006:1006::/home/cobb:/bin/sh
+Arthur:trustNo1:1007:1007::/home/arthur:/bin/sh
+
+7 password hashes cracked, 0 left

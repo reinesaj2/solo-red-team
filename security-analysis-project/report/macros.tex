@@ -1,0 +1,90 @@
+% Visual styling macros to match Project 2 report style
+\usepackage{xcolor,mdframed}
+\usepackage{geometry}
+
+% Graphics path for figures from appendix and screenshots
+\usepackage{graphicx}
+\graphicspath{{appendix/figures/}{../screenshots/}}
+
+% Caption styling for professional look
+\usepackage[labelfont=bf,font=small]{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+% Table enhancements
+\usepackage{booktabs,tabularx}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% Helper env for full-width professional tables
+\newenvironment{ProTable}[2][tbp]{%
+    \begin{table}[#1]\centering\caption{#2}\small
+}{\end{table}}
+
+% Quick Reference callout boxes (gray background with border) - compressed
+\newmdenv[
+  backgroundcolor=gray!10,
+  linecolor=gray!50,
+  skipabove=3pt,
+  skipbelow=3pt,
+  leftline=true,rightline=true,topline=true,bottomline=true,
+  innerleftmargin=4pt,innerrightmargin=4pt,innertopmargin=3pt,innerbottommargin=3pt
+]{callout}
+
+% Quick Reference command for task summaries
+\newcommand{\QuickRef}[1]{\begin{callout}\textbf{Quick Reference.} #1\end{callout}}
+
+% Requirement box for verbatim deliverable text
+\newcommand{\ReqBox}[1]{\begin{callout}\textbf{Requirement (verbatim).} #1\end{callout}}
+
+% Task box for major section headers
+\newcommand{\TaskBox}[1]{\begin{callout}\textbf{Task Overview.} #1\end{callout}}
+
+% Evidence reference helper
+\newcommand{\EvidenceRef}[2]{\textit{Evidence:} #1 (see #2)}
+
+% Password display helper (for security)
+\newcommand{\PasswordDisplay}[1]{\texttt{#1}}
+
+% Command display helper
+\newcommand{\CommandDisplay}[1]{\texttt{\small\detokenize{#1}}}
+
+% Tool name formatting
+\newcommand{\ToolName}[1]{\textbf{#1}}
+
+% Hash format display
+\newcommand{\HashFormat}[1]{\textsc{#1}}
+
+% Key Takeaway callout for results emphasis
+\newcommand{\KeyTakeaway}[1]{\begin{callout}\textbf{Key Takeaway.} #1\end{callout}}
+
+% Enhanced password display with bold red formatting
+\renewcommand{\PasswordDisplay}[1]{\textcolor{red}{\textbf{\texttt{#1}}}}
+
+% Row coloring for tables
+\usepackage{colortbl}
+
+% Aggressive spacing compression
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{10pt}
+\setlength{\topskip}{8pt}
+\setlength{\topmargin}{-10pt}
+\setlength{\textfloatsep}{8pt}
+\setlength{\floatsep}{6pt}
+\setlength{\intextsep}{6pt}
+
+% Compress section spacing
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 2pt minus 2pt}{3pt plus 1pt minus 1pt}
+\titlespacing\subsection{0pt}{4pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
+\titlespacing\subsubsection{0pt}{3pt plus 1pt minus 1pt}{1pt plus 1pt minus 1pt}
+\titlespacing\paragraph{0pt}{2pt plus 1pt minus 1pt}{1pt plus 1pt minus 1pt}
+
+% Optimize table spacing for readability
+\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{6pt}
+
+% Add padding to table cells
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}

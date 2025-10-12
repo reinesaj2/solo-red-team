@@ -1,0 +1,68 @@
+Windows 7 NTLM Hash Cracking Results - Task 2 (10 points)
+===========================================================
+
+Attack Summary:
+--------------
+Target File: 2025Fall-PVDwindows7.txt
+Hash Format: NTLM (NT format in John the Ripper)
+Total Users: 10 (including 2 disabled accounts)
+Target Users: 7 (Morpheus, Neo, Trinity, Cypher, Smith, Cobb, Arthur)
+Additional Users Cracked: 1 (tryme)
+
+Attack Phases:
+-------------
+
+Phase 1: Dictionary Attack (rockyou.txt)
+- Command: john --format=NT --wordlist=/tmp/rockyou.txt --max-run-time=1200 2025Fall-PVDwindows7.txt
+- Runtime: 3 seconds
+- Success Rate: 8/9 hashes cracked (89%)
+- Resource Impact: Minimal - completed in seconds
+
+Phase 2: Rules-based Attack (default rules)
+- Command: john --format=NT --wordlist=/tmp/rockyou.txt --rules --max-run-time=900 2025Fall-PVDwindows7.txt
+- Runtime: 1 minute 33 seconds
+- Success Rate: 0 additional cracks
+- Target: Smith's remaining hash
+
+Phase 3: Best64 Rules Attack
+- Command: john --format=NT --wordlist=/tmp/rockyou.txt --rules=best64 --max-run-time=300 2025Fall-PVDwindows7.txt
+- Runtime: 2 minutes 39 seconds
+- Success Rate: 0 additional cracks
+- Target: Smith's remaining hash
+
+Phase 4: Incremental Attack
+- Command: john --format=NT --incremental --max-run-time=180 2025Fall-PVDwindows7.txt
+- Runtime: 3 minutes
+- Success Rate: 0 additional cracks
+- Target: Smith's remaining hash
+
+Final Results:
+--------------
+CRACKED PASSWORDS:
+- Morpheus: a1b2c3d4
+- Neo: qwerty10
+- Trinity: letmein2
+- Cypher: passw0rd
+- Smith: [NOT CRACKED]
+- Cobb: 1q2w3e4r
+- Arthur: trustno1
+- tryme: 11111111 (bonus)
+
+SUCCESS RATE: 6/7 target users (86%)
+TOTAL RUNTIME: Under 10 minutes
+RESOURCE IMPACT: CPU-friendly, no system overheating
+
+Strategic Analysis:
+------------------
+- Dictionary attack was extremely effective (86% success in 3 seconds)
+- NTLM hashes are vulnerable to fast dictionary attacks
+- Smith's password appears to be more complex or not in common wordlists
+- Demonstrates importance of strong, unique passwords
+- Windows 7 disabled LM hashing by default (security improvement over Windows 2003)
+
+Computing Environment:
+---------------------
+- Platform: Linux 6.12.38+kali-arm64
+- John the Ripper: 1.9.0-jumbo-1+bleeding
+- Wordlist: rockyou.txt (14,344,392 passwords)
+- Time Management: Used --max-run-time to prevent resource exhaustion

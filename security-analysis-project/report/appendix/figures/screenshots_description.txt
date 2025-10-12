@@ -1,0 +1,179 @@
+SCREENSHOT CONTENTS DESCRIPTION - CS660 Project 3
+
+This file contains descriptions of all screenshot images found in the screenshots/ directory, documenting the password cracking activities and results from September 9, 2025.
+
+=== Screenshot 2025-09-09 at 10.11.51 AM.png ===
+Terminal showing grep command searching for "Cracked" in evidence/john.log file. Shows successful password cracks for multiple users:
+- Morpheus (cracked)
+- Neo (cracked) 
+- tryme (cracked)
+- Arthur (cracked)
+- Cobb (cracked)
+- Cypher (cracked)
+- *disabled* Administrator (ADMIN ACCOUNT) (cracked)
+- Trinity (cracked)
+All entries show timestamp 0:00:00:00 indicating rapid cracking success.
+
+=== Screenshot 2025-09-09 at 11.24.02 AM.png ===
+Terminal showing Hydra brute force attack output against HTTP login form at 192.168.100.101. Shows multiple failed login attempts with username "wangxx" testing various passwords like "password", "princess", "football", "michael", "jennifer", "amanda", "joshua", "computer", "welcome". Attack appears to be in progress with many attempts logged. Green text indicates successful attempts, red text shows failures.
+
+=== Screenshot 2025-09-09 at 11.30.46 AM.png ===
+Terminal showing curl commands for testing HTTP authentication:
+- Commands for creating new session cookies
+- SUCCESS sample showing test/test credentials working (page after login)
+- FAILURE sample showing test/wrong credentials failing
+- grep commands to find unique success markers like "welcome|logout|protected|dashboard"
+- Location header analysis showing redirect behavior
+- File size comparison (300 bytes success.html, 298 bytes fail.html, 598 total)
+
+=== Screenshot 2025-09-09 at 11.34.32 AM.png ===
+Terminal showing successful Hydra attack completion:
+- Target: 192.168.100.101 with username "wangxx" 
+- Successful password found: "iloveyou"
+- Attack statistics: 1 of 1 target successfully completed, 1 valid password found
+- Runtime: Started at 2025-09-09 11:34:02, finished at 11:34:04 (2 seconds)
+- Shows final green text confirming valid login pair found
+
+=== Screenshot 2025-09-09 at 12.54.29 PM.png ===
+Terminal showing John the Ripper session log for smith_phase2c:
+- Loaded 1 password hash (NT format)
+- Using rockyou.txt wordlist with 139,921,507 entries
+- Shows detailed rule processing and word mangling statistics
+- Multiple preprocessing rules applied (#1-#12)
+- Session completed successfully
+- Final result: "Cracked Smith" at timestamp 0:00:00:06
+
+=== Screenshot 2025-09-09 at 12.56.06 PM.png ===
+Terminal displaying Linux /etc/passwd file contents from 2025Fall-PVDlinux.txt showing system user accounts with encrypted password hashes. Contains entries for multiple users including:
+- root, daemon, bin, sys, sync, games, man, lp, mail, news, backup, list, proxy, gnats, nobody, mysql, avahi-daemon, sshd, landscape, messagebus, rtkit, festival, postgres, nx, morpheus, neo, trinity, cypher, smith, cobb, arthur
+Each entry shows username, user ID, group ID, home directory, and shell information in standard /etc/passwd format.
+
+=== Screenshot 2025-09-09 at 12.56.31 PM.png ===
+Terminal displaying Windows 2003 hash file contents from 2025Fall-PVDwindows2k3.txt showing NTLM password hashes for multiple user accounts:
+- Administrator, ASPNET, Morpheus, Neo, Trinity, Cypher, Smith, Cobb, Arthur
+- Guest account (NO PASSWORD)
+- Several service accounts (IUSR_JAMES, IWAM_JAMES, SUPPORT_388945a0, System32, SYS_32)
+Each entry shows username, user ID, and corresponding LM:NTLM hash pairs.
+
+=== Screenshot 2025-09-09 at 12.56.47 PM.png ===
+Terminal displaying Windows 7 hash file contents from 2025Fall-PVDwindows7.txt showing password hashes:
+- *disabled* Administrator and Guest accounts with LM:NTLM hash format
+- Multiple user accounts: tryme, Morpheus, Neo, Cypher, Smith, Cobb, Arthur, Trinity
+- All entries show the characteristic LM hash (aad3b435b51404ee) indicating LM hashes are disabled
+- NTLM portions contain the actual password hashes for cracking
+
+=== Screenshot 2025-09-09 at 12.57.55 PM.png ===
+Terminal showing Ophcrack results file displaying cracked passwords with their corresponding hash information:
+- Administrator: MSKITTY
+- ASPNET: D5912K8
+- Morpheus: a1b2c3d4  
+- Neo: qwerty10
+- Trinity: letmein2
+- Cypher: passw0rd
+- Smith: qaZwsX
+- Cobb: 1q2w3e4r
+- Arthur: trustno1
+Shows both the hash values and successfully cracked plaintext passwords.
+
+=== Screenshot 2025-09-09 at 1.08.05 PM.png ===
+Terminal showing john.pot file contents with cracked NT hash passwords:
+- Multiple NTLM hashes with their corresponding cracked passwords
+- Shows successful cracks for: a1b2c3d4, qwerty10, 11111111, trustno1, 1q2w3e4r, passw0rd, letmein2
+- Hash format indicates these are from Windows systems (NT hashes)
+
+=== Screenshot 2025-09-09 at 1.09.16 PM.png ===
+Terminal showing John the Ripper attack completion on smith_hash.txt:
+- Single NT hash cracked successfully  
+- Password found: "qaZwsX" for user Smith
+- Attack completed in 6 seconds with high performance metrics
+- Shows session completion message and suggests using --show option to display results
+
+=== Screenshot 2025-09-09 at 1.19.45 PM.png ===
+Continuation of previous John the Ripper session showing:
+- Command to display cracked password using --show option
+- Confirms Smith's password as "qaZwsX" 
+- Shows hash details and user ID (1005)
+- Reports "1 password hash cracked, 0 left"
+
+=== Screenshot 2025-09-09 at 1.20.15 PM.png ===
+Terminal showing grep searches for "Morpheus" across different hash files:
+- 2025Fall-PVDwindows7.txt: Shows Morpheus NTLM hash
+- 2025Fall-PVDwindows2k3.txt: Shows Morpheus NTLM hash  
+- 2025Fall-PVDlinux.txt: Shows Morpheus Linux account with SHA-512 hash
+Demonstrates cross-platform hash analysis for the same user account.
+
+=== Screenshot 2025-09-09 at 1.23.45 PM.png ===
+Terminal showing John the Ripper attacking Windows 7 hashes with rockyou wordlist:
+- Loaded 9 password hashes (NT format)
+- Shows real-time cracking progress with passwords being found:
+  - 11111111 (tryme)
+  - trustno1 (Arthur) 
+  - 1q2w3e4r (Cobb)
+  - passw0rd (Cypher)
+  - a1b2c3d4 (Morpheus)
+  - *disabled* Administrator
+  - letmein2 (Trinity)
+  - qwerty10 (Neo)
+- Performance: 800g/s, 8192Kp/s processing speed
+- Shows completion with all 10 password hashes cracked
+
+=== Screenshot 2025-09-09 at 1.25.38 PM.png ===
+Terminal showing second run of John the Ripper on same Windows 7 file:
+- Reports "No password hashes left to crack" indicating all were already cracked
+- Shows --show command displaying all cracked passwords with their hashes
+- Lists all 10 successfully cracked accounts with their corresponding passwords
+- Confirms 100% success rate: "10 password hashes cracked, 0 left"
+
+=== Screenshot 2025-09-09 at 1.26.36 PM.png ===
+Terminal showing system information via lscpu command:
+- Linux Kali 6.12.38 aarch64 system
+- Apple Silicon architecture (ARM64)
+- 4 CPU cores, 48.00 BogoMIPS
+- Various CPU flags and cache information
+- Vulnerability status (not affected by common CPU vulnerabilities)
+
+=== Screenshot 2025-09-09 at 1.29.21 PM.png ===
+Terminal showing John the Ripper attacking Linux SHA-512 hashes:
+- Loaded 8 password hashes with different salts (sha512crypt format)
+- Cost 1 (iteration count) is 5000 for all loaded hashes
+- Shows completion with "matrix123" password found for ubuntu user
+- Performance: 375p/s, 3000c/s processing speed
+- Session completed successfully
+
+=== Screenshot 2025-09-09 at 1.31.30 PM.png ===
+Terminal showing network connectivity test results:
+- IP address information and network interface details
+- Ping tests to multiple IP addresses (192.168.100.101, 192.168.100.103)
+- Shows successful connectivity with response times around 200ms
+- Network interface statistics and packet transmission details
+- Demonstrates network reconnaissance capabilities
+
+=== ophcrack_results.png ===
+Terminal showing comprehensive Ophcrack results with cracked Windows passwords:
+- Administrator: MSKITTY (ID: 500)
+- ASPNET: D5912K8 (ID: 1007) 
+- Morpheus: a1b2c3d4 (ID: 1010)
+- Neo: qwerty10 (ID: 1011)
+- Trinity: letmein2 (ID: 1012)
+- Cypher: passw0rd (ID: 1014)
+- Smith: qaZwsX (ID: 1015)
+- Cobb: 1q2w3e4r (ID: 1016)
+- Arthur: trustno1 (ID: 1017)
+Shows both hash values and successfully recovered plaintext passwords from rainbow table attacks.
+
+=== SUMMARY ===
+These screenshots document a comprehensive password security assessment involving:
+1. Windows 7 NTLM hash cracking (10/10 success rate)
+2. Windows 2003 LM/NTLM hash analysis using Ophcrack rainbow tables
+3. Linux SHA-512 hash cracking attempts
+4. HTTP form-based authentication testing with Hydra
+5. Network reconnaissance and connectivity testing
+6. Cross-platform user account analysis
+
+Tools successfully demonstrated:
+- John the Ripper (offline hash cracking)
+- Ophcrack (rainbow table attacks)
+- Hydra (online brute force attacks)
+- Standard Linux utilities (grep, curl, ping)
+
+All password recovery activities appear to be conducted in an authorized educational/testing environment for security research purposes.

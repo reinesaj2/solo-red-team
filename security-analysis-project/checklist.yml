@@ -1,0 +1,183 @@
+# CS 660 Project 3 Deliverables Checklist
+# Generated from Project3.txt task specifications
+
+project:
+  title: "Entity Authentication Security Assessment"
+  total_points: 75
+
+tasks:
+  # Task 3.7.1.0 - PVD File Study (10 points)
+  - id: "3.7.1.0"
+    section: "3.7.1.0"
+    title: "PVD File Study"
+    points: 10
+    description: "Analysis of password verification data files"
+    deliverables:
+      - id: "3.7.1.0.1"
+        points: 3
+        text: "Windows 7 PVD file analysis for Morpheus - explain each field, count hash values, identify duplicates"
+        evidence: ["fig:A-task0-win7-analysis", "tab:task0-win7-fields"]
+      - id: "3.7.1.0.2"
+        points: 3
+        text: "Windows 2003 PVD file analysis for Morpheus - explain each field, count hash values, identify duplicates"
+        evidence: ["fig:A-task0-win2003-analysis", "tab:task0-win2003-fields"]
+      - id: "3.7.1.0.3"
+        points: 4
+        text: "Ubuntu PVD file analysis for Morpheus - explain each field including $ separators"
+        evidence: ["fig:A-task0-linux-analysis", "tab:task0-linux-fields"]
+
+  # Task 3.7.1.1 - Tool Study (5 points)
+  - id: "3.7.1.1"
+    section: "3.7.1.1"
+    title: "Tool Study"
+    points: 5
+    description: "Comparison of password cracking tools"
+    deliverables:
+      - id: "3.7.1.1.1"
+        points: 2
+        text: "How does Ophcrack work and its advantages over other tools"
+        evidence: ["fig:A-task1-ophcrack-analysis"]
+      - id: "3.7.1.1.2"
+        points: 1
+        text: "How does John the Ripper work and its advantages"
+        evidence: ["fig:A-task1-john-analysis"]
+      - id: "3.7.1.1.3"
+        points: 2
+        text: "How does hashcat work and its advantages"
+        evidence: ["fig:A-task1-hashcat-analysis"]
+
+  # Task 3.7.1.2 - Windows 7 Password Cracking (10 points)
+  - id: "3.7.1.2"
+    section: "3.7.1.2"
+    title: "Windows 7 Password Cracking"
+    points: 10
+    description: "Offline dictionary attack on Windows 7 NTLM hashes"
+    deliverables:
+      - id: "3.7.1.2.1"
+        points: 10
+        text: "Crack all Windows 7 user passwords using appropriate tools"
+        evidence: ["tab:task2-win7-passwords", "fig:A-task2-win7-john-results"]
+
+  # Task 3.7.1.3 - Windows 2003 Password Cracking (10 points)
+  - id: "3.7.1.3"
+    section: "3.7.1.3"
+    title: "Windows 2003 Password Cracking"
+    points: 10
+    description: "Offline dictionary attack on Windows 2003 LM/NTLM hashes"
+    deliverables:
+      - id: "3.7.1.3.1"
+        points: 10
+        text: "Crack all Windows 2003 user passwords using appropriate tools"
+        evidence: ["tab:task3-win2003-passwords", "fig:A-task3-win2003-ophcrack-results"]
+
+  # Task 3.7.1.4 - Linux Password Cracking (10 points)
+  - id: "3.7.1.4"
+    section: "3.7.1.4"
+    title: "Linux Password Cracking"
+    points: 10
+    description: "Offline dictionary attack on Linux shadow hashes"
+    deliverables:
+      - id: "3.7.1.4.1"
+        points: 10
+        text: "Crack all Linux user passwords using appropriate tools"
+        evidence: ["tab:task4-linux-passwords", "fig:A-task4-linux-john-results"]
+
+  # Task 3.7.1.5 - Comparison Analysis (5 points)
+  - id: "3.7.1.5"
+    section: "3.7.1.5"
+    title: "Three PVD Cracking Comparison"
+    points: 5
+    description: "Comparative analysis of three password systems"
+    deliverables:
+      - id: "3.7.1.5.1"
+        points: 5
+        text: "Compare security of Windows 7, Windows 2003, and Linux password systems"
+        evidence: ["tab:task5-comparison", "fig:A-task5-security-comparison"]
+
+  # Task 3.7.2.1 - HTML Authentication (5 points)
+  - id: "3.7.2.1"
+    section: "3.7.2.1"
+    title: "HTML Form Authentication"
+    points: 5
+    description: "Online password guessing against HTML login form"
+    deliverables:
+      - id: "3.7.2.1.1"
+        points: 5
+        text: "Find password for username wangxx on HTML login form"
+        evidence: ["fig:A-web-html-attack", "fig:A-web-html-success"]
+
+  # Task 3.7.2.2 - HTTP Basic Authentication (5 points)
+  - id: "3.7.2.2"
+    section: "3.7.2.2"
+    title: "HTTP Basic Authentication"
+    points: 5
+    description: "Online password guessing against HTTP Basic Auth"
+    deliverables:
+      - id: "3.7.2.2.1"
+        points: 5
+        text: "Find password for username wangxx using HTTP Basic Authentication"
+        evidence: ["fig:A-web-basic-attack", "fig:A-web-basic-success"]
+
+  # Task 3.7.2.3 - HTTP Digest Authentication (5 points)
+  - id: "3.7.2.3"
+    section: "3.7.2.3"
+    title: "HTTP Digest Authentication"
+    points: 5
+    description: "Online password guessing against HTTP Digest Auth"
+    deliverables:
+      - id: "3.7.2.3.1"
+        points: 5
+        text: "Find password for username wangxx using HTTP Digest Authentication"
+        evidence: ["fig:A-web-digest-attack", "fig:A-web-digest-success"]
+
+  # Task 3.7.3 - Token Authentication (10 points)
+  - id: "3.7.3"
+    section: "3.7.3"
+    title: "Token-based Authentication"
+    points: 10
+    description: "RSA private key and certificate analysis"
+    deliverables:
+      - id: "3.7.3.1"
+        points: 2
+        text: "Extract RSA public key (e,N) from certificate in hex"
+        evidence: ["fig:A-token-cert-analysis", "fig:A-token-public-key"]
+      - id: "3.7.3.2"
+        points: 5
+        text: "Extract RSA private key d from token file in hex"
+        evidence: ["fig:A-token-private-analysis", "fig:A-token-private-key"]
+      - id: "3.7.3.3"
+        points: 1
+        text: "Extract full name from digital certificate"
+        evidence: ["fig:A-token-name-extract"]
+
+# Evidence file mappings
+evidence_files:
+  analysis:
+    - "task0_pvd_file_analysis.txt"
+    - "Task1_ToolStudy.md"
+    - "Task5_ComparisonAnalysis.md"
+  results:
+    - "task2_windows7_password_table.txt"
+    - "task3_windows2003_password_table.txt"
+    - "task4_linux_password_table.txt"
+  tools:
+    - "john_results_summary.txt"
+    - "ophcrack_results.txt"
+    - "win7_john_results.txt"
+    - "linux_john_results.txt"
+  web_auth:
+    - "html_password.txt"
+    - "basic_password.txt"
+    - "digest_password.txt"
+    - "html_hydra_results.txt"
+    - "basic_hydra_results.txt"
+    - "digest_hydra_results.txt"
+  token:
+    - "rsa_cert.txt"
+    - "rsa_private.txt"
+    - "rsa_analysis_answers.txt"
+  visualizations:
+    - "attempts_over_time.png"
+    - "success_rate_analysis.png"
+    - "comprehensive_dashboard.png"
+    - "lockout_analysis.png"

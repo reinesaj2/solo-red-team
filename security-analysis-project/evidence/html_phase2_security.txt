@@ -1,0 +1,1 @@
+# Hydra v9.5 run at 2025-09-10 15:25:46 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -P wordlists/security_terminology_8char.txt -t 2 -o evidence/html_phase2_security.txt 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:login.html)

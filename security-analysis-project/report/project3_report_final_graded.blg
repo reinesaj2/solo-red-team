@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'project3_report_final_graded.blg'
+[61] biber-darwin:340> INFO - === Sun Sep 14, 2025, 11:14:55
+[75] Biber.pm:415> INFO - Reading 'project3_report_final_graded.bcf'
+[154] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[160] Utils.pm:395> WARN - The file 'project3_report_final_graded.bcf' does not contain any citations!
+[168] bbl.pm:654> INFO - Writing 'project3_report_final_graded.bbl' with encoding 'UTF-8'
+[168] bbl.pm:757> INFO - Output to project3_report_final_graded.bbl
+[168] Biber.pm:128> INFO - WARNINGS: 1

@@ -1,0 +1,14 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:16:57
+[DATA] max 1 task per 1 server, overall 1 task, 10658 login tries (l:1/p:10658), ~10658 tries per task
+[DATA] attacking http-get://192.168.100.103:1800/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "orchel" - 1 of 10658 [child 0] (0/0)
+[ERROR] Child with pid 952838 terminating, can not connect
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "orchic" - 2 of 10659 [child 0] (0/1)
+[ERROR] Child with pid 953024 terminating, can not connect
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "orchil" - 3 of 10660 [child 0] (0/2)
+[ERROR] Child with pid 953069 terminating, can not connect
+[ERROR] all children were disabled due too many connection errors
+0 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-09-14 02:17:07

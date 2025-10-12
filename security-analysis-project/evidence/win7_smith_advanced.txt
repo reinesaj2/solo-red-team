@@ -1,0 +1,32 @@
+Using default input encoding: UTF-8
+Loaded 10 password hashes with no different salts (NT [MD4 128/128 ASIMD 4x2])
+Remaining 1 password hash
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+Warning: Only 2 candidates buffered for the current salt, minimum 8 needed for performance.
+Almost done: Processing the remaining buffered candidate passwords, if any.
+0g 0:00:00:00 DONE (2025-09-09 17:23) 0g/s 88300p/s 88300c/s 88300C/s smith1901..smith1900
+Session completed. 
+
+=== JUMBO RULES ATTACK ===
+Using default input encoding: UTF-8
+Loaded 9 password hashes with no different salts (NT [MD4 128/128 ASIMD 4x2])
+Remaining 1 password hash
+Warning: no OpenMP support for this hash type, consider --fork=4
+fopen: /usr/share/wordlists/rockyou.txt: No such file or directory
+Using default input encoding: UTF-8
+Loaded 9 password hashes with no different salts (NT [MD4 128/128 ASIMD 4x2])
+Remaining 1 password hash
+Warning: no OpenMP support for this hash type, consider --fork=4
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+qaZwsX           (Smith)     
+1g 0:00:00:06 DONE (2025-09-09 17:25) 0.1658g/s 7705Kp/s 7705Kc/s 7705KC/s octubre..yayarea
+Warning: passwords printed above might not be all those cracked
+Use the "--show --format=NT" options to display all of the cracked passwords reliably
+Session completed. 
+
+=== FINAL RESULTS SUMMARY ===
+Smith's Password Successfully Cracked: qaZwsX
+Tool: John the Ripper with jumbo rules
+Runtime: 6 seconds
+Success Rate: 100% (10/10 Windows 7 passwords cracked)
