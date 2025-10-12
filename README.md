@@ -18,11 +18,14 @@ This project demonstrates a comprehensive red teaming engagement against a serie
 
 ## Tools & Technologies
 
-*   **Password Crackers:** Hydra, Patator
-*   **Scripting:** Python, Bash
-*   **Web Application Proxies:** (Assumed, e.g., Burp Suite, OWASP ZAP)
-*   **Wordlist Generators:** crunch
-*   **Other:** `curl`, standard Linux command-line utilities
+*   **Hydra:** A parallelized network login cracker which supports numerous protocols to attack. It is used for brute-force and dictionary attacks against web authentication.
+*   **Patator:** A multi-purpose brute-forcer, with a modular design and a flexible usage. It was used for brute-force attacks.
+*   **Crunch:** A wordlist generator where you can specify a standard character set or a character set you specify.
+*   **Curl:** A command-line tool for transferring data with URLs. It was used for testing HTTP authentication.
+*   **Python:** A high-level, general-purpose programming language. It was used for scripting various attack scenarios.
+*   **Bash:** A Unix shell and command language. It was used for scripting and automating tasks.
+*   **John the Ripper:** A password cracking software tool.
+*   **Ophcrack:** A free Windows password cracker based on rainbow tables.
 
 ## Methodology
 
