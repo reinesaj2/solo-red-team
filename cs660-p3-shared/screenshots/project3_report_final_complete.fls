@@ -1,0 +1,5 @@
+PWD /Users/abrahamreines/Documents/Project3/cs660-p3-shared/screenshots
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+OUTPUT project3_report_final_complete.log

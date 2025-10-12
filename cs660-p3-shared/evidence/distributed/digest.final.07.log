@@ -1,0 +1,26 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:17:49
+[DATA] max 1 task per 1 server, overall 1 task, 8859 login tries (l:1/p:8859), ~8859 tries per task
+[DATA] attacking http-get://192.168.100.103:80/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "négoce" - 1 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nègres" - 2 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neigea" - 3 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neiger" - 4 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neiges" - 5 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nement" - 6 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nerais" - 7 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nerait" - 8 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nergie" - 9 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neries" - 10 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neriez" - 11 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nerons" - 12 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neront" - 13 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nervez" - 14 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "nervis" - 15 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neuses" - 16 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neutre" - 17 of 8859 [child 0] (0/0)
+[STATUS] 17.00 tries/min, 17 tries in 00:01h, 8842 to do in 08:41h, 1 active
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neuvas" - 18 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neuves" - 19 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "neuvie" - 20 of 8859 [child 0] (0/0)

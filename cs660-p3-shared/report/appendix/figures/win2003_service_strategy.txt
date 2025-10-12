@@ -1,0 +1,359 @@
+WINDOWS 2003 IIS SERVICE ACCOUNTS - STRATEGIC ANALYSIS
+=========================================================
+Date: 2025-09-14
+Analyst: Claude Code Hash Cracking Strategist
+
+TARGET HASHES:
+==============
+1. IUSR_JAMES-BFCF5F2D5:1003:A34C6084CD00D144804161F8F14BF675:74680584039C174E466BF3B85321F6FB:::
+   - Username: IUSR_JAMES-BFCF5F2D5 (Internet User Account)
+   - RID: 1003
+   - LM: A34C6084CD00D144804161F8F14BF675
+   - NTLM: 74680584039C174E466BF3B85321F6FB
+
+2. IWAM_JAMES-BFCF5F2D5:1004:0ADD5D9C6170C0D29DEBEBB3096E48C8:0C20B9D1814D4464D959AC5B39EFB005:::
+   - Username: IWAM_JAMES-BFCF5F2D5 (Internet Web Application Manager)
+   - RID: 1004
+   - LM: 0ADD5D9C6170C0D29DEBEBB3096E48C8
+   - NTLM: 0C20B9D1814D4464D959AC5B39EFB005
+
+INITIAL ANALYSIS:
+=================
+
+1. ACCOUNT TYPE SIGNIFICANCE:
+   - IUSR_: Default account for anonymous web access
+   - IWAM_: Application manager for out-of-process applications
+   - Both are system-generated service accounts
+   - Created during IIS installation on machine "JAMES-BFCF5F2D5"
+
+2. WHY BASIC RAINBOW TABLES FAILED:
+   - LM hashes are present and valid (not AAD3B435B51404EE...)
+   - Basic XP free tables typically contain:
+     * Common passwords (password, 123456, admin, etc.)
+     * Dictionary words up to 14 characters
+     * Simple patterns and variations
+   - IIS service accounts often use:
+     * Machine-specific strings
+     * Random/pseudo-random generation
+     * Longer complex passwords
+     * Non-dictionary combinations
+
+3. PASSWORD COMPLEXITY ASSESSMENT:
+   - Both LM hashes differ from null hash (AAD3B435B51404EEAAD3B435B51404EE)
+   - Passwords are likely 8-14 characters (LM hash present)
+   - May contain machine name components
+   - Could be auto-generated during IIS setup
+   - Possibly follow Microsoft default patterns
+
+STRATEGIC ATTACK PLAN:
+======================
+
+PHASE 1: MACHINE-NAME BASED ATTACKS (HIGH ROI - 30 minutes)
+-----------------------------------------------------------
+Target: Both accounts
+Rationale: IIS often incorporates machine names in service passwords
+
+Attack Vectors:
+a) Machine name variations:
+   - JAMES-BFCF5F2D5
+   - JAMES
+   - BFCF5F2D5
+   - james-bfcf5f2d5
+   - JamesBFCF5F2D5
+
+b) Common IIS patterns with machine name:
+   - JAMES123
+   - JAMES_2003
+   - BFCF5F2D5!
+   - IIS_JAMES
+   - JAMES$
+   - JAMES-IIS
+
+Tools: John the Ripper with custom wordlist
+Commands:
+john --format=LM --wordlist=machine_names.txt win2003_service.txt
+john --format=NT --wordlist=machine_names.txt win2003_service.txt
+
+Expected Success Rate: 35-40%
+Resource Requirements: Minimal CPU usage
+
+PHASE 2: IIS DEFAULT PATTERN ATTACKS (MEDIUM-HIGH ROI - 45 minutes)
+-------------------------------------------------------------------
+Target: Both accounts
+Rationale: Microsoft IIS has known default password patterns
+
+Attack Vectors:
+a) IIS service defaults:
+   - IUSR_password
+   - IWAM_password
+   - IISpassword
+   - WebUser123
+   - Anonymous1
+   - IIS_WPG
+
+b) Windows 2003 era patterns:
+   - Password123
+   - Admin2003
+   - IIS2003
+   - Service1
+   - WebService
+   - DefaultIIS
+
+Tools: John the Ripper with IIS-specific wordlist
+Commands:
+john --format=LM --wordlist=iis_defaults.txt --rules=NT win2003_service.txt
+john --format=NT --wordlist=iis_defaults.txt --rules=NT win2003_service.txt
+
+Expected Success Rate: 25-30%
+Resource Requirements: Low CPU usage
+
+PHASE 3: TARGETED RAINBOW TABLE ATTACK (MEDIUM ROI - 60 minutes)
+----------------------------------------------------------------
+Target: LM hashes only
+Rationale: Larger rainbow tables may contain the missing patterns
+
+Attack Vectors:
+a) Extended rainbow tables:
+   - Vista free tables (if available)
+   - Extended alphanumeric tables
+   - Special character tables
+
+Tools: Ophcrack with extended tables
+Commands:
+ophcrack-cli -d /extended_tables -t vista_free,xp_special -f win2003_service.txt
+
+Expected Success Rate: 40-45%
+Resource Requirements: High disk I/O, moderate RAM
+
+PHASE 4: HYBRID DICTIONARY + BRUTE FORCE (LOW-MEDIUM ROI - 120 minutes)
+-----------------------------------------------------------------------
+Target: Both accounts
+Rationale: Systematic approach for complex passwords
+
+Attack Vectors:
+a) Rockyou with rules:
+   - Common transformations
+   - Leetspeak substitutions
+   - Case variations
+   - Number/symbol appends
+
+b) Incremental brute force (LM only):
+   - 8-14 character space
+   - Alphanumeric first
+   - Add symbols if needed
+
+Tools: John the Ripper incremental mode
+Commands:
+john --format=LM --incremental=alpha win2003_service.txt
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt --rules=all win2003_service.txt
+
+Expected Success Rate: 60-70%
+Resource Requirements: High CPU usage, long runtime
+
+PHASE 5: GPU HASHCAT ATTACK (LOW ROI - 180+ minutes)
+----------------------------------------------------
+Target: NTLM hashes only (if GPU available)
+Rationale: Last resort for complex passwords
+
+Prerequisite: Verify GPU availability and hashcat installation
+
+Attack Vectors:
+a) Dictionary attack with rules:
+   - Best64 rules
+   - D3ad0ne rules
+   - Custom IIS rules
+
+b) Mask attack for suspected patterns:
+   - ?u?l?l?l?l?d?d?d (Name + numbers)
+   - ?u?u?u?u-?u?u?u?u?u?u?u?u?d (Machine name pattern)
+
+Tools: Hashcat (if GPU available)
+Commands:
+hashcat -m 1000 -a 0 ntlm_hashes.txt rockyou.txt -r best64.rule
+hashcat -m 1000 -a 3 ntlm_hashes.txt ?u?l?l?l?l?d?d?d
+
+Expected Success Rate: 70-80%
+Resource Requirements: High GPU usage, significant power consumption
+
+RESOURCE ALLOCATION STRATEGY:
+==============================
+
+Hardware Prioritization:
+1. CPU: Phases 1-2, 4 (John the Ripper)
+2. Disk I/O: Phase 3 (Rainbow tables)
+3. GPU: Phase 5 only (if available)
+4. RAM: 2-4GB sufficient for most phases
+
+Early Exit Conditions:
+- Stop Phase 1 if no results after 30 minutes
+- Skip Phase 5 if no GPU or thermal issues
+- Abort any phase consuming >80% CPU for >2 hours
+- Stop if passwords found (prioritize analysis over completion)
+
+Success Criteria:
+- Phase completion: Any password cracked
+- Partial success: One account cracked (analyze for patterns)
+- Full success: Both accounts cracked
+- Learning outcome: Understanding IIS password generation
+
+RISK ASSESSMENT:
+================
+
+High Probability (60-70%):
+- Machine name variations will crack at least one password
+- IIS default patterns cover common installations
+- These are service accounts, likely following patterns
+
+Medium Probability (40-50%):
+- Extended rainbow tables contain the hashes
+- Hybrid attacks with good wordlists succeed
+- GPU acceleration provides breakthrough
+
+Low Probability (20-30%):
+- Passwords are truly random/complex
+- Non-standard installation with custom passwords
+- Require advanced techniques beyond scope
+
+TIME ESTIMATES WITH CONFIDENCE INTERVALS:
+==========================================
+
+Phase 1: 30 minutes (90% confidence)
+Phase 2: 45 minutes (85% confidence)
+Phase 3: 60 minutes (75% confidence)
+Phase 4: 120 minutes (70% confidence)
+Phase 5: 180+ minutes (60% confidence)
+
+Total Estimated Time: 2-7 hours depending on success point
+Recommended Time Budget: 3 hours maximum
+
+RECOMMENDED EXECUTION ORDER:
+============================
+
+1. START: Phase 1 (Machine name attacks) - 30 min
+2. IF FAIL: Phase 2 (IIS defaults) - 45 min
+3. IF FAIL: Phase 3 (Extended rainbow tables) - 60 min
+4. ANALYZE: Review any patterns from partial success
+5. IF NEEDED: Phase 4 (Hybrid dictionary) - 120 min
+6. LAST RESORT: Phase 5 (GPU hashcat) - 180+ min
+
+EARLY SUCCESS SCENARIOS:
+========================
+
+If Phase 1 succeeds:
+- Analyze successful password for patterns
+- Apply similar patterns to remaining account
+- Document machine-name relationship
+
+If Phase 2 succeeds:
+- Research IIS installation defaults for this version
+- Check for additional service accounts with similar patterns
+- Update attack strategies for similar systems
+
+FAILURE ANALYSIS PROTOCOL:
+==========================
+
+If all phases fail:
+1. Verify hash file integrity
+2. Check for typos in hash format
+3. Research Windows 2003 IIS specific password policies
+4. Consider that passwords may be >14 characters (NTLM only attack)
+5. Investigate whether accounts were manually configured
+
+FINAL RECOMMENDATIONS:
+======================
+
+1. IMMEDIATE PRIORITY: Execute Phase 1 (machine name attacks)
+2. RESOURCE FOCUS: Allocate 75% effort to Phases 1-3
+3. TIME MANAGEMENT: Set strict 30-45 minute limits per phase
+4. SUCCESS AMPLIFICATION: If one password found, use patterns for the other
+5. DOCUMENTATION: Log all attempts for learning and report generation
+6. THERMAL MONITORING: Stop if systems run excessively hot
+
+This strategy maximizes ROI by targeting the most likely attack vectors first while maintaining realistic resource constraints for an academic environment.
+
+IMPLEMENTATION READY STATUS:
+============================
+
+Hash File Created: /mnt/hgsf/cs660-p3-shared/evidence/win2003_remaining_service.txt
+Wordlists Created:
+- /mnt/hgsf/cs660-p3-shared/evidence/machine_names.txt
+- /mnt/hgsf/cs660-p3-shared/evidence/iis_defaults.txt
+
+Available Tools:
+- john (v1.9.0-jumbo-1) at /usr/sbin/john
+- hashcat (v6.2.6) at /usr/bin/hashcat
+- ophcrack-cli (v3.8.0) at /usr/bin/ophcrack-cli
+
+EXACT COMMANDS TO EXECUTE:
+=========================
+
+Phase 1: Machine Name Attack (30 minutes)
+------------------------------------------
+cd /mnt/hgsf/cs660-p3-shared/evidence
+john --format=LM --wordlist=machine_names.txt win2003_remaining_service.txt 2>&1 | tee win2003_service_phase1_lm.txt
+john --format=NT --wordlist=machine_names.txt win2003_remaining_service.txt 2>&1 | tee win2003_service_phase1_nt.txt
+john --show --format=LM win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase1_results.txt
+john --show --format=NT win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase1_results.txt
+
+Phase 2: IIS Defaults Attack (45 minutes)
+------------------------------------------
+john --format=LM --wordlist=iis_defaults.txt --rules=NT win2003_remaining_service.txt 2>&1 | tee win2003_service_phase2_lm.txt
+john --format=NT --wordlist=iis_defaults.txt --rules=NT win2003_remaining_service.txt 2>&1 | tee win2003_service_phase2_nt.txt
+john --show --format=LM win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase2_results.txt
+john --show --format=NT win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase2_results.txt
+
+Phase 3: Rockyou Dictionary Attack (60 minutes)
+------------------------------------------------
+john --format=LM --wordlist=/usr/share/wordlists/rockyou.txt --rules=NT win2003_remaining_service.txt 2>&1 | tee win2003_service_phase3_lm.txt
+john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt --rules=NT win2003_remaining_service.txt 2>&1 | tee win2003_service_phase3_nt.txt
+john --show win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase3_results.txt
+
+Phase 4: Incremental Brute Force (LM only - 120 minutes max)
+------------------------------------------------------------
+john --format=LM --incremental=alpha win2003_remaining_service.txt 2>&1 | tee win2003_service_phase4_incremental.txt
+john --show --format=LM win2003_remaining_service.txt 2>&1 | tee -a win2003_service_phase4_results.txt
+
+SUCCESS VALIDATION COMMANDS:
+============================
+# Check all discovered passwords
+john --show win2003_remaining_service.txt
+
+# Verify pot file contents
+cat ~/.john/john.pot | grep -E "(IUSR_JAMES|IWAM_JAMES)"
+
+# Generate final results summary
+echo "=== FINAL RESULTS SUMMARY ===" > win2003_service_final_results.txt
+john --show win2003_remaining_service.txt >> win2003_service_final_results.txt
+echo "=== ATTACK TIMELINE ===" >> win2003_service_final_results.txt
+ls -la win2003_service_phase*.txt >> win2003_service_final_results.txt
+
+EARLY EXIT CONDITIONS (CRITICAL):
+=================================
+1. After Phase 1: If both passwords found, STOP and analyze patterns
+2. After Phase 2: If one password found, apply pattern to other account
+3. Phase 3: Stop if CPU temperature >80°C or load average >8.0
+4. Phase 4: Stop if no progress after 2 hours or memory usage >90%
+
+THERMAL MONITORING:
+==================
+# Check system temperature before each phase
+sensors | grep Core
+cat /proc/loadavg
+
+# If temperature >75°C, reduce attack intensity:
+john --format=LM --wordlist=machine_names.txt --max-run-time=600 win2003_remaining_service.txt
+
+RESOURCE OPTIMIZATION:
+=====================
+# For systems with limited RAM (<8GB)
+john --format=LM --wordlist=machine_names.txt --mem-file-size=50 win2003_remaining_service.txt
+
+# For better performance on multi-core systems
+john --format=NT --wordlist=iis_defaults.txt --fork=4 win2003_remaining_service.txt
+
+LOGGING PROTOCOL:
+================
+All commands must be logged to /mnt/hgsf/cs660-p3-shared/COMMANDS.log:
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting Phase 1: Machine name attack on IIS service accounts" >> /mnt/hgsf/cs660-p3-shared/COMMANDS.log
+
+This comprehensive strategy provides specific, executable commands with built-in safety measures and optimization for academic lab environments.

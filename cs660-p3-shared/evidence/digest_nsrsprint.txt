@@ -1,0 +1,1 @@
+# Hydra v9.5 run at 2025-09-10 15:42:13 on 192.168.100.103 http-get (hydra -I -V -f -l wangxx -p  -e nsr -t 1 -w 5 -o evidence/digest_nsrsprint.txt 192.168.100.103 http-get /digestauth)

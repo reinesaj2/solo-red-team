@@ -1,0 +1,28 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:17:41
+[DATA] max 1 task per 1 server, overall 1 task, 8859 login tries (l:1/p:8859), ~8859 tries per task
+[DATA] attacking http-get://192.168.100.103:80/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8phish" - 1 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8truck" - 2 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8video" - 3 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8volvo" - 4 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8hoops" - 5 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8quest" - 6 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8supra" - 7 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8basil" - 8 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8bliss" - 9 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8bugsy" - 10 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8canon" - 11 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8civil" - 12 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8cyber" - 13 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8fidel" - 14 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8image" - 15 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8major" - 16 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8media" - 17 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8mopar" - 18 of 8859 [child 0] (0/0)
+[STATUS] 18.00 tries/min, 18 tries in 00:01h, 8841 to do in 08:12h, 1 active
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8olsen" - 19 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8opera" - 20 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8polar" - 21 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "8radio" - 22 of 8859 [child 0] (0/0)

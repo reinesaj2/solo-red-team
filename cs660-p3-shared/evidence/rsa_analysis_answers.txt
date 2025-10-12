@@ -1,0 +1,86 @@
+CS 660 Project 3 - RSA Token Analysis Results
+===============================================
+Date: September 9, 2025
+Certificate File: /home/reinesaj/Downloads/Reines_Abraham_2025-660-cert.pem.txt
+Private Key File: /home/reinesaj/Downloads/Reines_Abraham_2025-660-key.pem.txt
+Passphrase Used: 111111
+
+REQUIRED ANSWERS:
+================
+
+1. RSA PUBLIC KEY (e,c) - 2 POINTS:
+   e (public exponent) = 65537 (0x10001)
+   N (modulus in hex) = 
+   009ed0770fdb3f972c82ed25f669f703141c3c6e131d15c5eba6b4d8296263d782
+   32ccac2213d9835bf3bc62ef84f537925369eb0fc3ec10fa02b03070e0c8e7a05f
+   cce8d0e2e790e6baafffb38b50e1cd2d346a350f5ae2d955e62932109849054ed
+   524fd52ed1e902eefdffc9c384c11f484fda55a826516c14459e9dafc02f815a54
+   b0a1b64e3afde2cf842161e853af0681219669715276f27bda1ce211defbf196af
+   58bff2017647c18117fb03fbdd12ad19d40d5f83e766ae6313415fce40430caff
+   5b7ec7cc8c5b31cee4af739c5e51529c088433d4db8e849bda3d93341f3fec688
+   c0d07bc7324663d769e96aa7121372a6275bff297299876c7fad2dc415b7b4602
+   9abbhc41b9522a97a88a8000a9ee43e745801f1f4c5d39a0d53fcda4cd4c8f0a7
+   2c2effb7f58d479f220165001b091a0a257afc102fe16918f9855866deb40e3fda
+   e3df73393d81fc05d5a707cc5b4aa215195dd3966a8a980535db7c552d7f95f41cc
+   7569076629292ffa7e696c76337946827de6084c509b29509e2dbb
+
+2. RSA PRIVATE KEY d - 5 POINTS:
+   d (private exponent in hex) = 
+   11fc4ddf8fd6edc9eeb1e8c0b55372176ef2d10c7d18c027655ec92f36a2a60b6a
+   b15f3524c65768c07c633ff8f0c4705fde15ecdd2558eed76b18b14fe3b0c7aad1
+   cbf40c1e697c97dbe23993d79b500cf94cf99839379458f214f3838c61d2b863c0
+   02c6a0a320dfec07b5b1727bfe13299e96577a173cead6d70f449e21426f5bc63
+   340033c1210a3abb5140c3e9b89c30a08cb013c740c0e16af7ab2c76c04fa29b5
+   855764eefe455dd755768261764b894748946e9dc035a7349a23035a471f0aa5
+   2c2975aad7ba9fd5cab47b7c0a1979eac65b7c3b5b7202aebbe266f77f427cd9e
+   e85509f44dab131b60d6b8d2d819d0f590ec9bdbfb6c488dd75f8571cd214de36
+   ae16e5a669c32f432b1a9484b1b5568893ad66aa4f8391c767074dded4f75526
+   62bdc492ba8232eb12d4e62ddb73dc979bbbe2110e9c7c8702544751e0172d7ca
+   3949a8b1e4368f805774171db514046936a6ced5d76b65680bfbb4ef63c9bae1e
+   1e6b722f302b99cb6ccad28a3899f771936326bc2c1031d2a1
+
+3. FULL NAME IN CERTIFICATE - 1 POINT:
+   Subject Distinguished Name: C=US, ST=Virginia, L=Harrisonburg, O=JMU, OU=CS, CN=Abraham Reines 2025-660
+   
+4. CA'S FULL NAME - 1 POINT:
+   Issuer Distinguished Name: C=US, ST=Virginia, L=Harrisonburg, O=JMU, OU=CS, CN=Xunhua 2024 CA
+
+5. CA KEY IDENTIFIER - 1 POINT:
+   Authority Key Identifier: 07:39:37:A2:BB:D4:94:B4:F0:8D:42:27:BB:50:45:25:52:DF:BB:2D
+
+ADDITIONAL TECHNICAL DETAILS:
+=============================
+- Certificate Version: 3 (X.509v3)
+- Serial Number: 549 (0x225)
+- Key Size: 3072 bits
+- Signature Algorithm: sha512WithRSAEncryption
+- Validity Period: July 24, 2025 - July 24, 2026
+- Subject Key Identifier: 83:E3:88:92:E8:1D:BD:3A:E6:10:D6:D0:3A:03:F7:DC:41:10:2E:06
+
+RSA ALGORITHM REVIEW ANSWERS:
+=============================
+1. RSA public key components: (N, e) where N is the modulus and e is the public exponent
+2. RSA private key components: d (private exponent), plus p, q (prime factors) for CRT optimization
+3. Chinese Remainder Theorem values: 
+   - d mod (p-1) = exponent1 (shown in private key output)
+   - d mod (q-1) = exponent2 (shown in private key output)  
+   - q^-1 mod p = coefficient (shown in private key output)
+
+COMMANDS USED:
+==============
+openssl x509 -in /home/reinesaj/Downloads/Reines_Abraham_2025-660-cert.pem.txt -text
+echo "111111" | openssl rsa -in /home/reinesaj/Downloads/Reines_Abraham_2025-660-key.pem.txt -text -passin stdin
+
+EVIDENCE FILES CREATED:
+=======================
+- evidence/rsa_cert.txt: Complete certificate analysis
+- evidence/rsa_private.txt: Complete private key analysis  
+- evidence/rsa_analysis_answers.txt: This summary file
+
+ACADEMIC LEARNING OUTCOMES:
+===========================
+- Successfully extracted RSA public key components (N, e) from X.509 certificate
+- Successfully extracted RSA private key components (d, p, q, exponents, coefficient) 
+- Demonstrated understanding of X.509 certificate structure and distinguished names
+- Applied knowledge of RSA algorithm mathematics to identify key components
+- Used OpenSSL tools for cryptographic analysis and certificate inspection

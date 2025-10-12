@@ -1,0 +1,1 @@
+# Hydra v9.5 run at 2025-09-12 14:04:03 on 192.168.100.103 http-get (hydra -l wangxx -P wordlists/biographical_ultra_8char.txt -t 1 -W 3 -f -V -o evidence/basic_biographical_ultra.txt 192.168.100.103 http-get /basicauth)

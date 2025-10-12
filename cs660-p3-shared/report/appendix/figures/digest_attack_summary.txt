@@ -1,0 +1,1 @@
+Digest auth attack stopped after 520+ attempts - strong password policy

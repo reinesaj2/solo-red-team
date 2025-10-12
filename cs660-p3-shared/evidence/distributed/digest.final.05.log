@@ -1,0 +1,27 @@
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-14 02:17:45
+[DATA] max 1 task per 1 server, overall 1 task, 8859 login tries (l:1/p:8859), ~8859 tries per task
+[DATA] attacking http-get://192.168.100.103:80/digestauth
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recomb" - 1 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recons" - 2 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recook" - 3 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recool" - 4 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recopy" - 5 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recork" - 6 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recrew" - 7 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recrop" - 8 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "rectos" - 9 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "rectus" - 10 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recure" - 11 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recurl" - 12 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recurs" - 13 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recuse" - 14 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "recuts" - 15 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redans" - 16 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redare" - 17 of 8859 [child 0] (0/0)
+[STATUS] 17.00 tries/min, 17 tries in 00:01h, 8842 to do in 08:41h, 1 active
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redarn" - 18 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redart" - 19 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redate" - 20 of 8859 [child 0] (0/0)
+[ATTEMPT] target 192.168.100.103 - login "wangxx" - pass "redaub" - 21 of 8859 [child 0] (0/0)

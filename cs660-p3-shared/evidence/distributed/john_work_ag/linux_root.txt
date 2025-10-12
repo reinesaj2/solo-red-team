@@ -1,0 +1,1 @@
+root:$6$lhiUnAov$ao2OdiKQ/BmcD1VKHmFZq/W/lwHGJ6je/3u8fpeULStm57NE9GZKmIj4LmKmZwEaAtxdAVpjoUM1nSBG6wph31:0:0:root:/root:/bin/bash

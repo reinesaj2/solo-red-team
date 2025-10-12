@@ -1,0 +1,860 @@
+=== John the Ripper 16-Prong Attack Monitor Started ===
+Start Time: Sat Sep 13 03:33:57 PM PDT 2025
+Monitoring Linux root and Windows 2003 service account attacks...
+
+=== Status Check at Sat Sep 13 03:33:57 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:34:57 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:35:57 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:36:57 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:37:58 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:38:58 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 28, John processes: 3, Total: 31
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:39:58 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 0, John processes: 3, Total: 3
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:40:58 PM PDT 2025 ===
+Active John processes: 3
+Hydra processes: 20, John processes: 3, Total: 23
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:41:58 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 20, John processes: 2, Total: 22
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:42:58 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 20, John processes: 2, Total: 22
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:43:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 20, John processes: 2, Total: 22
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:44:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:45:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:46:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:47:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:48:59 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:50:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 0, John processes: 2, Total: 2
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:51:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:52:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:53:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:54:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:55:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:56:00 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:57:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:58:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 03:59:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:00:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:01:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:02:01 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:03:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:04:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:05:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:06:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:07:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:08:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:09:02 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:10:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:11:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:12:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:13:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:14:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:15:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:16:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:17:03 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:18:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:19:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:20:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:21:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:22:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:23:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:24:04 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:25:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:26:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:27:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:28:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:29:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:30:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:31:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:32:05 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:33:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:34:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:35:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:36:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:37:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:38:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:39:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:40:06 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:41:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:42:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:43:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:44:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:45:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:46:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:47:07 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:48:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:49:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:50:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:51:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:52:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:53:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:54:08 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:55:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:56:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:57:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:58:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 04:59:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:00:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:01:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:02:09 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:03:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:04:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:05:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:06:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:07:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 78, John processes: 2, Total: 80
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:08:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:09:10 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:10:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 79, John processes: 2, Total: 81
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:11:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:12:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:13:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:14:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:15:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:16:11 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:17:12 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:18:12 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:19:12 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+
+=== Status Check at Sat Sep 13 05:20:12 PM PDT 2025 ===
+Active John processes: 2
+Hydra processes: 80, John processes: 2, Total: 82
+Recent log activity:
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.an.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ao.log
+-rw-r--r-- 1 501 dialout 303 Sep 13 15:33 john_win2003.16part.ap.log
+

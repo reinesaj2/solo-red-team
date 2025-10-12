@@ -1,0 +1,20 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   339  100   300  100    39    925    120 --:--:-- --:--:-- --:--:--  1049
+HTTP/1.1 302 Found
+Date: Wed, 10 Sep 2025 02:31:05 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Set-Cookie: session=%2fadmin-user=test&%2fadmin-pw=test;path=/
+Location: http://192.168.100.101/success.html
+Content-Length: 300
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="http://192.168.100.101/success.html">here</a>.</p>
+<hr>
+<address>Apache/2.4.58 (Ubuntu) Server at 192.168.100.101 Port 80</address>
+</body></html>

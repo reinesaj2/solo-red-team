@@ -1,0 +1,65 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{graphicx,booktabs,longtable,tabularx,float,enumitem,caption,subcaption}
+\setlist{nosep,left=0pt,topsep=-5pt,itemsep=-2pt} % Ultra-compact list formatting
+\usepackage{hyperref}
+\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage{minted} % For code highlighting
+\addbibresource{bib/references.bib}
+
+% Import custom macros and styling
+\input{macros}
+
+% Hyperref setup for proper PDF links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=red,
+    pdftitle={CS 660 Project 3 - Entity Authentication Security Assessment},
+    pdfauthor={Abraham Reines},
+    pdfsubject={Password Hash Cracking and Web Authentication Security Analysis}
+}
+
+% Title page setup
+\title{CS 660 Project 3\\Entity Authentication Security Assessment\\Password Hash Analysis and Web Authentication Testing}
+\author{Abraham Reines\\
+        Computer Science Department\\
+        James Madison University}
+\date{\today}
+
+\begin{document}
+\maketitle
+\vspace{-10pt}
+\input{sections/pledge}
+\vspace{-10pt}
+
+% Table of Contents
+\tableofcontents
+\vspace{-5pt}
+
+% Main document sections
+\input{sections/00_abstract}
+\input{sections/01_intro}
+\input{sections/02_methods}
+\input{sections/03_results_by_task}
+\input{sections/04_discussion}
+\input{sections/05_conclusion}
+\input{sections/06_ethics_limitations}
+% \input{sections/07_references}
+
+% Appendix section
+\clearpage
+\appendix
+\section*{Appendix A — Evidence and Screenshots}
+\addcontentsline{toc}{section}{Appendix A — Evidence and Screenshots}
+
+\input{sections/A0_appendix_index}
+\input{appendix/figures_autogen}
+
+% Bibliography
+\clearpage
+\printbibliography
+
+\end{document}

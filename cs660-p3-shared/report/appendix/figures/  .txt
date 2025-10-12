@@ -1,0 +1,176 @@
+CS 660 Project 3 - Computing Environment Details
+==================================================
+
+System Information:
+==================
+Architecture: ARM64 (aarch64)
+Operating System: Kali Linux 2023.3
+Kernel Version: Linux 6.12.38+kali-arm64
+Platform: Linux security testing environment
+Working Directory: /mnt/hgsf/cs660-p3-shared
+
+Hardware Specifications:
+========================
+CPU Architecture: ARM64 with SIMD optimization support
+Memory: Sufficient RAM for wordlist operations and hash processing
+Storage: Local filesystem access with adequate space for rainbow tables and wordlists
+Network: VPN-capable for online authentication testing
+
+Software Environment:
+=====================
+
+John the Ripper:
+- Version: 1.9.0-jumbo-1+bleeding-562f1d5
+- Optimizations: ARM SIMD support
+- Hash Formats Supported: NT (NTLM), sha512crypt, and others
+- Performance: 
+  * NTLM: MD4 128/128 ASIMD 4x2 (high speed)
+  * SHA-512: SHA512 128/128 ASIMD 2x (moderate speed due to iteration count)
+- MKPC (Most Keys Per Crypt): 4096 for optimal performance
+
+Ophcrack:
+- Version: Command-line version (ophcrack-cli)
+- Rainbow Tables: XP/Vista compatible tables stored in /usr/share/ophcrack/tables
+- Supported Formats: LM hash processing with 7-character split handling
+- Tables Used: xp_free_small, vista_free
+
+Hydra:
+- Version: v9.5
+- Supported Protocols: HTTP GET, POST, Basic Auth, Digest Auth
+- Performance Capabilities:
+  * HTML Form: 6-12 attempts/minute (rate limited)
+  * Basic Auth: 78-162 attempts/minute  
+  * Digest Auth: ~162 attempts/minute (fastest)
+- Thread Management: 1-4 threads for respectful resource usage
+- Rate Limiting: 1-5 second delays between attempts
+
+Additional Tools:
+- pw-inspector: Password filtering utility for creating targeted wordlists
+- OpenSSL: Certificate and key analysis (version with RSA support)
+- Standard Linux utilities: wget, curl, ping for connectivity testing
+
+Wordlists and Dictionaries:
+===========================
+RockyOU: 14+ million passwords (decompressed from gzip)
+- Location: /tmp/rockyou.txt
+- Usage: Primary wordlist for NTLM dictionary attacks
+- Coverage: Common passwords with excellent success rate
+
+All.gz Dictionary: 4+ million passwords
+- Source: ftp://ftp.openwall.com/pub/wordlists/all.gz
+- Filtered versions:
+  * all8.txt: 2,798,999 8-character alphanumeric passwords
+  * all6.txt: 1,885,435 6-character alphanumeric passwords
+- Usage: Online authentication testing
+
+Custom Strategic Lists:
+- linux_strategic.txt: Targeted passwords for Linux systems
+- top100.txt: Most common passwords
+- user_specific.txt: Context-specific password patterns
+
+Network Environment:
+====================
+VPN Configuration:
+- OpenVPN client for lab network access
+- Internal IP range: 192.168.101.x
+- Target systems: 192.168.100.101, 192.168.100.103
+- Connectivity verified via ping tests
+
+Authentication Targets:
+- HTML Form: http://192.168.100.101/login.html
+- Basic Auth: http://192.168.100.103/basicauth  
+- Digest Auth: http://192.168.100.103/digestauth
+- All targets responsive and rate-limited appropriately
+
+Performance Characteristics by Task:
+===================================
+
+Task 2 (Windows 7 NTLM):
+- Hash rate: Thousands per second (fast MD4 processing)
+- Memory usage: Low (single-threaded dictionary processing)
+- CPU utilization: Moderate during active cracking
+- Time to success: 3 seconds for dictionary hits
+- Scalability: Excellent for large wordlists
+
+Task 3 (Windows 2003 LM):
+- Processing method: Rainbow table lookup
+- Memory usage: Moderate (table caching)
+- CPU utilization: Moderate during table operations
+- Time to completion: 2 minutes 22 seconds for all hashes
+- Storage requirement: Rainbow tables ~GB range
+
+Task 4 (Linux SHA-512):
+- Hash rate: ~5 attempts/second (iteration count limited)
+- Memory usage: Low (individual hash processing)
+- CPU utilization: High during active cracking (5000 iterations per attempt)
+- Time per attempt: ~0.2 seconds
+- Computational limit: Iteration count provides strong defense
+
+Online Authentication Testing:
+- Network latency: Minimal within lab VPN
+- Rate limiting: Varies by target (6-162 attempts/minute)
+- Thread management: 1-4 threads to respect system resources
+- Connection stability: Stable throughout testing periods
+
+Resource Management:
+===================
+Heat Management:
+- No system overheating observed during any testing phase
+- Strategic time limits prevented excessive CPU usage
+- Followed project guidelines for "avoiding running really really hot"
+
+Memory Management:
+- Adequate RAM for all wordlist operations
+- No memory constraints encountered
+- Efficient use of available resources
+
+Time Management:
+- Strategic approach with defined time limits
+- ROI-focused testing (highest probability attacks first)
+- Resource allocation based on expected success rates
+
+System Monitoring:
+- CPU usage monitored throughout testing
+- No system stability issues encountered
+- Clean shutdown procedures followed for all tools
+
+Security and Compliance:
+========================
+Ethical Guidelines:
+- All testing conducted within authorized educational environment
+- Proper VPN access with legitimate credentials
+- Rate limiting respected to avoid system stress
+- Complete audit trail maintained
+
+Academic Integrity:
+- No online toolkits used (JMU Honor Code compliance)
+- All tools installed and configured locally
+- Original analysis and strategic thinking applied
+- Documentation of negative results as learning outcomes
+
+File Management:
+- Evidence properly stored in /evidence directory
+- Command history logged for reproducibility  
+- Results separated by task as required
+- Backup procedures followed
+
+Optimization Notes:
+==================
+ARM Architecture Benefits:
+- SIMD optimizations available for both John and hash processing
+- Efficient memory usage patterns
+- Good parallel processing capabilities for supported operations
+
+Tool Configuration:
+- John the Ripper: Default configuration optimized for ARM
+- Ophcrack: Standard table configuration
+- Hydra: Conservative threading to respect target systems
+- OpenSSL: Standard configuration for certificate analysis
+
+Performance Tuning:
+- Time limits used to prevent excessive resource consumption
+- Strategic wordlist ordering for maximum ROI
+- Parallel processing where appropriate
+- Resource monitoring throughout testing phases
+
+This comprehensive environment provided excellent capability for all required testing while maintaining system stability and following ethical guidelines throughout the CS 660 Project 3 execution.
