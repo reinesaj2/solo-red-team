@@ -1,3 +1,9 @@
+## ⚠️ Disclaimer: Educational Simulation Only ⚠️
+
+This repository contains scripts and tools for cybersecurity research and educational purposes only. The code is intended to be used in controlled environments to simulate and understand web application vulnerabilities.
+
+**DO NOT use these tools on any system you do not own or have explicit permission to test.** Unauthorized use of these tools against any system is illegal. The author is not responsible for any damage caused by the misuse of this information.
+
 # Cybersecurity Red Teaming: Web Application & Authentication Attack Simulation
 
 ## Project Overview
