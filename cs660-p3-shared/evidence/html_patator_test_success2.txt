@@ -1,10 +1,0 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   299  100   248  100    51    717    147 --:--:-- --:--:-- --:--:--   866
-<HTML>
-<form method="POST" action="/dologin.html">
-Username: <input type="text" name="httpd_username" value="" />
-Password: <input type="password" name="httpd_password" value="" />
-<input type="submit" name="login" value="Login" />
-</form>
-</HTML>

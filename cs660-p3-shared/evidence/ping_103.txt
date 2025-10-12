@@ -1,8 +1,0 @@
-PING 192.168.100.103 (192.168.100.103) 56(84) bytes of data.
-64 bytes from 192.168.100.103: icmp_seq=1 ttl=63 time=71.5 ms
-64 bytes from 192.168.100.103: icmp_seq=2 ttl=63 time=70.7 ms
-64 bytes from 192.168.100.103: icmp_seq=3 ttl=63 time=70.6 ms
-
---- 192.168.100.103 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2006ms
-rtt min/avg/max/mdev = 70.597/70.925/71.509/0.413 ms

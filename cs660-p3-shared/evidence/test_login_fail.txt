@@ -1,19 +1,0 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   338  100   298  100    40    934    125 --:--:-- --:--:-- --:--:--  1062
-HTTP/1.1 302 Found
-Date: Wed, 10 Sep 2025 02:31:16 GMT
-Server: Apache/2.4.58 (Ubuntu)
-Location: http://192.168.100.101/login.html
-Content-Length: 298
-Content-Type: text/html; charset=iso-8859-1
-
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>302 Found</title>
-</head><body>
-<h1>Found</h1>
-<p>The document has moved <a href="http://192.168.100.101/login.html">here</a>.</p>
-<hr>
-<address>Apache/2.4.58 (Ubuntu) Server at 192.168.100.101 Port 80</address>
-</body></html>

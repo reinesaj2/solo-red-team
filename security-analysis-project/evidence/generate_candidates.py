@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Strategic Password Candidate Generator for CS 660 Security Testing
-Generates org-aware, academically-focused password candidates ranked by probability
+Password Candidate Generator for Security Testing
+Generates context-aware password candidates ranked by probability
 """
 
 import itertools
@@ -11,12 +11,10 @@ import re
 
 class PasswordCandidateGenerator:
     def __init__(self):
-        # Core organizational tokens (fill in based on context)
+        # Core organizational tokens (can be customized for specific targets)
         self.org_tokens = [
-            "JMU", "jmu", "Jmu",  # ORG
-            "CS660", "cs660", "Cs660",  # PRODUCT  
-            "Harrisonburg", "harrisonburg", "HBurg",  # CITY
-            "Dukes", "dukes", "Duke"  # MASCOT
+            "Company", "company", "Org", "org", "Admin", "admin",
+            "Secure", "secure", "Security", "security"
         ]
         
         # IT default passwords
@@ -35,7 +33,7 @@ class PasswordCandidateGenerator:
         self.seasons = ["Fall", "Spring", "Summer", "Winter"]
         
         # Specified suffixes
-        self.suffixes = ["!", "!!", "123", "!23", "!2024"]
+        self.suffixes = ["!", "!!", "123", "!23", "!2024", "!2025"] # Added !2025 for current year
         
         # Leetspeak transformations (a,e,i,o,s,t only as specified)
         self.leet_map = {
@@ -137,14 +135,14 @@ class PasswordCandidateGenerator:
         return variations
     
     def rank_candidates(self, candidates):
-        """Rank candidates by estimated probability (academic context)"""
+        """Rank candidates by estimated probability based on general patterns"""
         scores = defaultdict(int)
         
         for candidate in candidates:
             score = 0
             lower_candidate = candidate.lower()
             
-            # Length scoring (favor 6-8 characters based on project constraints)
+            # Length scoring (favor 6-8 characters based on common password policies)
             if 6 <= len(candidate) <= 8:
                 score += 100
             elif len(candidate) == 5 or len(candidate) == 9:
@@ -152,28 +150,20 @@ class PasswordCandidateGenerator:
             elif len(candidate) == 4 or len(candidate) == 10:
                 score += 25
             
-            # Organizational relevance
-            if any(org.lower() in lower_candidate for org in ["jmu", "cs660", "harrisonburg", "dukes"]):
+            # Contextual relevance (general terms)
+            if any(term in lower_candidate for term in ["company", "admin", "security", "password", "login"]):
                 score += 150
             
-            # Academic relevance  
-            if any(term in lower_candidate for term in ["student", "professor", "class", "fall", "spring"]):
-                score += 100
-            
-            # Current year bonus
+            # Current year bonus (adjust as needed for current year)
             if any(year in candidate for year in ["2024", "2025", "24", "25"]):
                 score += 80
-            
-            # Security-related terms
-            if any(term in lower_candidate for term in ["security", "password", "auth", "login"]):
-                score += 70
             
             # Common patterns
             if any(pattern in lower_candidate for pattern in ["123", "password", "welcome", "qwerty"]):
                 score += 60
             
             # Proper capitalization (more likely to be used)
-            if candidate[0].isupper() and candidate[1:].islower():
+            if candidate and candidate[0].isupper() and candidate[1:].islower(): # Added check for empty string
                 score += 40
             
             # Has numbers (common in passwords)
@@ -185,7 +175,7 @@ class PasswordCandidateGenerator:
                 score += 20
             
             # Penalty for very common patterns (likely already tried)
-            if candidate.lower() in ["password", "123456", "qwerty", "welcome"]:
+            if lower_candidate in ["password", "123456", "qwerty", "welcome"]:
                 score -= 50
             
             scores[candidate] = score
@@ -218,17 +208,17 @@ class PasswordCandidateGenerator:
         return filtered_candidates[:limit]
 
 def main():
-    """Generate strategic password candidates for CS 660 lab testing"""
+    """Generate strategic password candidates for security testing"""
     generator = PasswordCandidateGenerator()
     
-    print("CS 660 Strategic Password Candidate Generator")
+    print("Password Candidate Generator")
     print("=" * 50)
     
     # Generate candidates
     candidates = generator.generate_top_candidates(10000)
     
     # Write to file
-    output_file = "/mnt/hgsf/cs660-p3-shared/candidates.txt"
+    output_file = "candidates.txt" # Changed to a relative path
     with open(output_file, 'w') as f:
         for candidate in candidates:
             f.write(f"{candidate}\n")

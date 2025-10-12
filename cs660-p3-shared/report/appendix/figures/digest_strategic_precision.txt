@@ -1,1 +1,0 @@
-# Hydra v9.5 run at 2025-09-12 14:18:35 on 192.168.100.103 http-get (hydra -l wangxx -P /mnt/hgsf/cs660-p3-shared/wordlists/strategic_precision_6char.txt -t 1 -W 5 -f -V -o /mnt/hgsf/cs660-p3-shared/evidence/digest_strategic_precision.txt 192.168.100.103 http-get /digestauth)

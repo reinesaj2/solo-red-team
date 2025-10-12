@@ -1,9 +1,0 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'project3_report_readable.blg'
-[59] biber-darwin:340> INFO - === Sat Sep 13, 2025, 15:37:46
-[74] Biber.pm:415> INFO - Reading 'project3_report_readable.bcf'
-[158] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[163] Utils.pm:395> WARN - The file 'project3_report_readable.bcf' does not contain any citations!
-[171] bbl.pm:654> INFO - Writing 'project3_report_readable.bbl' with encoding 'UTF-8'
-[171] bbl.pm:757> INFO - Output to project3_report_readable.bbl
-[171] Biber.pm:128> INFO - WARNINGS: 1

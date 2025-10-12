@@ -1,5 +1,0 @@
-# Hydra v9.5 run at 2025-09-09 12:26:51 on 192.168.100.103 http-get (hydra -I -l wangxx -P rockyou8.txt -t 8 -V -o evidence/basic_hydra_long.txt 192.168.100.103 http-get /basicauth)
-# Hydra v9.5 run at 2025-09-09 19:43:29 on 192.168.100.103 http-get (hydra -I -l wangxx -P rockyou8.txt -t 8 -V -o evidence/basic_hydra_long.txt 192.168.100.103 http-get /basicauth)
-# Hydra v9.5 run at 2025-09-09 20:03:06 on 192.168.100.103 http-get (hydra -I -l wangxx -P rockyou8.txt -t 8 -V -o evidence/basic_hydra_long.txt 192.168.100.103 http-get /basicauth)
-# Hydra v9.5 run at 2025-09-10 14:47:47 on 192.168.100.103 http-get (hydra -R)
-# Hydra v9.5 run at 2025-09-10 14:48:24 on 192.168.100.103 http-get (hydra -R)
