@@ -8,26 +8,6 @@
 
 This repository showcases a comprehensive analysis of web application and system-level authentication vulnerabilities. The project demonstrates core competencies in vulnerability assessment, ethical hacking, and defensive engineering, conducted in a secure, isolated lab environment. All attack simulations were performed against intentionally vulnerable targets to develop and test defensive strategies.
 
-## How to run safely
-
-- Run locally with the sandboxed lab (Docker). Prefer offline/isolated network.
-- Start lab services:
-```bash
-docker compose -f lab/docker-compose.yml up -d
-```
-- Stop and clean up:
-```bash
-docker compose -f lab/docker-compose.yml down -v
-```
-- Never target real hosts. See `lab/README.md` for isolation guidance.
-
-## Architecture
-
-Mermaid source: `docs/architecture.mmd`. Render to PNG (example):
-```bash
-mmdc -i docs/architecture.mmd -o docs/architecture.png
-```
-
 ## Core Competencies & Key Accomplishments
 
 *   **Vulnerability Assessment:** Identified critical security weaknesses in legacy and modern authentication mechanisms, including Basic, Digest, NTLM, and salted SHA-512.
