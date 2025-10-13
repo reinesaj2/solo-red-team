@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+
 ⚠️ Educational Use Only: All examples are fictional and for learning purposes. Do not use against systems without explicit written authorization.
 
 Recruiter note: This repository demonstrates offensive-security methodology in controlled, permissioned lab environments for defensive, detection, and training purposes. Full artifacts are retained privately and may be shared under NDA for interview or research review.
@@ -34,6 +37,9 @@ Raw logs, binaries, and any potentially sensitive artifacts have been removed fr
 
 - Failed‑auth telemetry, nonce issuance cadence, and response size variance can signal brute‑force and digest replay. Rate‑limit challenges, bind nonce to client tuple, and randomize static response sizes.
 - Password reuse signals across services inform hardening and user training; enforce unique credentials and breached‑password checks.
+
+## See Also
+See also: `federated-ids` — privacy-preserving distributed detection system complementary to this red-team lab.
 
 ## Methodology
 
