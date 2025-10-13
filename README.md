@@ -1,49 +1,46 @@
-## ⚠️ Disclaimer: Educational Simulation Only ⚠️
+⚠️ Legal & Ethical Notice: Do not use any code in this repo against systems without explicit written authorization. The author will not assist or condone misuse.
 
-This repository contains scripts and tools for cybersecurity research and educational purposes only. The code is intended to be used in controlled environments to simulate and understand web application vulnerabilities.
-
-**DO NOT use these tools on any system you do not own or have explicit permission to test.** Unauthorized use of these tools against any system is illegal. The author is not responsible for any damage caused by the misuse of this information.
-
-# Cybersecurity Red Teaming: Web Application & Authentication Attack Simulation
+# Cybersecurity Portfolio Project: Web Application & Authentication Security Analysis
 
 ## Project Overview
 
-This project demonstrates a comprehensive red teaming engagement against a series of web application and authentication challenges. The simulation involved real-world attack scenarios to identify and exploit vulnerabilities, showcasing a deep understanding of offensive security principles and methodologies. The primary objective was to achieve full system compromise by gaining unauthorized access to protected resources and escalating privileges.
+This repository showcases a comprehensive analysis of web application and system-level authentication vulnerabilities. The project demonstrates core competencies in vulnerability assessment, ethical hacking, and defensive engineering, conducted in a secure, isolated lab environment. All attack simulations were performed against intentionally vulnerable targets to develop and test defensive strategies.
 
-## Key Activities & Accomplishments
+## Core Competencies & Key Accomplishments
 
-*   **Vulnerability Assessment:** Conducted thorough reconnaissance and analysis to identify security weaknesses in web authentication mechanisms, including Basic and Digest authentication.
-*   **Password Cracking:** Executed a variety of password cracking techniques, from dictionary attacks to complex rule-based and hybrid strategies. Successfully compromised numerous accounts, including high-value targets, by leveraging tools like Hydra and Patator.
-*   **Advanced Attack Techniques:**
-    *   **Parameter Pollution:** Exploited a parameter pollution vulnerability to bypass security controls and gain unauthorized access.
-    *   **Credential Reuse:** Identified and exploited instances of credential reuse across different services to escalate privileges.
-    *   **Nonce Reuse Attack:** Successfully bypassed Digest authentication by exploiting a nonce reuse vulnerability.
-    *   **Timing Attacks:** Developed and executed timing attacks to infer information about the validity of credentials.
-*   **Privilege Escalation:** Successfully escalated privileges to gain administrative ("root") access to the target systems.
-*   **Reporting & Documentation:** Maintained a detailed log of all commands, methodologies, and findings in the `evidence/` directory, demonstrating a commitment to clear and thorough documentation.
+*   **Vulnerability Assessment:** Identified critical security weaknesses in legacy and modern authentication mechanisms, including Basic, Digest, NTLM, and salted SHA-512.
+*   **Offline Password Cracking:** Successfully executed dictionary and rule-based attacks using John the Ripper and Ophcrack to recover passwords from Windows and Linux hash dumps, demonstrating a deep understanding of password hashing vulnerabilities.
+*   **Online Brute-Force Attacks:** Conducted distributed brute-force attacks against web authentication forms (HTML, Basic, Digest) using Hydra, achieving a high success rate while managing attack signatures.
+*   **Advanced Attack Execution:**
+    *   **Parameter Pollution:** Exploited a parameter pollution vulnerability to bypass security controls.
+    *   **Credential Reuse:** Simulated privilege escalation by identifying and leveraging reused credentials across multiple services.
+    *   **Nonce Reuse Attack:** Defeated Digest authentication by exploiting a nonce reuse flaw.
+    *   **Timing Attacks:** Developed and implemented timing attacks to extract sensitive information from authentication endpoints.
+*   **Systematic Reporting:** Produced comprehensive documentation, including detailed command logs, evidence artifacts, and a final security assessment report, demonstrating strong communication and analytical skills.
+
+## How to run safely
+Safe lab instructions: docker-compose -f lab/docker-compose.yml up creates the vulnerable environment. Do not run tools against any networked system you do not own. See lab/README.md for required isolation steps.
 
 ## Tools & Technologies
 
-*   **Hydra:** A parallelized network login cracker which supports numerous protocols to attack. It is used for brute-force and dictionary attacks against web authentication.
-*   **Patator:** A multi-purpose brute-forcer, with a modular design and a flexible usage. It was used for brute-force attacks.
-*   **Crunch:** A wordlist generator where you can specify a standard character set or a character set you specify.
-*   **Curl:** A command-line tool for transferring data with URLs. It was used for testing HTTP authentication.
-*   **Python:** A high-level, general-purpose programming language. It was used for scripting various attack scenarios.
-*   **Bash:** A Unix shell and command language. It was used for scripting and automating tasks.
-*   **John the Ripper:** A password cracking software tool.
-*   **Ophcrack:** A free Windows password cracker based on rainbow tables.
+*   **Password Analysis:** John the Ripper, Ophcrack, Hydra, Patator, Crunch
+*   **Web Application Testing:** Curl, Custom Python & Bash Scripts
+*   **Operating Systems:** Windows 7, Windows 2003, Linux (Ubuntu)
+*   **Scripting & Automation:** Python, Bash
 
 ## Methodology
 
-The methodology was guided by a systematic and iterative approach:
+This project followed a structured, five-phase ethical hacking methodology:
 
-1.  **Reconnaissance:** Fingerprinting the target applications and authentication mechanisms to understand the attack surface.
-2.  **Initial Foothold:** Gaining an initial foothold by targeting low-hanging fruit, such as weak passwords and common vulnerabilities.
-3.  **Escalation & Expansion:** Pivoting to other systems and services, leveraging techniques like credential reuse and parameter pollution to escalate privileges.
-4.  **Advanced Exploitation:** For more hardened targets, employing advanced techniques like nonce reuse attacks and timing attacks.
-5.  **Documentation:** Meticulously documenting actions and findings to ensure a clear audit trail and to support the final report.
+1.  **Reconnaissance:** Fingerprinted target systems and applications to map the attack surface and identify authentication mechanisms.
+2.  **Initial Access:** Gained an initial foothold by exploiting weak passwords and common vulnerabilities in a controlled lab setting.
+3.  **Privilege Escalation & Lateral Movement:** Escalated privileges by leveraging credential reuse and other vulnerabilities.
+4.  **Advanced Exploitation:** Deployed sophisticated techniques, including nonce reuse and timing attacks, against hardened targets.
+5.  **Reporting:** Meticulously documented all findings, attack paths, and recommendations in a professional security assessment report.
 
 ## Evidence & Reporting
+
+**Sanitization Note:** All evidence and logs in this repository have been sanitized. This project demonstrates security assessment capabilities in a controlled, ethical context.
 
 The `evidence/` directory contains a comprehensive collection of artifacts from this engagement, including:
 
@@ -52,4 +49,4 @@ The `evidence/` directory contains a comprehensive collection of artifacts from 
 *   **Password Lists:** The passwords that were successfully cracked.
 *   **Command Logs:** A log of the commands that were executed.
 
-This project demonstrates the ability to think like an attacker, identify and exploit complex vulnerabilities, and achieve objectives in a simulated red teaming environment.
+This project demonstrates the ability to think like an attacker to identify and exploit complex vulnerabilities, providing the foundation for building stronger, more resilient defensive systems.

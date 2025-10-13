@@ -1,10 +1,8 @@
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract}
 
-This security assessment examines entity authentication mechanisms through offline password hash cracking, online password guessing, and token-based authentication analysis.
+This report presents a comprehensive security analysis of entity authentication mechanisms across multiple platforms, including Windows and Linux environments, as well as web-based applications. The analysis involved a combination of offline password cracking, online password guessing, and token-based authentication review to identify and assess vulnerabilities in a controlled lab environment.
 
-We analyzed password verification data from Windows 7 (NTLM), Windows 2003 (LM/NTLM), and Ubuntu 14.04 (salted SHA-512) systems using John the Ripper, Ophcrack, and Hydra. All systems except the Ubuntu root account were successfully compromised.
+Key findings from the assessment include the rapid compromise of legacy Windows 2003 LM hashes using rainbow table attacks and the successful cracking of all Windows 7 NTLM hashes in under eight minutes. While the Ubuntu system's root account remained secure, analysis of user passwords revealed weaknesses to pattern-based attacks, resulting in an 87.5\% success rate. All targeted web authentication systems (HTML, Basic, and Digest) were compromised via distributed brute-force techniques.
 
-Key findings: Windows 2003 LM hashes cracked via rainbow tables within seconds; Windows 7 NTLM hashes defeated in <8 minutes (100\% success); Ubuntu user passwords showed vulnerability to pattern analysis (87.5\% success) while root remained secure; web authentication systems (HTML/Basic/Digest) compromised through distributed brute-force.
-
-Results demonstrate critical importance of modern password hashing (salt, iterations, memory-hard functions) and rate limiting for authentication security.
+The results of this project underscore the critical importance of modern, robust password hashing protocols that incorporate salts, high iteration counts, and memory-hard functions. Furthermore, the successful online attacks highlight the necessity of implementing security measures such as rate limiting and account lockout to defend against brute-force attempts. This analysis provides actionable insights for strengthening authentication security in both system and web application contexts.

@@ -1,48 +1,49 @@
 \section{Introduction}
 
-Entity authentication forms the cornerstone of modern cybersecurity, serving as the first line of defense in protecting digital assets and systems. As the digital landscape continues to evolve, understanding the strengths and vulnerabilities of authentication mechanisms becomes increasingly critical for security professionals.
+Entity authentication is a foundational element of cybersecurity, acting as the primary gatekeeper for digital assets. A deep understanding of authentication technologies, their vulnerabilities, and corresponding defense mechanisms is essential for any security professional. This report details a practical exploration of these concepts through a multi-faceted security assessment.
 
-\subsection{Background and Motivation}
+\subsection{Project Background and Motivation}
 
-Authentication systems rely on multiple factors: \textit{what you know} (passwords), \textit{what you have} (tokens), \textit{who you are} (biometrics), and \textit{where you are} (location). This study focuses primarily on password-based authentication and token-based systems, examining their implementation across different platforms and their resistance to various attack vectors.
+This project was conceived to build hands-on expertise in assessing and circumventing authentication controls. It focuses on password-based and token-based systems, which are ubiquitous across both system-level and application-level security architectures.
 
-Password authentication has been the dominant authentication method for decades, implemented at both the system level (Linux, Windows) and web application level (HTML forms, HTTP authentication). However, the security of password-based systems depends heavily on the underlying cryptographic implementation, particularly the password verification data (PVD) storage mechanisms.
+While password-based authentication is a well-established practice, its security is not guaranteed. The strength of such a system is intrinsically linked to its underlying cryptographic implementation, especially the methods used for storing password verification data (PVD). This assessment delves into these implementations to provide a real-world understanding of their security implications.
 
-\subsection{Security Challenges}
+\subsection{Key Security Challenges Investigated}
 
-Modern authentication systems face several critical challenges:
+The security of modern authentication systems is constantly under threat from a variety of challenges. This project directly addresses several of these, including:
 
 \begin{enumerate}
-    \item \textbf{Legacy Systems}: Older systems often employ weak hashing algorithms without proper salt or iteration counts
-    \item \textbf{User Behavior}: Users frequently choose weak, predictable passwords that are vulnerable to dictionary attacks
-    \item \textbf{Implementation Flaws}: Web applications may lack proper rate limiting or account lockout mechanisms
-    \item \textbf{Attack Evolution}: Attackers have access to powerful tools and massive wordlists, making brute-force attacks increasingly effective
+    \item \textbf{Legacy System Vulnerabilities}: Analyzing the weaknesses of older systems that often rely on outdated and insecure hashing algorithms.
+    \item \textbf{User Password Practices}: Investigating the impact of common user behaviors, such as the use of weak or predictable passwords.
+    \item \textbf{Implementation Flaws}: Identifying and exploiting common implementation oversights in web applications, such as the absence of rate limiting.
+    \item \textbf{Advanced Attack Vectors}: Utilizing powerful, modern tools and techniques to simulate sophisticated brute-force and dictionary attacks.
 \end{enumerate}
 
-\subsection{Research Objectives}
+\subsection{Project Objectives}
 
-This assessment aims to achieve several key learning objectives:
+The primary objectives of this security assessment were to:
 
 \begin{enumerate}
-    \item Understand the roles of salt and iteration count in mitigating offline dictionary attacks
-    \item Differentiate between offline dictionary attacks and online password guessing
-    \item Analyze token authentication with private keys
-    \item Develop the ability to quickly identify the weakest authentication links in systems
+    \item Demonstrate the critical role of cryptographic salts and high iteration counts in defending against offline dictionary attacks.
+    \item Distinguish between and execute both offline dictionary attacks and online password guessing.
+    \item Analyze the security of token-based authentication systems that rely on private keys.
+    \item Develop a systematic approach to identifying the weakest links in a given authentication infrastructure.
 \end{enumerate}
 
 \subsection{Scope and Limitations}
 
-This study examines three distinct computing environments representing different eras of password security: Windows 2003 Server (legacy LM hashes), Windows 7 Enterprise (NTLM hashes), and Ubuntu 14.04 (modern salted hashes). Additionally, we analyze web-based authentication mechanisms including HTML form authentication, HTTP Basic authentication, and HTTP Digest authentication.
+The scope of this assessment covers three distinct computing environments, each representing a different stage in the evolution of password security: Windows 2003 Server (legacy LM hashes), Windows 7 Enterprise (NTLM hashes), and Ubuntu 14.04 (modern salted hashes). In addition, the project includes an analysis of common web-based authentication mechanisms, such as HTML form authentication and HTTP Basic/Digest authentication.
 
-All testing was conducted in controlled laboratory environments with proper authorization, following JMU's Honor Code and ethical hacking guidelines.
+All activities were conducted ethically and responsibly within a controlled laboratory setting.
 
 \subsection{Document Organization}
 
-This report is structured to provide comprehensive coverage of all assessment activities:
+This report is structured as a professional security assessment, with the following sections:
+
 \begin{itemize}
-    \item \textbf{Methods}: Tools, techniques, and experimental setup
-    \item \textbf{Results}: Task-by-task findings aligned with project deliverables
-    \item \textbf{Discussion}: Analysis of security implications and comparative assessment
-    \item \textbf{Conclusion}: Key findings and recommendations
-    \item \textbf{Appendix}: Complete evidence documentation and supporting materials
+    \item \textbf{Methods}: A detailed description of the tools, techniques, and experimental setup used in the assessment.
+    \item \textbf{Results}: A comprehensive presentation of the findings for each task, aligned with the project's deliverables.
+    \item \textbf{Discussion}: An in-depth analysis of the security implications of the findings and a comparative evaluation of the different systems.
+    \item \textbf{Conclusion}: A summary of the key findings and strategic recommendations for improving authentication security.
+    \item \textbf{Appendix}: A complete collection of evidence, including logs, screenshots, and other supporting materials.
 \end{itemize}
