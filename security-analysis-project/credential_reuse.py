@@ -23,7 +23,6 @@ class WebAuthTester:
         self.username = username if username else 'testuser'
         self.dry_run = dry_run
         
-        # This list should be populated from external sources (e.g., cracked password lists)
         self.discovered_passwords = discovered_passwords if discovered_passwords else []
         
         # Example of how to populate if needed for testing (remove for production)

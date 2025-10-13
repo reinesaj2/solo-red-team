@@ -1,24 +1,26 @@
 ⚠️ Educational Use Only: All examples are fictional and for learning purposes. Do not use against systems without explicit written authorization.
 
+Recruiter note: This repository demonstrates offensive-security methodology in controlled, permissioned lab environments for defensive, detection, and training purposes. Full artifacts are retained privately and may be shared under NDA for interview or research review.
+
 # Cybersecurity Portfolio Project: Web Application & Authentication Security Analysis
 
 > Recruiter note: Demonstrates red‑team simulation in a controlled lab; no live targets.
 
 ## Project Overview
 
-This repository showcases a comprehensive analysis of web application and system-level authentication vulnerabilities. The project demonstrates core competencies in vulnerability assessment, ethical hacking, and defensive engineering, conducted in a secure, isolated lab environment. All attack simulations were performed against intentionally vulnerable targets to develop and test defensive strategies.
+This repository provides an educational simulation of red-team techniques intended for use only in isolated lab environments. All examples are executed against intentionally vulnerable, containerized targets and are designed to help defenders understand attack patterns and detection engineering.
 
-## Core Competencies & Key Accomplishments
+How to run safely: Use docker-compose -f lab/docker-compose.yml up to start an isolated lab. Do not run any tools on production or third-party networks.
 
-*   **Vulnerability Assessment:** Identified critical security weaknesses in legacy and modern authentication mechanisms, including Basic, Digest, NTLM, and salted SHA-512.
-*   **Offline Password Cracking:** Successfully executed dictionary and rule-based attacks using John the Ripper and Ophcrack to recover passwords from Windows and Linux hash dumps, demonstrating a deep understanding of password hashing vulnerabilities.
-*   **Online Brute-Force Attacks:** Conducted distributed brute-force attacks against web authentication forms (HTML, Basic, Digest) using Hydra, achieving a high success rate while managing attack signatures.
-*   **Advanced Attack Execution:**
-    *   **Parameter Pollution:** Exploited a parameter pollution vulnerability to bypass security controls.
-    *   **Credential Reuse:** Simulated privilege escalation by identifying and leveraging reused credentials across multiple services.
-    *   **Nonce Reuse Attack:** Defeated Digest authentication by exploiting a nonce reuse flaw.
-    *   **Timing Attacks:** Developed and implemented timing attacks to extract sensitive information from authentication endpoints.
-*   **Systematic Reporting:** Produced comprehensive documentation, including detailed command logs, evidence artifacts, and a final security assessment report, demonstrating strong communication and analytical skills.
+## Key Activities & Learning Goals
+	•	Reconnaissance methodology for identifying common web-authentication misconfigurations (lab-only).
+	•	Demonstration of password-testing strategies against synthetic lab accounts to evaluate detection efficacy.
+	•	Exploration of parameter-handling vulnerabilities and timing-analysis concepts in controlled scenarios.
+	•	Development of detection-rule sketches and reporting templates for defensive teams.
+
+## Evidence & Reporting (sanitized)
+
+Raw logs, binaries, and any potentially sensitive artifacts have been removed from this public repository for legal and safety reasons. This repo contains sanitized examples and synthetic outputs that illustrate methodology without distributing dangerous artifacts. Full artifacts are preserved offline in a private archive and can be made available under NDA for legitimate research or hiring review.
 
 ## Module summary
 
@@ -32,17 +34,6 @@ This repository showcases a comprehensive analysis of web application and system
 
 - Failed‑auth telemetry, nonce issuance cadence, and response size variance can signal brute‑force and digest replay. Rate‑limit challenges, bind nonce to client tuple, and randomize static response sizes.
 - Password reuse signals across services inform hardening and user training; enforce unique credentials and breached‑password checks.
-
-## Evidence & Reporting
-
-**Sanitization Note:** All evidence and logs in this repository have been sanitized. This project demonstrates security assessment capabilities in a controlled, ethical context.
-
-The `evidence/` directory contains sanitized artifacts only (raw evidence excluded by `.gitignore`). Includes:
-
-*   **Attack Summaries:** Detailed summaries of the basic and advanced attack phases.
-*   **Log Files:** Sanitized output from tools like Hydra and Patator.
-*   **Screenshots:** Redacted CLI output, no real credentials.
-*   **Command Logs:** A log of the commands that were executed.
 
 ## Methodology
 
