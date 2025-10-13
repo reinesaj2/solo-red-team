@@ -1,0 +1,28 @@
+# Exclude raw evidence and sensitive artifacts
+security-analysis-project/evidence/**
+!security-analysis-project/evidence/sanitized/**
+
+# Logs and large outputs
+*.log
+security-analysis-project/logs/**
+
+# Binaries and archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.bin
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Docker local state
+lab/**/.env
+lab/**/.local/**

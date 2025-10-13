@@ -1,3 +1,5 @@
+> Recruiter note: This repo demonstrates offensive-security methods in controlled labs for defensive & detection engineering. I can discuss methodology, safe-dev environments, and ethical safeguards during interviews.
+
 # Strategic Password Testing Framework
 
 A comprehensive password testing system designed for security research and defensive analysis within controlled lab environments.

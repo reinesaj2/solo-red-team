@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
 Credential Reuse Analysis Tool
-Tests a list of credentials across various web services to identify reuse vulnerabilities.
+Purpose: Safely test a list of credentials across demo services to identify reuse vulnerabilities.
+Usage:
+    python credential_reuse.py --dry-run --user testuser --passwords file.txt
+Example:
+    python credential_reuse.py --dry-run --targets http://localhost:8083/login.html,http://localhost:8081/basicauth,http://localhost:8082/digestauth
 """
 
 import requests
@@ -9,13 +13,15 @@ import base64
 import hashlib
 import time
 from urllib.parse import quote
+import argparse
 
 class WebAuthTester:
-    def __init__(self, target_urls=None, username=None, discovered_passwords=None):
+    def __init__(self, target_urls=None, username=None, discovered_passwords=None, dry_run=True):
         self.html_url = target_urls.get('html_form', 'http://localhost/login.html') if target_urls else 'http://localhost/login.html'
         self.basic_url = target_urls.get('basic_auth', 'http://localhost/basicauth') if target_urls else 'http://localhost/basicauth'
         self.digest_url = target_urls.get('digest_auth', 'http://localhost/digestauth') if target_urls else 'http://localhost/digestauth'
         self.username = username if username else 'testuser'
+        self.dry_run = dry_run
         
         # This list should be populated from external sources (e.g., cracked password lists)
         self.discovered_passwords = discovered_passwords if discovered_passwords else []
@@ -28,6 +34,8 @@ class WebAuthTester:
 
     def test_html_form(self, password):
         """Test HTML form authentication"""
+        if self.dry_run:
+            return False, "DRY-RUN: Skipped HTML form request"
         try:
             response = requests.post(
                 self.html_url,
@@ -56,6 +64,8 @@ class WebAuthTester:
     
     def test_basic_auth(self, password):
         """Test HTTP Basic authentication"""
+        if self.dry_run:
+            return False, "DRY-RUN: Skipped Basic auth request"
         try:
             auth_header = base64.b64encode(f"{self.username}:{password}".encode()).decode()
             
@@ -77,6 +87,8 @@ class WebAuthTester:
     
     def get_digest_challenge(self):
         """Get digest authentication challenge"""
+        if self.dry_run:
+            return None
         try:
             response = requests.get(self.digest_url, timeout=10)
             if response.status_code == 401:
@@ -89,6 +101,8 @@ class WebAuthTester:
     
     def test_digest_auth(self, password):
         """Test HTTP Digest authentication"""
+        if self.dry_run:
+            return False, "DRY-RUN: Skipped Digest auth request"
         try:
             # Get fresh challenge
             challenge = self.get_digest_challenge()
@@ -146,7 +160,8 @@ class WebAuthTester:
             print("No passwords provided for testing. Exiting.")
             return results
 
-        print("Credential Reuse Testing")
+        mode = "DRY-RUN" if self.dry_run else "ACTIVE"
+        print(f"Credential Reuse Testing ({mode})")
         print("=" * 50)
         print(f"Testing {len(self.discovered_passwords)} provided passwords...")
         print()
@@ -158,40 +173,25 @@ class WebAuthTester:
             success, msg = self.test_html_form(password)
             results['html'].append((password, success, msg))
             print(f"  HTML Form:  {msg}")
-            
-            if success:
-                print(f"*** HTML FORM SUCCESS WITH PASSWORD: {password} ***")
-                # return results  # Commented out to continue testing all passwords
-            
-            time.sleep(0.2)  # Rate limiting
+            time.sleep(0.1)
             
             # Test Basic auth
             success, msg = self.test_basic_auth(password)
             results['basic'].append((password, success, msg))
             print(f"  Basic Auth: {msg}")
-            
-            if success:
-                print(f"*** BASIC AUTH SUCCESS WITH PASSWORD: {password} ***")
-                # return results  # Commented out to continue testing all passwords
-            
-            time.sleep(0.2)  # Rate limiting
+            time.sleep(0.1)
             
             # Test Digest auth (only for 6-character alphanumeric passwords)
-            # This constraint is based on a common scenario, adjust as needed
-            if len(password) == 6 and password.isalnum(): # Simplified check
+            if len(password) == 6 and password.isalnum():
                 success, msg = self.test_digest_auth(password)
                 results['digest'].append((password, success, msg))
                 print(f"  Digest Auth: {msg}")
-                
-                if success:
-                    print(f"*** DIGEST AUTH SUCCESS WITH PASSWORD: {password} ***")
-                    # return results  # Commented out to continue testing all passwords
             else:
                 results['digest'].append((password, False, "SKIPPED: Does not match 6-char alphanumeric format"))
                 print(f"  Digest Auth: SKIPPED (format mismatch)")
             
             print()
-            time.sleep(0.5)  # Rate limiting between passwords
+            time.sleep(0.2)
         
         print("=" * 50)
         print("CREDENTIAL REUSE TEST COMPLETE")
@@ -199,50 +199,42 @@ class WebAuthTester:
         
         return results
 
-if __name__ == "__main__":
-    # Example usage:
-    # Define target URLs and a list of passwords to test
-    target_service_urls = {
-        'html_form': 'http://192.168.100.101/login.html',
-        'basic_auth': 'http://192.168.100.103/basicauth',
-        'digest_auth': 'http://192.168.100.103/digestauth'
-    }
-    
-    # Load passwords from a file or define them here
-    # For demonstration, using a small example list
-    test_passwords = [
-        'password123', 'secret', 'admin', 'qwerty',
-        'P@ssw0rd', 'MyPass1', 'SecurePwd!',
-        'testpass', 'testuser', 'test12', 'test34',
-        'hakkis', 'sotalait', 'tripsine' # Example passwords that might be found
-    ]
 
-    tester = WebAuthTester(
-        target_urls=target_service_urls,
-        username='testuser', # Replace with actual target username
-        discovered_passwords=test_passwords
-    )
-    results = tester.run_all_tests()
-    
-    # Print summary
-    print("\nSUMMARY:")
-    html_attempts = len([r for r in results['html'] if r[0]])
-    basic_attempts = len([r for r in results['basic'] if r[0]])  
-    digest_attempts = len([r for r in results['digest'] if r[0]])
-    
-    print(f"HTML Form attempts: {html_attempts}")
-    print(f"Basic Auth attempts: {basic_attempts}")
-    print(f"Digest Auth attempts: {digest_attempts}")
-    
-    successes = []
-    for service, test_results in results.items():
-        for password, success, msg in test_results:
-            if success:
-                successes.append((service, password, msg))
-    
-    if successes:
-        print("\nSUCCESSFUL AUTHENTICATIONS:")
-        for service, password, msg in successes:
-            print(f"{service.upper()}: {password} - {msg}")
-    else:
-        print("\nNo successful authentications found.")
+def _parse_cli_args():
+    parser = argparse.ArgumentParser(description="Credential Reuse Analysis Tool (lab-only)")
+    parser.add_argument("--targets", type=str, default="",
+                        help="Comma-separated URLs html_form,basic_auth,digest_auth")
+    parser.add_argument("--user", type=str, default="testuser")
+    parser.add_argument("--passwords", type=str, default="",
+                        help="Path to newline-delimited password list")
+    parser.add_argument("--dry-run", action="store_true", default=True,
+                        help="Run without sending network requests (default)")
+    return parser.parse_args()
+
+
+def _build_targets_map(targets_str):
+    if not targets_str:
+        return {}
+    parts = [p.strip() for p in targets_str.split(",") if p.strip()]
+    mapping = {}
+    if len(parts) > 0:
+        mapping['html_form'] = parts[0]
+    if len(parts) > 1:
+        mapping['basic_auth'] = parts[1]
+    if len(parts) > 2:
+        mapping['digest_auth'] = parts[2]
+    return mapping
+
+
+if __name__ == "__main__":
+    args = _parse_cli_args()
+    passwords = []
+    if args.passwords:
+        try:
+            with open(args.passwords, "r", encoding="utf-8") as fh:
+                passwords = [line.strip() for line in fh if line.strip()]
+        except Exception as e:
+            print(f"Could not read passwords file: {e}")
+    targets = _build_targets_map(args.targets)
+    tester = WebAuthTester(target_urls=targets, username=args.user, discovered_passwords=passwords, dry_run=args.dry_run)
+    tester.run_all_tests()

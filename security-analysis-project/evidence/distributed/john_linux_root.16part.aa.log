@@ -1,7 +1,0 @@
-Using default input encoding: UTF-8
-Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 128/128 ASIMD 2x])
-Cost 1 (iteration count) is 5000 for all loaded hashes
-Will run 4 OpenMP threads
-Press Ctrl-C to abort, or send SIGUSR1 to john process for status
-0g 0:00:11:41 DONE (2025-09-13 15:41) 0g/s 3684p/s 3684c/s 3684C/s bledbl..btylbt
-Session completed. 

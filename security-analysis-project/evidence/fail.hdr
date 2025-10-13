@@ -1,7 +1,0 @@
-HTTP/1.1 302 Found
-Date: Tue, 09 Sep 2025 18:30:31 GMT
-Server: Apache/2.4.58 (Ubuntu)
-Location: http://192.168.100.101/login.html
-Content-Length: 298
-Content-Type: text/html; charset=iso-8859-1
-

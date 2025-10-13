@@ -1,10 +1,32 @@
-⚠️ Legal & Ethical Notice: Do not use any code in this repo against systems without explicit written authorization. The author will not assist or condone misuse.
+⚠️ Educational Use Only: All examples are fictional and for learning purposes. Do not use against systems without explicit written authorization.
 
 # Cybersecurity Portfolio Project: Web Application & Authentication Security Analysis
+
+> Recruiter note: Demonstrates red‑team simulation in a controlled lab; no live targets.
 
 ## Project Overview
 
 This repository showcases a comprehensive analysis of web application and system-level authentication vulnerabilities. The project demonstrates core competencies in vulnerability assessment, ethical hacking, and defensive engineering, conducted in a secure, isolated lab environment. All attack simulations were performed against intentionally vulnerable targets to develop and test defensive strategies.
+
+## How to run safely
+
+- Run locally with the sandboxed lab (Docker). Prefer offline/isolated network.
+- Start lab services:
+```bash
+docker compose -f lab/docker-compose.yml up -d
+```
+- Stop and clean up:
+```bash
+docker compose -f lab/docker-compose.yml down -v
+```
+- Never target real hosts. See `lab/README.md` for isolation guidance.
+
+## Architecture
+
+Mermaid source: `docs/architecture.mmd`. Render to PNG (example):
+```bash
+mmdc -i docs/architecture.mmd -o docs/architecture.png
+```
 
 ## Core Competencies & Key Accomplishments
 
@@ -18,15 +40,29 @@ This repository showcases a comprehensive analysis of web application and system
     *   **Timing Attacks:** Developed and implemented timing attacks to extract sensitive information from authentication endpoints.
 *   **Systematic Reporting:** Produced comprehensive documentation, including detailed command logs, evidence artifacts, and a final security assessment report, demonstrating strong communication and analytical skills.
 
-## How to run safely
-Safe lab instructions: docker-compose -f lab/docker-compose.yml up creates the vulnerable environment. Do not run tools against any networked system you do not own. See lab/README.md for required isolation steps.
+## Module summary
 
-## Tools & Technologies
+| Module | Purpose | Key scripts | Outputs |
+|---|---|---|---|
+| Recon | Fingerprint services and auth schemes | `response_fingerprint.py` | service map, headers |
+| Exploitation | Online/offline auth testing | `credential_reuse.py`, `digest_nonce_reuse.py`, `timing_attack.py` | attempt logs, findings |
+| Reporting | Aggregate and explain findings | `report/` LaTeX and PNGs | final report, visuals |
 
-*   **Password Analysis:** John the Ripper, Ophcrack, Hydra, Patator, Crunch
-*   **Web Application Testing:** Curl, Custom Python & Bash Scripts
-*   **Operating Systems:** Windows 7, Windows 2003, Linux (Ubuntu)
-*   **Scripting & Automation:** Python, Bash
+## Detection Engineering Insight
+
+- Failed‑auth telemetry, nonce issuance cadence, and response size variance can signal brute‑force and digest replay. Rate‑limit challenges, bind nonce to client tuple, and randomize static response sizes.
+- Password reuse signals across services inform hardening and user training; enforce unique credentials and breached‑password checks.
+
+## Evidence & Reporting
+
+**Sanitization Note:** All evidence and logs in this repository have been sanitized. This project demonstrates security assessment capabilities in a controlled, ethical context.
+
+The `evidence/` directory contains sanitized artifacts only (raw evidence excluded by `.gitignore`). Includes:
+
+*   **Attack Summaries:** Detailed summaries of the basic and advanced attack phases.
+*   **Log Files:** Sanitized output from tools like Hydra and Patator.
+*   **Screenshots:** Redacted CLI output, no real credentials.
+*   **Command Logs:** A log of the commands that were executed.
 
 ## Methodology
 
@@ -38,15 +74,6 @@ This project followed a structured, five-phase ethical hacking methodology:
 4.  **Advanced Exploitation:** Deployed sophisticated techniques, including nonce reuse and timing attacks, against hardened targets.
 5.  **Reporting:** Meticulously documented all findings, attack paths, and recommendations in a professional security assessment report.
 
-## Evidence & Reporting
+---
 
-**Sanitization Note:** All evidence and logs in this repository have been sanitized. This project demonstrates security assessment capabilities in a controlled, ethical context.
-
-The `evidence/` directory contains a comprehensive collection of artifacts from this engagement, including:
-
-*   **Attack Summaries:** Detailed summaries of the basic and advanced attack phases.
-*   **Log Files:** Raw output from tools like Hydra and Patator.
-*   **Password Lists:** The passwords that were successfully cracked.
-*   **Command Logs:** A log of the commands that were executed.
-
-This project demonstrates the ability to think like an attacker to identify and exploit complex vulnerabilities, providing the foundation for building stronger, more resilient defensive systems.
+Ethical statement: The author supports responsible disclosure and safe training. All examples are fictional and for learning purposes only.

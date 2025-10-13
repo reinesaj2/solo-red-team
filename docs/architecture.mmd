@@ -1,0 +1,13 @@
+flowchart TD
+  A[Analyst] -->|runs| B(Lab Docker Compose)
+  B --> B1[web-basic :8081]
+  B --> B2[web-digest :8082]
+  B --> B3[web-form :8083]
+  A -->|scripts| C[security-analysis-project]
+  C --> C1[credential_reuse.py]
+  C --> C2[digest_nonce_reuse.py]
+  C --> C3[timing_attack.py]
+  C --> D[evidence/sanitized]
+  C --> E[report/]
+  D --> E
+

@@ -1,1 +1,0 @@
-# Hydra v9.5 run at 2025-09-10 15:42:27 on 192.168.100.103 http-get (hydra -I -V -f -l wangxx -P /dev/fd/63 -t 1 -w 5 -o evidence/digest_cs660_patterns.txt 192.168.100.103 http-get /digestauth)

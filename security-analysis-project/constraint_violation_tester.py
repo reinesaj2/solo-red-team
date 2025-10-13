@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """
 Authentication Constraint Testing Utility
-Generates test cases to verify authentication system constraints and identify unexpected behaviors.
+Purpose: Generate test cases to verify authentication constraint hypotheses in a lab.
+Usage:
+    python constraint_violation_tester.py --dry-run
+Example:
+    python constraint_violation_tester.py
 """
 import string
 import random
 import os
+import argparse
 
 def generate_test_cases_for_constraints():
     """Generate passwords that test various constraint hypotheses"""
@@ -112,7 +117,7 @@ def generate_additional_test_patterns():
         'numbers_8': number_heavy_8
     }
 
-def main():
+def main(dry_run=True):
     """Generate authentication constraint test pools"""
     print("Generating authentication constraint test pools...")
     
@@ -148,6 +153,13 @@ def main():
         hypotheses['numbers_8'][7:]
     )  # ~70 total
     
+    if dry_run:
+        print("DRY-RUN: Skipping file writes. Pools prepared in memory.")
+        print(f"  6-character constraint tests: {len(pool_6_char)} passwords")
+        print(f"  8-character primary constraint tests: {len(pool_8_char_primary)} passwords")  
+        print(f"  8-character secondary constraint tests: {len(pool_8_char_secondary)} passwords")
+        return
+    
     # Ensure entropy_pools directory exists
     output_dir = 'entropy_pools'
     os.makedirs(output_dir, exist_ok=True)
@@ -177,4 +189,7 @@ def main():
         print(f"  {i+1}. {pwd}")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Auth constraint test generator (lab-only)")
+    parser.add_argument("--dry-run", action="store_true", default=True)
+    args = parser.parse_args()
+    main(dry_run=args.dry_run)
