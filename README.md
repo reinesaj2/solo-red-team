@@ -51,6 +51,16 @@ This project followed a structured, five-phase ethical hacking methodology:
 4.  **Advanced Exploitation:** Deployed sophisticated techniques, including nonce reuse and timing attacks, against hardened targets.
 5.  **Reporting:** Meticulously documented all findings, attack paths, and recommendations in a professional security assessment report.
 
+## Tools Used
+
+This project leveraged a combination of standard cybersecurity tools and custom scripts to simulate real-world attack scenarios. The primary tools include:
+
+*   **cURL:** A command-line tool for making HTTP requests, essential for initial service fingerprinting and testing web endpoints.
+*   **Hydra:** A popular online password-cracking tool used to perform brute-force and dictionary attacks against authentication services.
+*   **John the Ripper:** A powerful offline password-cracking tool used to crack password hashes obtained from target systems.
+*   **Ophcrack:** A specialized tool for cracking Windows passwords using rainbow tables, demonstrated in the project's analysis of NTLM hashes.
+*   **Wordlists:** Standard password lists, such as RockYou, were used to simulate credential reuse and dictionary attacks.
+
 ---
 
 Ethical statement: The author supports responsible disclosure and safe training. All examples are fictional and for learning purposes only.
